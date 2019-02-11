@@ -323,7 +323,7 @@
 .end method
 
 .method public paser(Lorg/json/JSONObject;)V
-    .locals 8
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -336,7 +336,7 @@
     const/4 v1, 0x0
 
     .line 154
-    const-string v0, "is_ad"
+    const-string v0, "fuck_is_ad"
 
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -783,11 +783,12 @@
     iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/data/RecommendModelEntity;->url:Ljava/lang/String;
 
     .line 234
-    const-string v0, "auto_play"
+    #const-string v0, "auto_play"
+    const-string v0, "0"
 
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    #invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    #move-result-object v0
 
     iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/data/RecommendModelEntity;->auto_play:Ljava/lang/String;
 
@@ -807,6 +808,12 @@
 
     move-result v0
 
+    const/4 v8, 0x2
+	
+    if-ne v0, v8, :cond_10
+    const/16 v0, -0x20
+
+    :cond_10
     iput v0, p0, Lcom/hupu/app/android/bbs/core/module/data/RecommendModelEntity;->type:I
 
     .line 237
@@ -969,7 +976,7 @@
 
     .line 264
     :goto_5
-    const-string v0, "is_ad"
+    const-string v0, "fuck_is_ad"
 
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 

@@ -307,11 +307,12 @@
     iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/data/OtherADEntity;->video_url:Ljava/lang/String;
 
     .line 99
-    const-string v0, "auto_play"
+    #const-string v0, "auto_play"
+    const-string v0, "0"
 
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    #invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    #move-result-object v0
 
     iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/data/OtherADEntity;->auto_play:Ljava/lang/String;
 

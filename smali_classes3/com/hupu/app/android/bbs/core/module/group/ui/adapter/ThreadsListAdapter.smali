@@ -1573,9 +1573,9 @@
     if-eqz v1, :cond_1
 
     .line 1609
-    iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 1671
     :cond_0
@@ -1584,9 +1584,9 @@
 
     .line 1612
     :cond_1
-    iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 1614
     iget-object v1, p1, Lcom/hupu/app/android/bbs/core/module/group/ui/viewmodel/ThreadInfoViewModel;->custom_text:Ljava/lang/String;
@@ -1895,9 +1895,9 @@
     invoke-virtual {v1, v3, v0, v6}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
     .line 1659
-    iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 1660
     iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_view:Landroid/widget/ImageView;
@@ -1934,9 +1934,9 @@
     invoke-virtual {v0, v6}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 1781
-    iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v7}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v0, v7}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 1782
     iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolder;->advertiserLayout:Landroid/widget/RelativeLayout;
@@ -5202,47 +5202,47 @@
 
     if-nez v3, :cond_12
 
-    .line 713
-    iget-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, p1
-
-    invoke-virtual {v0, v1, v3, v8}, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
-
-    .line 714
-    iget-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->videoParent:Landroid/view/View;
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
-
-    .line 715
-    move/from16 v0, p1
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->currentClickPosition:I
-
-    .line 716
-    iget-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    .line 717
-    move-object/from16 v0, p0
-
-    iput-object v8, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->contentView:Landroid/view/View;
-
-    .line 718
-    const/4 v3, 0x1
-
-    move-object/from16 v0, p0
-
-    iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->auto_play:Z
+    #.line 713
+    #iget-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #move-object/from16 v0, p0
+    #
+    #move/from16 v1, p1
+    #
+    #invoke-virtual {v0, v1, v3, v8}, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
+    #
+    #.line 714
+    #iget-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->videoParent:Landroid/view/View;
+    #
+    #const/4 v4, 0x0
+    #
+    #invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+    #
+    #line 715
+    #ove/from16 v0, p1
+    #
+    #ove-object/from16 v1, p0
+    #
+    #put v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->currentClickPosition:I
+    #
+    #line 716
+    #get-object v3, v7, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #ove-object/from16 v0, p0
+    #
+    #put-object v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #line 717
+    #ove-object/from16 v0, p0
+    #
+    #put-object v8, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->contentView:Landroid/view/View;
+    #
+    #line 718
+    #onst/4 v3, 0x1
+    #
+    #ove-object/from16 v0, p0
+    #
+    #put-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->auto_play:Z
 
     .line 722
     :goto_4
@@ -6529,51 +6529,51 @@
 
     if-nez v3, :cond_28
 
-    .line 1078
-    iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #.line 1078
+    #iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
 
-    move-object/from16 v0, p0
+    #move-object/from16 v0, p0
 
-    move/from16 v1, p1
+    #move/from16 v1, p1
 
-    move-object/from16 v2, p2
+    #move-object/from16 v2, p2
 
-    invoke-virtual {v0, v1, v3, v2}, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
+    #invoke-virtual {v0, v1, v3, v2}, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
 
-    .line 1079
-    iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->videoParent:Landroid/view/View;
+    #.line 1079
+    #iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->videoParent:Landroid/view/View;
 
-    const/4 v4, 0x0
+    #const/4 v4, 0x0
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+    #invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1080
-    move/from16 v0, p1
+    #.line 1080
+    #move/from16 v0, p1
 
-    move-object/from16 v1, p0
+    #move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->currentClickPosition:I
+    #iput v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->currentClickPosition:I
 
-    .line 1081
-    iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #.line 1081
+    #iget-object v3, v10, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
 
-    move-object/from16 v0, p0
+    #move-object/from16 v0, p0
 
-    iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
 
-    .line 1082
-    move-object/from16 v0, p2
+    #.line 1082
+    #move-object/from16 v0, p2
 
-    move-object/from16 v1, p0
+    #move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->contentView:Landroid/view/View;
+    #iput-object v0, v1, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->contentView:Landroid/view/View;
 
-    .line 1083
-    const/4 v3, 0x1
+    #.line 1083
+    #const/4 v3, 0x1
 
-    move-object/from16 v0, p0
+    #move-object/from16 v0, p0
 
-    iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->auto_play:Z
+    #iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/group/ui/adapter/ThreadsListAdapter;->auto_play:Z
 
     .line 1088
     :goto_e

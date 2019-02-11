@@ -428,7 +428,7 @@
     invoke-static {v0, v3}, Lcom/hupu/android/util/ag;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 116
-    const-string v0, "core"
+    const-string v0, "fuck_core"
 
     invoke-virtual {v6, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
@@ -662,7 +662,7 @@
     .line 180
     const-string v0, "third_id"
 
-    const-string v3, "third_ad"
+    const-string v3, "fuck_third_ad"
 
     invoke-virtual {v6, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 

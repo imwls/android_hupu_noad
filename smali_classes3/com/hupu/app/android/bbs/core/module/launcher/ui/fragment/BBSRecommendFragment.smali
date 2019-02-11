@@ -1627,22 +1627,22 @@
 
     if-nez v0, :cond_2
 
-    .line 813
-    iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
-
-    iget-object v0, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    invoke-virtual {v0}, Lcom/hupu/android/ui/widget/HPVideoPlayView;->h()V
-
-    .line 814
-    iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
-
-    iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->isPlaying:Z
-
-    .line 815
-    iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
-
-    iput-boolean v2, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->isPaused:Z
+    #.line 813
+    #iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
+    #
+    #iget-object v0, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #invoke-virtual {v0}, Lcom/hupu/android/ui/widget/HPVideoPlayView;->h()V
+    #
+    #.line 814
+    #iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
+    #
+    #iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->isPlaying:Z
+    #
+    #.line 815
+    #iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/fragment/BBSRecommendFragment;->recommendListAdapter:Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;
+    #
+    #iput-boolean v2, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->isPaused:Z
 
     goto :goto_0
 

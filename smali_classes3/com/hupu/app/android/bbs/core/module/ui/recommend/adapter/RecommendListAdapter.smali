@@ -1624,9 +1624,9 @@
     if-eqz v1, :cond_3
 
     .line 1997
-    iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2055
     :cond_1
@@ -1648,9 +1648,9 @@
 
     .line 2001
     :cond_3
-    iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2003
     iget-object v1, p1, Lcom/hupu/app/android/bbs/core/module/data/RecommendModelEntity;->custom_text:Ljava/lang/String;
@@ -1961,9 +1961,9 @@
     invoke-virtual {v1, v3, v0, v6}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
     .line 2047
-    iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2048
     iget-object v1, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_view:Landroid/widget/ImageView;
@@ -2009,9 +2009,9 @@
     invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2060
-    iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2127
     :cond_1
@@ -2034,9 +2034,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2065
-    iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
+    #iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->promotion_layout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+    #invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 2066
     iget-object v0, p2, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$NormalViewHolder;->thumbnailView:Landroid/view/View;
@@ -7733,33 +7733,33 @@
 
     if-nez v0, :cond_44
 
-    .line 1252
-    iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->videoParentMask:Landroid/view/View;
-
-    invoke-virtual {v0, v7}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1253
-    iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    iget-object v1, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->itemView:Landroid/view/View;
-
-    invoke-virtual {p0, p3, v0, v1}, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
-
-    .line 1254
-    iput p3, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->currentClickPosition:I
-
-    .line 1255
-    iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    .line 1256
-    iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->itemView:Landroid/view/View;
-
-    iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
-
-    .line 1257
-    iput-boolean v10, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->auto_play:Z
+    #.line 1252
+    #iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->videoParentMask:Landroid/view/View;
+    #
+    #invoke-virtual {v0, v7}, Landroid/view/View;->setVisibility(I)V
+    #
+    #.line 1253
+    #iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #iget-object v1, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->itemView:Landroid/view/View;
+    #
+    #invoke-virtual {p0, p3, v0, v1}, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
+    #
+    #.line 1254
+    #iput p3, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->currentClickPosition:I
+    #
+    #.line 1255
+    #iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #.line 1256
+    #iget-object v0, v6, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter$ViewHolderForVideo;->itemView:Landroid/view/View;
+    #
+    #iput-object v0, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
+    #
+    #.line 1257
+    #iput-boolean v10, p0, Lcom/hupu/app/android/bbs/core/module/ui/recommend/adapter/RecommendListAdapter;->auto_play:Z
 
     .line 1264
     :goto_28

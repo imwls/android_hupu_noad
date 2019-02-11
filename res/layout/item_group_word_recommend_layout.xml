@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/hot_replies_main" android:background="?v0_index_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:visibility="gone">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone">
         <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/rl_hotreplycard_top" android:layout_width="fill_parent" android:layout_height="45.0dip">
             <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/ic_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
                 <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/ic_group" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_group_def" android:scaleType="centerInside" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
@@ -21,5 +21,5 @@
         <com.hupu.android.ui.colorUi.ColorImageButton android:id="@id/no_interest_icon" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_no_interest" android:scaleType="centerInside" android:layout_alignParentBottom="true" app:riv_oval="true" />
         <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_ad_download" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/no_interest_icon" style="@style/txt_ad_download_style" />
     </com.hupu.android.ui.colorUi.ColorRelativeLayout>
-    <com.hupu.android.ui.colorUi.ColorView android:id="@id/split" android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.hupu.android.ui.colorUi.ColorView android:id="@id/split" android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:visibility="gone" />
 </com.hupu.android.ui.colorUi.ColorLinearLayout>

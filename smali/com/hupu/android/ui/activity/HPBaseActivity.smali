@@ -1930,89 +1930,89 @@
     .locals 2
 
     .prologue
-    .line 1092
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 1094
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 1095
-    const-string v0, "emeng_toast"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    .line 1096
-    if-eqz v0, :cond_0
-
-    .line 1097
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "\u4e8b\u4ef6\uff1a"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 1099
-    :cond_0
+    #.line 1092
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;)V
+    #
+    #.line 1094
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;)V
+    #
+    #.line 1095
+    #const-string v0, "emeng_toast"
+    #
+    #const/4 v1, 0x0
+    #
+    #invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
+    #
+    #move-result v0
+    #
+    #.line 1096
+    #if-eqz v0, :cond_0
+    #
+    #.line 1097
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #const-string v1, "\u4e8b\u4ef6\uff1a"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
+    #
+    #.line 1099
+    #:cond_0
     return-void
 .end method
 
@@ -2020,99 +2020,99 @@
     .locals 2
 
     .prologue
-    .line 1081
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0, p2}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 1083
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0, p2}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 1085
-    const-string v0, "emeng_toast"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    .line 1086
-    if-eqz v0, :cond_0
-
-    .line 1087
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "\u4e8b\u4ef6\uff1a"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "==>key\uff1a "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 1089
-    :cond_0
+    #.line 1081
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0, p2}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    #
+    #.line 1083
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0, p2}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    #
+    #.line 1085
+    #const-string v0, "emeng_toast"
+    #
+    #const/4 v1, 0x0
+    #
+    #invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
+    #
+    #move-result v0
+    #
+    #.line 1086
+    #if-eqz v0, :cond_0
+    #
+    #.line 1087
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #const-string v1, "\u4e8b\u4ef6\uff1a"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "==>key\uff1a "
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
+    #
+    #.line 1089
+    #:cond_0
     return-void
 .end method
 
@@ -2120,131 +2120,131 @@
     .locals 2
 
     .prologue
-    .line 1068
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
-
-    .line 1069
-    iget-object v0, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
-
-    invoke-virtual {v0, p2, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1070
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
-
-    invoke-static {p0, v0, v1}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 1072
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
-
-    invoke-static {p0, v0, v1}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 1073
-    const-string v0, "emeng_toast"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    .line 1074
-    if-eqz v0, :cond_0
-
-    .line 1075
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "\u4e8b\u4ef6\uff1a"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "_7"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "( "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ","
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 1078
-    :cond_0
+    #.line 1068
+    #new-instance v0, Ljava/util/HashMap;
+    #
+    #invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    #
+    #iput-object v0, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
+    #
+    #.line 1069
+    #iget-object v0, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
+    #
+    #invoke-virtual {v0, p2, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    #
+    #.line 1070
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #iget-object v1, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
+    #
+    #invoke-static {p0, v0, v1}, Lcom/umeng/analytics/MobclickAgent;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
+    #
+    #.line 1072
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #iget-object v1, p0, Lcom/hupu/android/ui/activity/HPBaseActivity;->UMENG_MAP:Ljava/util/HashMap;
+    #
+    #invoke-static {p0, v0, v1}, Lcom/hupu/statistics/HuPuMountInterface;->onEvent(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
+    #
+    #.line 1073
+    #const-string v0, "emeng_toast"
+    #
+    #const/4 v1, 0x0
+    #
+    #invoke-static {v0, v1}, Lcom/hupu/android/util/ag;->a(Ljava/lang/String;Z)Z
+    #
+    #move-result v0
+    #
+    #.line 1074
+    #if-eqz v0, :cond_0
+    #
+    #.line 1075
+    #new-instance v0, Ljava/lang/StringBuilder;
+    #
+    #invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    #
+    #const-string v1, "\u4e8b\u4ef6\uff1a"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "_7"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, "( "
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, ","
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #const-string v1, ")"
+    #
+    #invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #
+    #move-result-object v0
+    #
+    #invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    #
+    #move-result-object v0
+    #
+    #invoke-static {p0, v0}, Lcom/hupu/android/util/ai;->c(Landroid/content/Context;Ljava/lang/String;)V
+    #
+    #.line 1078
+    #:cond_0
     return-void
 .end method
 

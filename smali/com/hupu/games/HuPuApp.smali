@@ -738,7 +738,7 @@
     invoke-direct {p0}, Lcom/hupu/games/HuPuApp;->I()V
 
     .line 1369
-    invoke-direct {p0}, Lcom/hupu/games/HuPuApp;->H()V
+    #invoke-direct {p0}, Lcom/hupu/games/HuPuApp;->H()V
 
     .line 1370
     return-void

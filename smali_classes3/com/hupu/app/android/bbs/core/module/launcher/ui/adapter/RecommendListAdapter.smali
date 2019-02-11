@@ -5452,40 +5452,40 @@
 
     if-nez v3, :cond_26
 
-    .line 923
-    iget-object v3, v9, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, p1
-
-    invoke-virtual {v0, v1, v3, v10}, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
-
-    .line 924
-    move/from16 v0, p1
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->currentClickPosition:I
-
-    .line 925
-    iget-object v3, v9, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    .line 926
-    move-object/from16 v0, p0
-
-    iput-object v10, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
-
-    .line 927
-    const/4 v3, 0x1
-
-    move-object/from16 v0, p0
-
-    iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->auto_play:Z
+    #.line 923
+    #iget-object v3, v9, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #move-object/from16 v0, p0
+    #
+    #move/from16 v1, p1
+    #
+    #invoke-virtual {v0, v1, v3, v10}, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
+    #
+    #.line 924
+    #move/from16 v0, p1
+    #
+    #move-object/from16 v1, p0
+    #
+    #iput v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->currentClickPosition:I
+    #
+    #.line 925
+    #iget-object v3, v9, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #move-object/from16 v0, p0
+    #
+    #iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #.line 926
+    #move-object/from16 v0, p0
+    #
+    #iput-object v10, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
+    #
+    #.line 927
+    #const/4 v3, 0x1
+    #
+    #move-object/from16 v0, p0
+    #
+    #iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->auto_play:Z
 
     .line 932
     :goto_12
@@ -7947,44 +7947,44 @@
 
     if-nez v3, :cond_53
 
-    .line 1613
-    iget-object v3, v13, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, p1
-
-    move-object/from16 v2, p2
-
-    invoke-virtual {v0, v1, v3, v2}, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
-
-    .line 1614
-    move/from16 v0, p1
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->currentClickPosition:I
-
-    .line 1615
-    iget-object v3, v13, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    move-object/from16 v0, p0
-
-    iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
-
-    .line 1616
-    move-object/from16 v0, p2
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
-
-    .line 1617
-    const/4 v3, 0x1
-
-    move-object/from16 v0, p0
-
-    iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->auto_play:Z
+    #.line 1613
+    #iget-object v3, v13, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #move-object/from16 v0, p0
+    #
+    #move/from16 v1, p1
+    #
+    #move-object/from16 v2, p2
+    #
+    #invoke-virtual {v0, v1, v3, v2}, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playVideo(ILcom/hupu/android/ui/widget/HPVideoPlayView;Landroid/view/View;)V
+    #
+    #.line 1614
+    #move/from16 v0, p1
+    #
+    #move-object/from16 v1, p0
+    #
+    #iput v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->currentClickPosition:I
+    #
+    #.line 1615
+    #iget-object v3, v13, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter$ViewHolderForVideo;->play_view:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #move-object/from16 v0, p0
+    #
+    #iput-object v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->playView:Lcom/hupu/android/ui/widget/HPVideoPlayView;
+    #
+    #.line 1616
+    #move-object/from16 v0, p2
+    #
+    #move-object/from16 v1, p0
+    #
+    #iput-object v0, v1, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->contentView:Landroid/view/View;
+    #
+    #.line 1617
+    #const/4 v3, 0x1
+    #
+    #move-object/from16 v0, p0
+    #
+    #iput-boolean v3, v0, Lcom/hupu/app/android/bbs/core/module/launcher/ui/adapter/RecommendListAdapter;->auto_play:Z
 
     .line 1621
     :goto_28

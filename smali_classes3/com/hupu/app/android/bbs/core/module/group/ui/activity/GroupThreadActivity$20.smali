@@ -40,6 +40,10 @@
     .locals 6
 
     .prologue
+    .line 2097
+    iget-object v0, p0, Lcom/hupu/app/android/bbs/core/module/group/ui/activity/GroupThreadActivity$20;->this$0:Lcom/hupu/app/android/bbs/core/module/group/ui/activity/GroupThreadActivity;
+    invoke-static {v0, p1}, Lcom/hupu/app/android/bbs/core/common/dal/h5/view/HupuCss;->injectOverrideBbsCss(Landroid/content/Context;Landroid/webkit/WebView;)V
+	
     const/4 v1, 0x0
 
     .line 2098
