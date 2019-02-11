@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:id="@id/layout_discovery" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/img_logo" android:layout_width="@dimen/set_item_logo" android:layout_height="@dimen/set_item_logo" android:layout_marginLeft="@dimen/set_item_img_padding" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height" android:layout_marginLeft="@dimen/set_item_img_padding">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+            <ToggleButton android:id="@id/toggle" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/child_divider_line" android:layout_alignParentBottom="true" style="@style/view_divider1" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

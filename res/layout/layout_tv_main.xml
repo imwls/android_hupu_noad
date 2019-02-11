@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_portrait" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:loading_layoutid="@layout/loading_layout_style_default" app:is_show_error="false">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_title_bar" android:layout_width="fill_parent" android:layout_alignParentTop="true" style="@style/bg_title_bar">
+                <Button android:id="@id/btn_back" style="@style/btn_back" />
+                <RelativeLayout android:gravity="center" android:id="@id/layout_live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <RelativeLayout android:id="@id/layout_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="20.0sp" android:textColor="?game_textcolor_style1" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="?game_textcolor_style1" android:id="@id/title_room_peple_online" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ImageButton android:id="@id/btn_land" android:background="?game_icon_rotate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/gold_num" android:visibility="gone" style="@style/layout_right">
+                    <ImageView android:id="@id/gold_img" android:background="?myinfo_gold_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="?game_textcolor_style1" android:id="@id/coin_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:layout_toRightOf="@id/gold_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/add_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="?game_icon_quiz_add_label" android:layout_toRightOf="@id/coin_num" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/topbar_layout_giftrank" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/layout_right">
+                    <ImageView android:id="@id/giftrank_dollor_img" android:background="@drawable/giftrank_hupudollor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="?game_textcolor_style1" android:id="@id/giftrank_dollor_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/giftrank_dollor_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/dollor_add_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_quiz_add" android:layout_toRightOf="@id/giftrank_dollor_num" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_video" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <com.hupu.games.huputv.views.HPTVLiveVideoView android:id="@id/video_view" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_video">
+                <com.hupu.games.huputv.views.TVPagerSlidingTabStrip android:id="@id/pager_tabs" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="45.0dip" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="?home_bg_indicator" app:pstsIndicatorHeight="3.0dip" app:pstsShouldExpand="true" app:ptstCurrentTextColor="?main_color_1" app:ptstNormalTextColor="?main_color_4" />
+                <com.hupu.android.ui.colorUi.ColorView android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.hupu.games.huputv.views.TVViewPager android:id="@id/tv_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.hupu.android.ui.colorUi.ColorLinearLayout>
+            <ImageView android:id="@id/commit_layout_bg" android:background="@color/exciting_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar" />
+            <RelativeLayout android:id="@id/hotline_layout" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ListView android:id="@id/hotline_list" android:background="@color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:overScrollMode="never" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/port_bottom_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/to_reply_img_layout" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:id="@id/tv_hot_words_port" android:layout_width="31.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:src="?tv_hotline_icon_port" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <RelativeLayout android:id="@id/tv_send_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@id/tv_send_btn" android:paddingLeft="4.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_send_btn" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tv_send_btn_layout" android:layout_toRightOf="@id/tv_hot_words_port" android:layout_centerInParent="true">
+                        <RelativeLayout android:id="@id/input_layout_port" android:background="?tv_input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="vertical" android:id="@id/danmu_tag" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_centerVertical="true">
+                                <TextView android:textSize="10.0sp" android:textColor="#ff5c5c5d" android:id="@id/port_tag1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="彩色" />
+                                <TextView android:textSize="10.0sp" android:textColor="#ff5c5c5d" android:id="@id/port_tag2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="弹幕" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/damu_row_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="?tv_row_danmu" android:layout_toRightOf="@id/danmu_tag" android:layout_centerVertical="true" />
+                            <View android:id="@id/split" android:background="?input_split" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/damu_row_land" />
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/split">
+                                <EditText android:textSize="14.0sp" android:textColor="#ff5c5c5d" android:textColorHint="?main_color_4" android:id="@id/reply_text_content_port" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:hint="发弹幕" android:maxLines="3" android:layout_centerVertical="true" />
+                            </LinearLayout>
+                            <RelativeLayout android:id="@id/tv_send_words_layout" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                                <ImageView android:id="@id/tv_send_words" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="?tv_send_msg_disable_icon" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/port_color_danmu_list" android:layout_width="fill_parent" android:layout_height="259.0dip" android:layout_below="@id/to_reply_img_layout" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/gift_pop_layout_port" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_video" />
+            <RelativeLayout android:id="@id/guess_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+    <RelativeLayout android:id="@id/gift_list_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gift_pop_layout_land" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_above="@id/gift_list_layout" />
+    <include android:layout_width="250.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" layout="@layout/danmu_setting" />
+    <RelativeLayout android:id="@id/lurenwang_gift_land_pop" android:layout_width="wrap_content" android:layout_height="90.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="105.0px" />
+    <RelativeLayout android:id="@id/tv_task_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/tv_task_done_layout" android:background="?tv_task_pop_bg" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_marginTop="55.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/palyer_gift_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/tv_quality_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/tv_land_color_danmu_list" android:visibility="gone" android:layout_width="335.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/tv_zan_pop_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/cut_finish_layout_video" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/cut_imageview_video" android:background="#00000000" android:layout_width="290.0dip" android:layout_height="164.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/cut_imageview_video" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_cut_screen_ok" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/night_res_cor5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已保存至系统相册，可以分享给好友啦" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_layout" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/tv_wx_share_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/tv_wx_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_wx_share" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/night_res_cor5" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信好友" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tv_wx_share_group_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_toRightOf="@id/tv_wx_share_layout" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/tv_wx_share_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_wx_share_group" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/night_res_cor5" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/tv_share_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginRight="28.0dip" android:src="?tv_cut_screen_cancel" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hotwords_pop_parent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/hotwords_pop_layout" android:background="@drawable/tv_hotwords_update_bg" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有新的热词加入" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/hotwords_pop_trangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:src="@drawable/tv_hotwords_update_tag" android:layout_below="@id/hotwords_pop_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tv_guess_layout" android:visibility="gone" android:layout_width="291.0dip" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/tv_matchstatus_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0sp" android:id="@id/test_socket" android:background="@color/red" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginTop="100.0dip" android:text="测试推送" />
+    <ImageView android:id="@id/tv_rp_guess" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/guess_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

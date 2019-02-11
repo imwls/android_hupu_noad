@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.NoBounceFlingBehavior">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/tv_address" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货地设置" android:drawableRight="@mipmap/icon_pull_new" android:drawablePadding="3.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_close" android:background="@mipmap/ic_shopping_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0">
+                <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/recycler_attr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/digit3c_of_supplier_tv_tab" android:background="@color/color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="切换配色与容量" />
+            </FrameLayout>
+            <ImageView android:id="@id/iv_es" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_down_1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recycler" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <View android:id="@id/popupWindowMask" android:background="#30000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</android.support.design.widget.CoordinatorLayout>

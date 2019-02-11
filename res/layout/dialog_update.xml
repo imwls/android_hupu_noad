@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:paddingTop="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_111111" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_444444" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="subtitle" />
+    <cn.shihuo.modulelib.views.BambooMaxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="300.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_111111" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="dddd" android:lineSpacingExtra="10.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </cn.shihuo.modulelib.views.BambooMaxLayout>
+    <View android:background="@color/color_d7d7d7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_update" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="立即更新" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="以后再说" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

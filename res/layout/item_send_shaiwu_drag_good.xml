@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="goods" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/dragHandle" android:background="@color/color_f2f2f2" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_centerVertical="true">
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/move_gray_text" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="商品模块拖动" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/dragBody" android:background="@color/color_f2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="11.5dip" android:src="@mipmap/move_gray_text" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/id1" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="5.0dip" android:text="按住可拖动商品位置" android:layout_toRightOf="@id/imageView" />
+        <ImageView android:id="@id/dragClose" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/close_1" android:layout_alignParentRight="true" />
+        <FrameLayout android:background="@drawable/bg_shaiwu_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/id1">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_card_goods" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

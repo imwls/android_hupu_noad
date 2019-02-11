@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fffbfbfb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/txt0" android:textColor="#ff191c22" android:id="@id/txt_title" android:text="@string/select_leagues_new" android:layout_above="@id/tips" style="@style/txt_title" />
+        <TextView android:textSize="@dimen/txt8" android:textColor="?main_color_4" android:id="@id/btn_skip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_leagues_skip" android:layout_above="@id/tips" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/txt8" android:textColor="?main_color_4" android:gravity="center_horizontal" android:id="@id/tips" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_leagues_top_tips" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar">
+        <ScrollView android:id="@id/leagues_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_next">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_game" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tips" android:layout_centerHorizontal="true" />
+        </ScrollView>
+        <Button android:textSize="@dimen/txt3" android:textStyle="bold" android:textColor="?main_color_2" android:id="@id/btn_next" android:background="@drawable/icon_choose_teams_new_selector" android:layout_width="325.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/select_leagues_has_no_select" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/probar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</RelativeLayout>

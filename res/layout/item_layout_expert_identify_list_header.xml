@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_rec_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" fresco:roundAsCircle="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="29.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/color_333333" android:id="@id/tv_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日均" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_average" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                    <View android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginLeft="15.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="排队" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_queue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="left" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_send_identify" android:background="@drawable/bg_expert_identify_list_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:text="发鉴别" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip">
+            <ImageView android:background="@mipmap/allweb_baicai_list_head_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="24小时内无法鉴定将返还金币或免费鉴定机会" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

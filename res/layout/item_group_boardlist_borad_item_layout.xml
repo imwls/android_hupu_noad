@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorView android:id="@id/iv_line" android:background="@color/color_main_red" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center_vertical" android:id="@id/tv_board_name" android:background="?bbs_listitem_selector" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="我的板块" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

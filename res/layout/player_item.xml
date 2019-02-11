@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头1" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item2" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头2" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item3" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头3" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item4" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头4" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item5" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头5" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item6" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头5" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item7" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头5" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item8" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头5" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/item9" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不动列头5" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_group_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="25.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:id="@id/tv_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/rl_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/arrow_group" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_gray2red2" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:text="展开" android:maxLines="1" android:layout_toLeftOf="@id/arrow_group" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="-10.0dip" />
+</LinearLayout>

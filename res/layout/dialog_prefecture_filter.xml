@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="9.0dip">
+                <EditText android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/et_price_min" android:background="@drawable/selector_prefecture_list_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="最低价" android:layout_weight="1.0" android:inputType="numberDecimal" />
+                <View android:background="@color/color_999999" android:layout_width="9.0dip" android:layout_height="1.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+                <EditText android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/et_price_max" android:background="@drawable/selector_prefecture_list_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="最高价" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_price_first" android:background="@drawable/selector_prefecture_list_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:id="@id/tv_price_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0-200" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_price_second" android:background="@drawable/selector_prefecture_list_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:id="@id/tv_price_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200-1000" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_price_third" android:background="@drawable/selector_prefecture_list_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:id="@id/tv_price_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000-5000" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:id="@id/tv_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="识货服务" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_service" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="-10.0dip" />
+            <RelativeLayout android:id="@id/rl_brand_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="品牌" />
+                <RelativeLayout android:id="@id/rl_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/arrow_brand" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_brands" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:text="展开" android:maxLines="1" android:layout_toLeftOf="@id/arrow_brand" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_brands" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="-10.0dip" />
+            <RelativeLayout android:id="@id/rl_size_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尺码" />
+                <RelativeLayout android:id="@id/rl_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/arrow_size" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_gray2red2" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:text="展开" android:maxLines="1" android:layout_toLeftOf="@id/arrow_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="-10.0dip" />
+            <RelativeLayout android:id="@id/rl_color_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="颜色" />
+                <RelativeLayout android:id="@id/rl_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/arrow_color" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_gray2red2" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:text="展开" android:maxLines="1" android:layout_toLeftOf="@id/arrow_color" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <RelativeLayout android:id="@id/rl_child_brand_title" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系列" />
+                <RelativeLayout android:id="@id/rl_child_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@id/arrow_child_brand" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/category_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_gray2red2" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_child_brand" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:text="展开" android:maxLines="1" android:layout_toLeftOf="@id/arrow_child_brand" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_child_brand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_groups" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textColor="@color/color_333333" android:gravity="center" android:id="@id/tv_reset" android:background="@color/color_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重置" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/tv_confirm" android:background="@color/color_ef341c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

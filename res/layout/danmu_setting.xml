@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/danmu_setting" android:background="#b2000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:id="@id/danmu_note_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:text="显示弹幕" android:layout_centerVertical="true" />
+        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/danmu_switch" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:checked="true" android:button="?danm_switch" android:textOn="" android:textOff="" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/line_1" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="35.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:id="@id/alpha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="35.0dip" android:text="透明度" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/alpha_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="24.0dip" android:layout_below="@id/alpha_title">
+            <TextView android:textSize="14.0sp" android:textColor="?danmu_select_alpha" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alpha_all" android:paddingTop="15.0dip" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不透明" android:layout_weight="1.0" />
+            <View android:background="#33ffffff" android:layout_width="1.0px" android:layout_height="55.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="?danmu_select_alpha" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alpha_30" android:paddingTop="15.0dip" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%" android:layout_weight="1.0" />
+            <View android:background="#33ffffff" android:layout_width="1.0px" android:layout_height="55.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="?danmu_select_alpha" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alpha_50" android:paddingTop="15.0dip" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1.0" />
+            <View android:background="#33ffffff" android:layout_width="1.0px" android:layout_height="55.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="?danmu_select_alpha" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alpha_70" android:paddingTop="15.0dip" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70%" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/line_2" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_below="@id/alpha_setting" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:id="@id/set_direct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="弹幕位置" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/set_danmu_direct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/set_direct">
+            <ImageButton android:id="@id/danmu_full_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?danm_full_tab" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/danmu_top_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?danm_top_tab" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/danmu_bottom_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?danm_bottom_tab" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

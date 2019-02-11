@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/order_my_coin" style="@style/txt_title" />
+    </RelativeLayout>
+    <ScrollView android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_coin_info" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/v0_txt3" android:textStyle="bold" android:id="@id/text_guess_result" android:layout_marginLeft="10.0dip" android:text="@string/title_gold_des" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="?myinfo_gold_icon" />
+                    <TextView android:id="@id/txt_coin_num" android:layout_marginRight="@dimen/set_distance_befor_arrow" android:text="0" style="@style/txt_item_myinfo_right" />
+                    <ImageView style="@style/img_linear_arrow_right_setup" />
+                </LinearLayout>
+                <View android:layout_marginLeft="10.0dip" style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_pay" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/v0_txt3" android:textStyle="bold" android:id="@id/txt_pay" android:layout_marginLeft="10.0dip" android:text="@string/title_my_pay" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_linear_arrow_right_setup" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/box_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.5sp" android:textStyle="bold" android:textColor="?main_color_5" android:id="@id/text_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/title_my_box" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_guess_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <RelativeLayout android:gravity="center" android:id="@id/lay_gold" android:background="?myinfo_goldbox_item_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_gold1" android:background="?mybox_icon_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/v0_txt4" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_gold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/box_gold" android:layout_below="@id/img_gold1" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@id/lay_silver" android:background="?myinfo_goldbox_item_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_gold2" android:background="?mybox_icon_silver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/v0_txt4" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_silver" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/box_slive" android:layout_below="@id/img_gold2" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@id/lay_copper" android:background="?myinfo_goldbox_item_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_gold3" android:background="?mybox_icon_copper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/v0_txt4" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_copper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/box_copper" android:layout_below="@id/img_gold3" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/set_title_text_size" android:textColor="?main_color_3" android:id="@id/txt_box_memo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#32000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_comment_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_444444" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您还未绑定手机号" />
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="5.0dip" />
+        <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="15.0sp" android:textColor="@color/color_444444" android:id="@id/dialogLeftButton" android:background="@drawable/btn_gray_stroke_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="取消" android:layout_weight="1.0" />
+            <Button android:textSize="15.0sp" android:textColor="@color/color_d33333" android:id="@id/dialogRightButton" android:background="@drawable/btn_red_stroke_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="17.0dip" android:text="去绑定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

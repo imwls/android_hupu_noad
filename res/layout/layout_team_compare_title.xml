@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="23.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/compare_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="球队对比" android:layout_centerInParent="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/team_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:layout_toLeftOf="@id/compare_title" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/team_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_toRightOf="@id/compare_title" android:layout_centerVertical="true" />
+</RelativeLayout>

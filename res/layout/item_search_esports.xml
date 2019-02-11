@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_group_def" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="3.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.5dip" android:layout_toRightOf="@id/img" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/name" android:layout_alignBaseline="@id/name" android:layout_alignWithParentIfMissing="true" />
+            <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:id="@id/league" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

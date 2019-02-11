@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/pop_box" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/txt_pay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    <View android:background="@drawable/bg_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/res_cor1" android:id="@id/btn_cancel" android:background="@drawable/dialog_gray_selector" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/res_cor1" android:id="@id/btn_confirm" android:background="@drawable/dialog_red_selector" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/title_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

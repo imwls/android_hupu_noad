@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/top" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="75.0dip" android:layout_height="75.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Air Jordan 1" android:maxLines="1" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:gravity="bottom" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="8.0dip" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/haitao_item_img" android:layout_width="fill_parent" android:layout_height="wrap_content" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+        <ImageView android:layout_gravity="bottom|center" android:background="@mipmap/icon_haitao_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/haitao_item_rv" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/line_horizontal" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tv_img_tag" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/praise_layout" android:background="@drawable/tv_priase_popup" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_toRightOf="@id/img_tag" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="?bbs_title_textcolor" android:id="@id/top_text" android:paddingRight="37.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/top_text" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/zan" android:layout_width="41.0dip" android:layout_height="41.0dip" android:src="?tv_zan" />
+                <TextView android:textSize="12.0sp" android:textColor="?bbs_title_textcolor" android:layout_gravity="center_horizontal" android:id="@id/left_num" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_toRightOf="@id/left_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/bad" android:layout_width="41.0dip" android:layout_height="41.0dip" android:src="?tv_bad" />
+                <TextView android:textSize="12.0sp" android:textColor="?bbs_title_textcolor" android:layout_gravity="center_horizontal" android:id="@id/right_num" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/paise_close" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-37.0dip" android:src="@drawable/praise_close_btn" android:scaleType="centerInside" android:layout_toRightOf="@id/praise_layout" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_player" android:layout_width="30.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/txt_team_player" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/player_name">
+                <TextView android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:id="@id/txt_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/txt_team_player" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/team_leader_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="?team_player_caption_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/injured_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="?team_player_injury_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:gravity="left" android:id="@id/player_position" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" style="@style/txt_team_player" />
+    <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/player_salary" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" style="@style/txt_team_player" />
+</LinearLayout>

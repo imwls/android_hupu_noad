@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/coupon_item_bg_left" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="6.0dip" fresco:placeholderImageScaleType="fitCenter" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="京东全场30优惠券(不限新老客户)" android:maxLines="2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_valid_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="有效期:2017-05-31" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/coupon_item_bg_right" android:layout_width="60.0dip" android:layout_height="90.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_get" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="立即领取" />
+    </LinearLayout>
+</LinearLayout>

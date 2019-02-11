@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/activity_search_result_item" />
+    <include layout="@layout/line_horizontal" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="选择配色" />
+    <include layout="@layout/line_horizontal" />
+    <GridView android:id="@id/component_detail_gv_peise" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="5" android:layout_weight="1.0" />
+    <include layout="@layout/include_layout_clipboard" />
+</LinearLayout>

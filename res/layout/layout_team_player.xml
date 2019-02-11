@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorFrameLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.base.logic.component.widget.StickyNavLayout android:orientation="vertical" android:id="@id/stickyLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/layout_title_bar" layout="@layout/layout_team_player_top" />
+        <include android:id="@id/layout_title_up" layout="@layout/layout_team_player_title" />
+        <com.base.logic.component.widget.HupuViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.base.logic.component.widget.StickyNavLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/title_show_hide" style="@style/bg_title_bar">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_title_top" android:visibility="invisible" style="@style/bg_title_bar" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/txt_title_top" android:visibility="invisible" style="@style/txt_title" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back_top" android:background="?common_icon_back_white" style="@style/btn_back" />
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_follow_top" android:visibility="gone" style="@style/btn_right_txt_white" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorFrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/txt_title_layout_wv">
+            <TextView android:id="@id/txt_title" android:singleLine="true" style="@style/txt_head_title_browser" />
+            <TextView android:id="@id/txt_side_title" style="@style/txt_side_head_title_browser" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/btn_share" android:background="?news_icon_share" android:visibility="gone" style="@style/btn_right_browser" />
+            <Button android:id="@id/btn_all_rank" android:visibility="gone" android:text="@string/all_guess_rank" style="@style/btn_right_txt" />
+            <Button android:id="@id/btn_contacts" android:visibility="gone" android:text="@string/title_contacts" style="@style/btn_right_txt" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/btn_back_arrow" style="@style/btn_back" />
+            <ImageView android:textSize="18.0sp" android:id="@id/btn_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?icon_close" android:layout_toRightOf="@id/btn_back" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

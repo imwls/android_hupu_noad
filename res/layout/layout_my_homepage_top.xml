@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/menu_name_text_layout" android:background="?v0_main_bg_color_1" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/ll_name_reputaticon" android:background="@drawable/bg_homepage_head_back" android:layout_width="fill_parent" android:layout_height="160.0dip">
+                <com.hupu.android.ui.colorUi.ColorView android:id="@id/mask_big" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+                <TextView android:textSize="@dimen/txt2" android:textColor="?myhomepage_reputation_text_color" android:id="@id/myhome_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginBottom="5.0dip" android:text="" android:maxLines="1" android:drawablePadding="5.0dip" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:id="@id/rl_reputation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:layout_toRightOf="@id/myhome_nick_name" android:layout_alignParentBottom="true">
+                    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0sp" android:textColor="?myhomepage_reputation_text_color" android:gravity="center" android:id="@id/txt_reputation" android:background="?myinfo_reputation_bg" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="125.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_join_location" android:background="?alert_content_no_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="43.0dip" android:layout_toRightOf="@id/user_icon_img">
+                    <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_4" android:id="@id/myhome_join_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0.0dip" />
+                    <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_4" android:id="@id/myhome_location_school" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:lineSpacingExtra="0.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="43.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <com.hupu.android.ui.colorUi.ColorButton android:textSize="@dimen/txt6" android:textColor="?mymsg_text_send" android:gravity="center_vertical" android:id="@id/send_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="私信" android:drawableLeft="?mymsg_icon_send" />
+                    <com.hupu.android.ui.colorUi.ColorButton android:textSize="@dimen/txt6" android:textColor="?main_color_5" android:gravity="center" android:id="@id/edit_myinfo" android:background="?btn_bg_black" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="编辑个人资料" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/author" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_below="@id/user_icon_img">
+                    <RelativeLayout android:id="@id/offical_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/offical_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?myhomepage_offical_icon" />
+                        <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/offical_txt" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/offical_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/bbsjob_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <ImageView android:id="@id/bbsjob_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?myhomepage_bbsjob_icon" />
+                        <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/bbsjoc_txt" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bbsjob_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/lrw_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <ImageView android:id="@id/lrw_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?myhomepage_lrw_icon" />
+                        <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/lrw_txt" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/lrw_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/author_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <ImageView android:id="@id/author_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?myhomepage_author_icon" />
+                        <LinearLayout android:orientation="vertical" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/author_iv" android:layout_centerVertical="true">
+                            <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/author_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_7" android:id="@id/author_open" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="展开" android:drawableRight="?myhomepage_certify_open_icon" />
+                            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_7" android:id="@id/author_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/homepage_certify_author_tips" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/user_icon_img" android:background="@drawable/icon_default_head_homepage" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="1.0px" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_belighted" android:background="?v0_main_bg_color_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/v0_txt2" android:textColor="?main_color_5" android:layout_gravity="center_horizontal" android:id="@id/txt_lighted_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/homepage_lighted" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_berecommand" android:background="?v0_main_bg_color_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/v0_txt2" android:textColor="?main_color_5" android:layout_gravity="center_horizontal" android:id="@id/txt_commended_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/homepage_commended" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_follow" android:background="?v0_main_bg_color_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/v0_txt2" android:textColor="?main_color_5" android:layout_gravity="center_horizontal" android:id="@id/txt_follow_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:layout_gravity="center_horizontal" android:id="@id/txt_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/homepage_follow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_isfollowed" android:background="?v0_main_bg_color_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/v0_txt2" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_isfollowed_num" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center|top" android:id="@id/txt_isfollowed_red_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="10.0dip" android:src="?icon_red_dot" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:layout_gravity="center_horizontal" android:id="@id/txt_isfollowed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/homepage_followed" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.hupu.app.android.bbs.core.common.ui.view.BindLayout android:id="@id/pubg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

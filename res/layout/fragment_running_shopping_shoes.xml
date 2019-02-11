@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_f7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.ScrollableLayout android:orientation="vertical" android:id="@id/scrollableLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:topMargin="48.0dip">
+                <LinearLayout android:id="@id/running_header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/fragment_running413_header_shoes" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cn.shihuo.modulelib.views.widget.tablayout.SlidingTabLayout android:id="@id/fragment_freestyle_tablayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tl_indicator_color="@color/color_dd1712" app:tl_textAllCaps="true" app:tl_textBold="SELECT" />
+                    <include layout="@layout/line_horizontal" />
+                </LinearLayout>
+                <android.support.v4.view.ViewPager android:id="@id/shopping_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </cn.shihuo.modulelib.views.widget.ScrollableLayout>
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/anchorListToTop" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:src="@mipmap/dingbu_icon_normal" />
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin">
+                <LinearLayout android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/running520_header_rl_search" android:background="@drawable/bg_search_f7f7f7" android:layout_width="0.0dip" android:layout_height="28.0dip" android:layout_marginLeft="14.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@mipmap/icon_search_shoes_580" android:layout_centerVertical="true" />
+                        <EditText android:textSize="12.0sp" android:textColor="@color/color_999999" android:textColorHint="@color/color_999999" android:id="@id/et_search" android:background="@null" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:hint="请输入产品名或商品名" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/iv_pzg" android:background="@mipmap/icon_search_shoes_photo_580" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </FrameLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+</FrameLayout>

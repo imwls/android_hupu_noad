@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <cn.shihuo.modulelib.views.zhuanqu.widget.viewpagerindicator.LinePageIndicator android:layout_gravity="bottom|center" android:id="@id/shopping_noshoes_indicator" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:selectedColor="@color/color_c2c2c2" app:strokeWidth="2.0dip" app:unselectedColor="@color/color_e6e6e6" app:lineWidth="10.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:lineSpacingExtra="8.0dip" />
+        <include layout="@layout/include_detail_phb" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:id="@id/rmb" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/rmb" android:layout_alignBottom="@id/tv_price" />
+            <cn.shihuo.modulelib.views.widget.fonttextview.PriceFontTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/rmb" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/shopping_noshoes_tv_subscribe" android:background="@drawable/bg_price_sub" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="降价订阅" android:layout_toRightOf="@id/tv_price" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/noshoes_header_imgbtn_error" android:background="@mipmap/icon_noshoes_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/shopping_noshoes_tv_subscribe" android:layout_alignBottom="@id/shopping_noshoes_tv_subscribe" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_views" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_see" android:layout_toLeftOf="@id/tv_views" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/detail_noshoes_header_rv_coupon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/tv_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="8.0dip" />
+    </LinearLayout>
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/noshoes_header_flexbox_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="30.0dip" app:flexWrap="wrap" app:alignItems="flex_start" app:alignContent="flex_start" app:dividerDrawable="@drawable/divider_nodetail" app:showDivider="beginning|middle">
+        <LinearLayout android:gravity="center" android:id="@id/noshoes_header_ll_similar" android:background="@drawable/bg_red_border2white" android:layout_width="62.0dip" android:layout_height="22.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_dd1712" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜同款" android:drawableLeft="@mipmap/icon_noshoes_search" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+    <include layout="@layout/template_shopping_detail_reputation_noshoes_v560" />
+</LinearLayout>

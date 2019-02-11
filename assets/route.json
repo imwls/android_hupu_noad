@@ -1,0 +1,644 @@
+{
+  "routeKey": [
+    "route",
+    "webview"
+  ],
+  "defaultTarget": "cn.shihuo.modulelib.views.activitys.MainActivity",
+  "routes": {
+    "youhuiList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.YouHuiActivity",
+      "defaultTarget": null
+    },
+    "youhuiDetail": {
+      "params": {
+        "to": "youhuiDetail",
+        "channel": "youhui",
+        "title": "",
+        "bundle_key_statistics": "优惠详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.YouHuiDetailActivity",
+      "defaultTarget": null
+    },
+    "haitaoList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.HaiTaoActivity",
+      "defaultTarget": null
+    },
+    "findList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.FaXianActivity",
+      "defaultTarget": null
+    },
+    "shaiwuList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiwuChannelActivity",
+      "defaultTarget": null
+    },
+    "findDetail": {
+      "params": {
+        "to": "findDetail",
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.BaseWebDetailActivity",
+      "defaultTarget": null
+    },
+    "grouponList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.TuanGouActivity",
+      "defaultTarget": null
+    },
+    "grouponDetail": {
+      "params": {
+        "to": "grouponDetail",
+        "title": "",
+        "bundle_key_statistics": "团购详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.BaseWebDetailActivity",
+      "defaultTarget": null
+    },
+    "shoesList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShoesActivity",
+      "defaultTarget": null
+    },
+    "daigouList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.DaigouActivity",
+      "defaultTarget": null
+    },
+    "haitaoDetail": {
+      "params": {
+        "to": "haitaoDetail",
+        "channel": "haitao",
+        "title": "",
+        "bundle_key_statistics": "海淘优惠详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.YouHuiDetailActivity",
+      "defaultTarget": null
+    },
+    "shoesDetail": {
+      "params": {
+        "to": "shoeDetail",
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.BaseWebDetailActivity",
+      "defaultTarget": null
+    },
+    "daigouDetail": {
+      "params": {
+        "to": "daigouDetail",
+        "title": "",
+        "bundle_key_statistics": "海淘代购详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.DaigouDetailActivity",
+      "defaultTarget": null
+    },
+    "orderDetail": {
+      "params": {
+        "to": "orderDetail",
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.WebViewOrderActivity",
+      "defaultTarget": null
+    },
+    "expressDetail": {
+      "params": {
+        "to": "expressDetail",
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.WebViewOrderActivity",
+      "defaultTarget": null
+    },
+    "myOrder": {
+      "params": {
+        "to": "myOrder",
+        "title": "",
+        "bundle_key_statistics": "我的订单"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.WebViewOrderActivity",
+      "defaultTarget": null
+    },
+    "mobilesite": {
+      "params": {
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.LoadCustomUrlActivity",
+      "defaultTarget": null
+    },
+    "fastWebview": {
+      "params": {
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.LoadCustomUrlActivity",
+      "defaultTarget": null
+    },
+    "youhuiquanList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.YouHuiQuanActivity",
+      "defaultTarget": null
+    },
+    "myCoupon": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.MineLiPinActivity",
+      "defaultTarget": null
+    },
+    "myCollection": {
+      "params": {
+        "url": "http://www.shihuo.cn/app/wx/test.js"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.ShouCangActivity",
+      "defaultTarget": null
+    },
+    "mySupport": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ZanActivity",
+      "defaultTarget": null
+    },
+    "myAddress": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.AddressListActivity",
+      "defaultTarget": null
+    },
+    "go": {
+      "params": {
+        "title": ""
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.LoadCustomUrlActivity",
+      "defaultTarget": null
+    },
+    "comment": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SendCommentActivity",
+      "defaultTarget": null
+    },
+    "checkComment": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.CommentListActivity",
+      "defaultTarget": null
+    },
+    "myShaiwu": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiWuMineActivity",
+      "defaultTarget": null
+    },
+    "youhuiquanDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.YouHuiQuanDetailActivity",
+      "defaultTarget": null
+    },
+    "shaiwuDetail": {
+      "params": {
+        "title": "晒物详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiwuDetailActivity",
+      "defaultTarget": null
+    },
+    "haitaoIndex": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.HaiTaoHome420Activity",
+      "defaultTarget": null
+    },
+    "basketball": {
+      "params": {
+        "type": "basketball"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "running": {
+      "params": {
+        "type": "running"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "freestyle": {
+      "params": {
+        "type": "freestyle"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "fitness": {
+      "params": {
+        "type": "fitness"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "football": {
+      "params": {
+        "type": "football"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "digital": {
+      "params": {
+        "type": "digital"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "beauty": {
+      "params": {
+        "type": "beauty"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "shoes": {
+      "params": {
+        "type": "shoes"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "goodsDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.zhuanqu.detail.ShoppingDetailActivity",
+      "defaultTarget": null
+    },
+    "goodsList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PrefectureListActivity",
+      "defaultTarget": null
+    },
+    "grouponHome": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.TuanGou400Activity",
+      "defaultTarget": null
+    },
+    "homeSearchList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.NewSearchResult404Activity",
+      "defaultTarget": null
+    },
+    "daigouCategory": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.FenLeiActivity",
+      "defaultTarget": null
+    },
+    "myCart": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShoppingCartActivity",
+      "defaultTarget": null
+    },
+    "cartList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShoppingCartActivity",
+      "defaultTarget": null
+    },
+    "goodsCommentList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ReputationAllActivity",
+      "defaultTarget": null
+    },
+    "homeSearchPic": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SearchPicsActivity",
+      "defaultTarget": null
+    },
+    "homeSearchWebsite": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SearchAllWebsiteActivity",
+      "defaultTarget": null
+    },
+    "articleDetail": {
+      "params": {
+        "title": "识物详情"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.ShiwuDetailActivity",
+      "defaultTarget": null
+    },
+    "columnHome": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ColumnIndexActivity",
+      "defaultTarget": null
+    },
+    "subList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SubscriptionActivity",
+      "defaultTarget": null
+    },
+    "pictureDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ColumnDetailActivity",
+      "defaultTarget": null
+    },
+    "attendColumn": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.widget.camera.CameraSeletePhotoActivity",
+      "defaultTarget": null
+    },
+    "personalHomePage": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PersonInfoActivity",
+      "defaultTarget": null
+    },
+    "shiwuHome": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.Find417Activity",
+      "defaultTarget": null
+    },
+    "zoneHomes": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShoppingLibListActivity",
+      "defaultTarget": null
+    },
+    "publishShaiwu": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiwuSendActivity",
+      "defaultTarget": null
+    },
+    "msgHome": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.MessageTotalActivity",
+      "defaultTarget": null
+    },
+    "notifyMessage": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.MessageListActivity",
+      "defaultTarget": null
+    },
+    "helperMessage": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShihuoHelperActivity",
+      "defaultTarget": null
+    },
+    "index": {
+      "params": {
+        "index": "equipment"
+      },
+      "target": "com.hupu.games.home.activity.HupuHomeActivity",
+      "defaultTarget": null
+    },
+    "shop": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.RecommendShopActivity",
+      "defaultTarget": null
+    },
+    "myWallet": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.WalletActivity",
+      "defaultTarget": null
+    },
+    "identifyList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.IdentifyListActivity",
+      "defaultTarget": null
+    },
+    "browserHistory": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.BrowseHistoryListActivity",
+      "defaultTarget": null
+    },
+    "zoneHomesCategories": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ZhuangBeiTypeAllActivity",
+      "defaultTarget": null
+    },
+    "expertList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SelectExpertActivity",
+      "defaultTarget": null
+    },
+    "subColumn": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ColumnListActivity",
+      "defaultTarget": null
+    },
+    "activityHome": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.HuaTiActivity",
+      "defaultTarget": null
+    },
+    "attendActivity": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.widget.camera.CameraSeletePhotoActivity",
+      "defaultTarget": null
+    },
+    "publishEvaluation": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.zhuanqu.ReputationPublicActivity",
+      "defaultTarget": null
+    },
+    "publishAppraisal": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiwuSendActivity",
+      "defaultTarget": null
+    },
+    "attendShaituActivity": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.widget.camera.CameraSeletePhotoActivity",
+      "defaultTarget": null
+    },
+    "attendShaiwuActivity": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShaiwuSendActivity",
+      "defaultTarget": null
+    },
+    "outsideCoupons": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.CouponListActivity",
+      "defaultTarget": null
+    },
+    "pintuanDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PinTuanDetailActivity",
+      "defaultTarget": null
+    },
+    "haitaoMyHome": {
+      "params": {
+        "to": "myOrder",
+        "title": "",
+        "bundle_key_statistics": "我的订单"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.WebViewOrderActivityV470",
+      "defaultTarget": null
+    },
+    "haitaoKefu": {
+      "params": {},
+      "target": null,
+      "defaultTarget": null
+    },
+    "feedback": {
+      "params": {},
+      "target": null,
+      "defaultTarget": null
+    },
+    "myTaobaoOrder": {
+      "params": {},
+      "target": null,
+      "defaultTarget": null
+    },
+    "lightLuxury": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.zhuanqu.LightLuxuryActivity",
+      "defaultTarget": null
+    },
+    "shihuoStar": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.StarOnFootActivity",
+      "defaultTarget": null
+    },
+    "shoeUse": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ShoeUseActivity",
+      "defaultTarget": null
+    },
+    "figureChooseShoes": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SeePhotoSelectActivity",
+      "defaultTarget": null
+    },
+    "myCollectionGoods": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.CollectionGoodsActivity",
+      "defaultTarget": null
+    },
+    "myCollectionShop": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.CollectionShopsActivity",
+      "defaultTarget": null
+    },
+    "baicaiList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.AllWebBaiCaiListActivity",
+      "defaultTarget": null
+    },
+    "freestyleZone": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.FreestyleSaleActivity",
+      "defaultTarget": null
+    },
+    "pendingEvaluationList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.EvaluateListActivity",
+      "defaultTarget": null
+    },
+    "brandSale": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.SampleSaleActivity",
+      "defaultTarget": null
+    },
+    "myGoldRecord": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.GoldRecordingActivity",
+      "defaultTarget": null
+    },
+    "myInfo": {
+      "params": {
+        "to": "center"
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.MainActivity",
+      "defaultTarget": null
+    },
+    "goodsActivityItem": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.ShoppingEventsActivity",
+      "defaultTarget": null
+    },
+    "identify": {
+      "params": {},
+      "target": "com.hupu.games.home.activity.appraisal.ChoiceAppraisalActivity",
+      "defaultTarget": null
+    },
+    "redirectToApp": {
+      "params": {},
+      "target": null,
+      "defaultTarget": null
+    },
+    "sportwear": {
+      "params": {
+        "type": "sportwear"
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.RunningActivity",
+      "defaultTarget": null
+    },
+    "goodsListC1": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.zhuanqu.PhoneListActivity",
+      "defaultTarget": null
+    },
+    "fashionElement": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.FashionElementActivity",
+      "defaultTarget": null
+    },
+    "wearLesson": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.WearLessonActivity",
+      "defaultTarget": null
+    },
+    "goodsListCG1": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.FreeStyleActivity",
+      "defaultTarget": null
+    },
+    "searchByPic": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PZGoodsActivity",
+      "defaultTarget": null
+    },
+    "goodsStyleList": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.SelectShoesActivity",
+      "defaultTarget": null
+    },
+    "chuandaDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.ColumnDetailActivity",
+      "defaultTarget": null
+    },
+    "goodsTopList": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PaiHangBangIndexActivity",
+      "defaultTarget": null
+    },
+    "goodsTopDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PaiHangBangListActivity",
+      "defaultTarget": null
+    },
+    "goodsTopListDetail": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.PaiHangBangDetailActivity",
+      "defaultTarget": null
+    },
+    "expertIdentifyList": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.ExpertIdentifyListActivity",
+      "defaultTarget": null
+    },
+    "goodsBrandList": {
+      "target": "cn.shihuo.modulelib.views.activitys.BrandListActivity",
+      "defaultTarget": null
+    },
+    "identifyComplete": {
+      "params": {},
+      "target": "cn.shihuo.modulelib.views.activitys.IdentifySendActivity",
+      "defaultTarget": null
+    },
+    "clothesBrands": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.DressBrandListActivity",
+      "defaultTarget": null
+    },
+    "listBrands": {
+      "params": {
+      },
+      "target": "cn.shihuo.modulelib.views.activitys.SpecialBrandListActivity",
+      "defaultTarget": null
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <include layout="@layout/line_horizontal" />
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_left" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:id="@id/tv_category_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最新发布" />
+                <ImageView android:id="@id/iv_category_left" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+            </LinearLayout>
+            <View android:layout_gravity="center" android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="26.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_middle" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:id="@id/tv_category_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="品牌" />
+                <ImageView android:id="@id/iv_category_middle" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+            </LinearLayout>
+            <View android:layout_gravity="center" android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="26.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_right" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:id="@id/tv_category_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类型" />
+                <ImageView android:id="@id/iv_category_right" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_d7d7d7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <View android:id="@id/popupWindowMask" android:background="#30000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/anchor_list_totop" />
+</RelativeLayout>

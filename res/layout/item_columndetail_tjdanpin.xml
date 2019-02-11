@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="2" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+</LinearLayout>

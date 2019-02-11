@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:background="?v0_main_bg_color_1" style="@style/bg_title_bar">
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back" android:background="?common_icon_back" style="@style/btn_back" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?common_title_txt" android:id="@id/txt_title" android:text="@string/title_worldcup_detail" style="@style/txt_title" />
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/layout_bottom_divider" android:background="?v0_main_color_line03" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

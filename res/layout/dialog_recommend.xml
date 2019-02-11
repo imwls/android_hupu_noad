@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_layout_wl" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/deserve_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_below="@id/dialog_title" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/dr_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="18.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/dr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/dr_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/no_deserve_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:layout_below="@id/dialog_title" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/ndr_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="18.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/ndr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/ndr_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_below="@id/no_deserve_recommend" />
+    </RelativeLayout>
+</RelativeLayout>

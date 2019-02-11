@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="235.0dip">
+        <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_2" android:gravity="center" android:id="@id/tv_position" android:background="@drawable/bg_equipe_detail_pic" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="1/4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.base.logic.component.widget.HackyViewPager android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/txt1" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/name" android:background="?main_color_2" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/auth_verify" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="识货认证" android:drawableLeft="?equipe_shi_ic" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全网最低" android:drawableLeft="?equipe_price_ic" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:gravity="center" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正品保证" android:drawableLeft="?equipe_real_ic" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:layout_gravity="center_vertical" android:id="@id/goods_real_tip" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="识货如何做到正品保障" android:drawableLeft="?equipe_real_tip" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="查看详情" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text=">" />
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.base.logic.component.widget.HupuGridView android:gravity="center" android:id="@id/goods_colors" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:numColumns="auto_fit" android:choiceMode="singleChoice" />
+    <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</LinearLayout>

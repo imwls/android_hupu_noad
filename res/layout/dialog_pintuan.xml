@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="18.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/color_e2e2e2" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:text="李冰冰推荐的拼团" />
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/color_e2e2e2" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img" android:layout_width="80.0dip" android:layout_height="80.0dip" fresco:fadeDuration="1000" fresco:placeholderImage="@mipmap/zhanweifu_header" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NIKE SOCK DART SE PREMIUM" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="￥1129 拼团领奖10元" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/tv_close" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="取消" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/selector_bg_red_1" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

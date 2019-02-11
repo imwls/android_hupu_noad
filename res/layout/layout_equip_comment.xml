@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:background="?common_bg_title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/all_replys_txt" style="@style/txt_title" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.view.xlistview.HPXListView android:id="@id/list_equip_comment" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="?v0_main_color_line01" android:dividerHeight="1.0px" android:footerDividersEnabled="false" android:overScrollMode="never" />
+</LinearLayout>

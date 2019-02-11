@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/bg_alert" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor5" android:gravity="center_vertical" android:id="@id/title_text" android:background="@color/normal_res_cor3" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip" android:layout_below="@id/title_text">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor5" android:gravity="center" android:id="@id/content_text" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="76.0dip" android:lineSpacingExtra="10.0dip" />
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bts" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="-44.0dip" android:layout_below="@id/content">
+            <TextView android:gravity="center_horizontal" android:background="@drawable/bg_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor4" android:gravity="center" android:id="@id/lef_btn" android:background="@drawable/btn_dialog_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ok" android:layout_weight="1.0" />
+                <TextView android:gravity="center_horizontal" android:background="@drawable/bg_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor5" android:gravity="center" android:id="@id/right_btn" android:background="@drawable/btn_dialog_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:background="@drawable/bg_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

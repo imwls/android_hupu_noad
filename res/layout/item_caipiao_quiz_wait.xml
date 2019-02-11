@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txt_content" style="@style/txt_caipiao_title" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/join_info" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 人已参与" />
+            <ImageView android:id="@id/btn_faq" android:background="@drawable/icon_faq_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignBottom="@id/join_info" android:layout_alignParentRight="true" />
+            <Button android:textSize="12.0sp" android:textColor="?game_textcolor_quiz_button" android:id="@id/btn_info" android:background="?game_bg_caipiao_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/caipiao_look_info" android:layout_alignBottom="@id/join_info" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

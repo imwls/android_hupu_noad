@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?chat_content_color" android:gravity="center" android:id="@id/tv_sport" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="5.0dip" android:drawableRight="@drawable/arrow_ic_down" android:drawablePadding="3.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_line" android:layout_below="@id/tv_sport" style="@style/view_divider1" />
+    <com.hupu.games.huputv.views.udlrslidelistview.UDLRSlideListView android:id="@id/udls_list_view_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_line" app:pin_title="true" app:slide_start="1" />
+    <View android:id="@id/view_mask" android:background="#a2000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_sport" />
+    <TextView android:textColor="?main_color_4" android:gravity="center" android:id="@id/tv_nodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无该赛事选手数据" android:layout_centerInParent="true" />
+</RelativeLayout>

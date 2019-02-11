@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/my_wallet_header_bg" android:layout_width="fill_parent" android:layout_height="126.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="85.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar_bg" android:background="@mipmap/icon_touxiang" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/iv_avatar_bg" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" />
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币" />
+                    <com.robinhood.ticker.TickerView android:textSize="19.0sp" android:textColor="@android:color/white" android:id="@id/tv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" app:ticker_animationDuration="1000" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_getGold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="如何获得金币?" android:layout_alignBottom="@id/ll_desc" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="41.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_wdlp" android:background="@color/color_ef341c" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="21.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_lipin_mine" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我的礼品" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_jbjl" android:background="@color/color_ec2516" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="21.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_gold_jilu" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="金币记录" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_task" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="金币任务" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/tv_gold_tasks_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="全部任务" android:drawableRight="@mipmap/icon_arrow_1" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="151.0dip" layout="@layout/fragment_main_banner" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_duobao" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="金币夺宝" android:layout_weight="1.0" />
+            <cn.shihuo.modulelib.views.WalletMarqueeView android:gravity="center_vertical" android:id="@id/marquee_duobao" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_duobao_img" android:layout_width="110.0dip" android:layout_height="110.0dip" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitCenter" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_duobao_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:maxLines="2" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_duobao_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币夺宝" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:id="@id/tv_duobao_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ProgressBar android:id="@id/progressbar_duobao" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_duobao_desc" style="@style/ProgressBarHorizontal" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="70.0dip" android:layout_height="24.0dip" android:text="立即夺宝" android:layout_alignBottom="@id/progressbar_duobao" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_duobao_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_278ccf" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="查看更多夺宝" />
+            <ImageView android:background="@mipmap/icon_right_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_guess" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="金币竞猜" android:layout_weight="1.0" />
+            <cn.shihuo.modulelib.views.WalletMarqueeView android:gravity="center_vertical" android:id="@id/marquee_guess" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_guess_title" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_guess_options_1" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_alignBottom="@id/progressbar_duobao" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_guess_options_1_bet_golds" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:background="@mipmap/icon_wallet_vs" android:layout_width="16.0dip" android:layout_height="14.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_guess_options_2" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_alignBottom="@id/progressbar_duobao" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_guess_options_2_bet_golds" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_guess_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_278ccf" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="查看更多竞猜" />
+            <ImageView android:background="@mipmap/icon_right_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_jianding" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="装备鉴定" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:background="@drawable/bg_wallet_jianding" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                <ImageView android:layout_gravity="center" android:background="@mipmap/icon_wallet_jianding" android:layout_width="27.0dip" android:layout_height="38.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运动装备权威鉴定" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_jianding_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币／次" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="70.0dip" android:layout_height="24.0dip" android:text="我要鉴定" android:layout_alignBottom="@id/progressbar_duobao" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/color_333333" android:gravity="center_vertical" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="兑换好礼" />
+    <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <HorizontalScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+        <RadioGroup android:orientation="horizontal" android:id="@id/tags" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_3" android:showDividers="middle" />
+    </HorizontalScrollView>
+</LinearLayout>

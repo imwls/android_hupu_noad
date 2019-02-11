@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_portrait" android:background="@color/static_blank" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/key_events" style="@style/txt_title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_score_bar" android:background="@drawable/selector_football_game_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+                <ImageView android:id="@id/img_team_left" android:layout_width="66.0dip" android:layout_height="53.0dip" android:src="@drawable/bg_home_nologo" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/layout_score" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="10.0">
+                <TextView android:id="@id/txt_shootout1" style="@style/txt_football_team2" />
+                <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/res_cor1" android:id="@id/txt_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 - 0" />
+                <TextView android:id="@id/txt_shootout2" style="@style/txt_football_team2" />
+            </LinearLayout>
+            <TextView android:textColor="@color/res_cor1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txt_start_time" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+                <ImageView android:id="@id/img_team_right" android:layout_width="66.0dip" android:layout_height="53.0dip" android:src="@drawable/bg_home_nologo" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/txt_team_left" android:background="@drawable/bg_home_team_l" style="@style/txt_football_team" />
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/txt_proccess" android:drawablePadding="2.0dip" style="@style/txt_football_team2" />
+            </LinearLayout>
+            <TextView android:id="@id/txt_team_right" android:background="@drawable/bg_home_team_r" style="@style/txt_football_team" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/bg_football_live" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/list_live" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:focusable="false" android:scrollbars="@null" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="@null" android:fastScrollEnabled="true" />
+        <ProgressBar android:id="@id/probar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

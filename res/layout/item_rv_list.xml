@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/item_rv_list_hint" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="125.0dip" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_rv_list_img" android:layout_width="125.0dip" android:layout_height="wrap_content" app:placeholderImage="@mipmap/zhanweifu" />
+        <View android:background="#33000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/item_rv_list_tv_content" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

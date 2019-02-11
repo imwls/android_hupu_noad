@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:text="优质晒物" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="查看更多" android:drawableRight="@mipmap/icon_arrow" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@drawable/line_bolangxian" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" />
+</LinearLayout>

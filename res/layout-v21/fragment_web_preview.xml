@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:contentInsetStart="10.0dip" app:contentInsetStart="10.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="继续编辑" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/tv_commit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="发布" />
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/line_horizontal" />
+    <include layout="@layout/web" />
+</LinearLayout>

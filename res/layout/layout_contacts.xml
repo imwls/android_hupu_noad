@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_contacts" style="@style/txt_title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?contact_qq" />
+            <TextView android:textSize="@dimen/txt3" android:textColor="@color/res_cor5" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/qq_txt" />
+            <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_1" android:layout_gravity="center_horizontal" android:id="@id/txt_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true" />
+            <Button android:textSize="@dimen/txt5" android:textColor="@color/res_cor5" android:layout_gravity="center_horizontal" android:id="@id/btn_copy_qq" android:background="?btn_contact" android:layout_width="81.0dip" android:layout_height="35.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/contact_copy" style="@style/Widget.AppCompat.Button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?contact_weixin" />
+            <TextView android:textSize="@dimen/txt3" android:textColor="@color/res_cor5" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/weixin_txt" />
+            <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_1" android:layout_gravity="center_horizontal" android:id="@id/txt_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true" />
+            <Button android:textSize="@dimen/txt5" android:textColor="@color/res_cor5" android:layout_gravity="center_horizontal" android:id="@id/btn_copy_weixin" android:background="?btn_contact" android:layout_width="81.0dip" android:layout_height="35.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/contact_copy" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

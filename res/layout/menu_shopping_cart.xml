@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_photo" android:layout_width="45.0dip" android:layout_height="45.0dip">
+        <ImageView android:id="@id/cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_action_cart" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_count" android:background="@drawable/menu_bradge" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignRight="@id/rl_photo" />
+</RelativeLayout>

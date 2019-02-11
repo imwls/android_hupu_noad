@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?follow_team_child_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/team_logo" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="35.0dip" android:layout_height="22.0dip" android:layout_marginLeft="60.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+    <TextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/team_name" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_toRightOf="@id/team_logo" android:layout_centerVertical="true" />
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/child_checkbox" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+</RelativeLayout>

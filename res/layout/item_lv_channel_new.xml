@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_lv_item_white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/item_channel_new_tv_fenge" android:background="@color/color_f7f7f7" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <LinearLayout android:id="@id/item_channel_new_ll_header" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/item_channel_new_tv_resultHit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他结果" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_channel_new_image" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginRight="9.0dip" app:fadeDuration="@integer/image_duration" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="centerCrop" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="65.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/item_channel_new_tv_recommend" android:background="@drawable/bg_red_buy" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="为您推荐" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/item_channel_new_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/item_channel520_tv_sales" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/item_channel_new_ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:ellipsize="end" android:id="@id/item_channel_new_tv_activity" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    <com.google.android.flexbox.FlexboxLayout android:id="@id/item_channel520_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:flexWrap="wrap" app:alignItems="flex_start" app:alignContent="flex_start" app:dividerDrawable="@drawable/divider_nodetail" app:showDivider="middle" />
+                    <cn.shihuo.modulelib.views.widget.ReadMoreTextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/item_channel_new_tv_youhui" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:lineSpacingExtra="5.0dip" app:colorClickableText="@color/color_666666" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_channel_new_tv_skuInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+            <cn.shihuo.modulelib.views.widget.fonttextview.PriceFontTextView android:textSize="13.0sp" android:textColor="@color/selector_buy_red" android:gravity="center" android:id="@id/item_channel_new_btn_buy" android:background="@drawable/selector_btn_buy" android:layout_width="52.0dip" android:layout_height="27.0dip" android:text="购买" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/item_channel520_tv_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

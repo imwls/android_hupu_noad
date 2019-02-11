@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="射门（0）" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/rate" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="准确率 0%" android:layout_centerInParent="true" />
+    <View android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="35.0dip" />
+</RelativeLayout>

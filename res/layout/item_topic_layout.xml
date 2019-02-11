@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="148.0dip" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center" android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="13.0dip">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="社区精彩话题" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_close" android:background="@drawable/close_btn_normal_night" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="查看更多" android:layout_toLeftOf="@id/iv_close" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorHorizontalScrollView android:layout_gravity="center_vertical" android:background="?main_color_2" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_title">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:id="@id/ll_horizon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hupu.android.ui.colorUi.ColorHorizontalScrollView>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

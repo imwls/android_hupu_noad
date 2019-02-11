@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.base.logic.component.widget.PinnedHeaderXListView android:id="@id/list_player" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="@dimen/divider_height" android:layout_below="@id/layout_title_bar" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_my_caipiao_result" style="@style/txt_title" />
+        <RelativeLayout android:id="@id/gold_num" style="@style/layout_right">
+            <ImageView android:id="@id/gold_img" android:background="?myinfo_gold_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/res_cor1" android:id="@id/coin_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:layout_toRightOf="@id/gold_img" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/box_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="?mybox_icon_gold_s" android:layout_toRightOf="@id/coin_num" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/res_cor1" android:id="@id/box_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="..." android:layout_toRightOf="@id/box_img" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/img_no_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/no_my_caipiao" android:layout_centerInParent="true" style="@style/txt_list_empty" />
+</RelativeLayout>

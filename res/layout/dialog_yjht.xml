@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/v_zdlj" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="直达链接" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/v_yjht" android:background="@color/color_ff4343" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="一键海淘" android:layout_weight="1.0" />
+</LinearLayout>

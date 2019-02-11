@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_shopping_frame" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="130.0dip" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@id/popdialog_shopping_ps_rg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="13.0sp" android:textColor="@color/selector_2" android:gravity="center_vertical" android:id="@id/popdialog_shopping_ps_rbo_hot" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:button="@null" android:text="热门配色" />
+            <RadioButton android:textSize="13.0sp" android:textColor="@color/selector_2" android:gravity="center_vertical" android:id="@id/popdialog_shopping_ps_rbo_pricea" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:button="@null" android:text="价格由低到高" />
+            <RadioButton android:textSize="13.0sp" android:textColor="@color/selector_2" android:gravity="center_vertical" android:id="@id/popdialog_shopping_ps_rbo_priced" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:button="@null" android:text="价格由高到低" />
+            <RadioButton android:textSize="13.0sp" android:textColor="@color/selector_2" android:gravity="center_vertical" android:id="@id/popdialog_shopping_ps_rbo_new" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:button="@null" android:text="上架时间" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?new_recommed_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.base.logic.component.widget.MatchCalendarView android:id="@id/calendar" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/no_games_txt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_games_text" android:layout_centerInParent="true" />
+    <com.hupu.android.recyler2.PinnedHeaderRecyclerView android:id="@id/pinned" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/calendar" />
+    <com.hupu.android.ui.colorUi.ColorButton android:id="@id/anchor_up_button" android:background="?gamelist_icon_gps_down" android:visibility="gone" android:layout_marginTop="@dimen/anchor_up_margin_top" android:layout_marginRight="10.0dip" android:contentDescription="@string/anchor_btn_up_description" style="@style/anchor_btn_style_up" />
+    <com.hupu.android.ui.colorUi.ColorButton android:id="@id/anchor_down_button" android:background="?gamelist_icon_gps_up" android:visibility="gone" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/anchor_up_margin_down" android:contentDescription="@string/anchor_btn_down_description" style="@style/anchor_btn_style_bottom" />
+    <include android:id="@id/error" android:background="?discovery_bg_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="38.0dip" android:layout_above="@id/temp_view" android:layout_below="@id/layout_title" layout="@layout/layout_webview_error" />
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/loading_spin" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</RelativeLayout>

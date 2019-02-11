@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" app:viewAspectRatio="2.34" />
+    <cn.shihuo.modulelib.views.ColumnSubView android:layout_gravity="center" android:id="@id/column_sub_ll" android:background="@drawable/selector_column_sub_single" android:layout_width="98.0dip" android:layout_height="30.0dip" app:subIcon="@drawable/selector_column_sub_icon" app:subText="栏目订阅" app:subTextSelected="已订阅" app:subTextColor="@color/selector_w2r_column_sub" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:background="@mipmap/l_material" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

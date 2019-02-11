@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/league_layout" android:layout_width="90.0dip" android:layout_height="60.0dip">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center" android:id="@id/item_text" android:background="?item_nav_sort_bg" android:layout_width="75.0dip" android:layout_height="40.0dip" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center|right|top" android:id="@id/item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?delete_icon" android:onClick="team_remove_Onclick" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center|right|top" android:id="@id/item_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?add_icon" android:onClick="team_add_onClick" />
+    </FrameLayout>
+</RelativeLayout>

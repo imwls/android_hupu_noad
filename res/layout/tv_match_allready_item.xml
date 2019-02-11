@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tag_top" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/tv_player_tag" android:layout_width="4.0dip" android:layout_height="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#fff2f2f2" android:gravity="center_vertical" android:id="@id/group_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组赛第8组" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/mid" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tag_top" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/left_head" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/tv_task_def_icon" android:scaleType="centerCrop" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/left_name" android:layout_width="50.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mid_icon" android:layout_width="36.0dip" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_toRightOf="@id/left_icon" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tv_vs" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tv_allready" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_toRightOf="@id/mid_icon">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/right_head" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/tv_task_def_icon" android:scaleType="centerCrop" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/right_name" android:layout_width="50.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.hupu.live.player.media.IjkVideoView android:layout_gravity="center" android:id="@id/play_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/video_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/video_no_pic_night" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor2" android:gravity="bottom|center|left" android:id="@id/tv_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在全力加载中" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

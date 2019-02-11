@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center" android:id="@id/sub_btn" android:background="?num_subtract_bg_invalible" android:layout_width="35.0dip" android:layout_height="30.0dip" android:src="?num_subtract_ic" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <EditText android:enabled="false" android:textSize="14.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:gravity="center" android:id="@id/number_edit" android:background="?num_edit_select_color" android:focusable="false" android:layout_width="35.0dip" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/sub_btn" android:layout_centerVertical="true" android:inputType="number" />
+    <ImageView android:gravity="center" android:id="@id/add_btn" android:background="?num_add_bg" android:layout_width="35.0dip" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:src="?num_add_ic" android:scaleType="centerInside" android:layout_toRightOf="@id/number_edit" android:layout_centerVertical="true" />
+</RelativeLayout>

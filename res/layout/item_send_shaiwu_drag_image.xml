@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="img" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    <RelativeLayout android:id="@id/dragHandle" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/dragImage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/move_white_text" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="图片模块拖动" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/dragBody" android:background="@color/color_f2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_send_shaiwu_drag" android:layout_width="wrap_content" android:layout_height="20.0dip">
+            <ImageView android:id="@id/imageView" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="7.0dip" android:src="@mipmap/move_white_text" />
+            <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按住图片可拖动" />
+        </LinearLayout>
+        <ImageView android:id="@id/dragClose" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/close_1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/edit" android:background="@drawable/bg_send_shaiwu_edit" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_margin="10.0dip" android:text="添加描述" android:drawablePadding="3.0dip" android:layout_alignBottom="@id/iv_photo" />
+        <EditText android:textSize="14.0sp" android:textColor="@color/color_666666" android:gravity="top" android:id="@id/et_desc" android:background="@null" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入文字" android:minLines="2" android:maxLength="100" android:layout_below="@id/iv_photo" />
+    </RelativeLayout>
+</RelativeLayout>

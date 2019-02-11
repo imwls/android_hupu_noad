@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:background="?common_bg_title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor" android:id="@id/btn_back" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/txt_title" android:text="发布鉴定" style="@style/txt_title" />
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor" android:id="@id/btn_submit" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="发布" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_choice" android:background="?home_bg_bottom_divider" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="@dimen/txt2" android:textColor="?main_color_4" android:gravity="center" android:id="@id/tv_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="选择商品" android:maxLines="1" android:drawableLeft="@drawable/icon_appra_add" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/txt2" android:textColor="?main_color_7" android:gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <EditText android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:gravity="top" android:id="@id/et_desc" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:minHeight="200.0dip" android:hint="描述了求鉴定商品的内容，如颜色，货号..." android:layout_below="@id/rl_choice" />
+            <com.base.logic.component.widget.IndentifiImageLayout android:id="@id/ll_indetifi_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/et_desc" />
+            <ImageView android:id="@id/iv_line" android:background="@color/normal_res_cor4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/ll_indetifi_image" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_promt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/iv_line">
+                <TextView android:textSize="@dimen/txt6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="友情提示:" />
+                <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_7" android:id="@id/tv_promt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="新手必看" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/progress_layout" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <com.hupu.android.ui.view.ProgressWheel android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="100.0dip" android:layout_height="100.0dip" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+            </FrameLayout>
+            <com.base.logic.component.widget.DymiSubmitSuccessLayout android:id="@id/dl_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/message_main" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/rl_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/ic_user_layout" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true">
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/ic_user_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/ic_head_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_shield_ic" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/ic_user_layout" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_name" android:layout_width="fill_parent" android:layout_height="22.0dip">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_5" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="路然" android:singleLine="true" android:layout_alignParentBottom="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?reddot_color_num" android:gravity="center" android:id="@id/message_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99+" android:layout_toRightOf="@id/user_name" style="@style/txt_reddot_number" />
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/ic_message_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_official_ic" android:scaleType="centerInside" android:layout_toRightOf="@id/user_name" android:layout_alignParentBottom="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_4" android:id="@id/message_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="2016-01-18" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_name">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_4" android:id="@id/message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最近一条通信的前n字，超过字数，显示..." android:singleLine="true" android:layout_toLeftOf="@id/message_count" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorView android:layout_marginLeft="70.0dip" android:layout_alignParentBottom="true" style="@style/view_divider1" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

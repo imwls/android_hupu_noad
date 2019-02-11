@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    <HorizontalScrollView android:paddingLeft="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_qgb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider_w_5dp" android:showDividers="middle" />
+    </HorizontalScrollView>
+    <HorizontalScrollView android:paddingLeft="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_xlb" android:background="@drawable/bg_phb_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider_w_10dp" android:showDividers="middle" />
+    </HorizontalScrollView>
+</LinearLayout>

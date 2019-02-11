@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/match_main" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="298.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <com.hupu.android.ui.widget.PagerSlidingTabStrip android:id="@id/tv_page_indicator" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="44.0dip" app:pstsIndicatorColor="#ffe30a0a" app:pstsDividerColor="#ff5c5d5d" app:pstsTabPaddingLeftRight="@dimen/slid_tab_width" app:pstsShouldExpand="false" app:ptstCurrentTextColor="#ffe30a0a" app:ptstNormalTextColor="#ffc3c2c2" />
+        <View android:id="@id/split" android:background="#ff5c5d5d" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tv_page_indicator" />
+        <com.hupu.app.android.bbs.core.common.ui.view.CustomViewPager android:id="@id/tv_view_pager" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HupuEditTextStyle" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:textCursorDrawable">?edit_cursor_color</item>
+    </style>
+</resources>

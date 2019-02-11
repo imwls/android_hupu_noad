@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="10.0dip" app:layout_scrollFlags="enterAlways|scroll">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/toolbarClose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_action_remove_black" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/color_333333" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/fab" android:background="@drawable/bg_shaiwu_send" android:layout_width="179.0dip" android:layout_height="38.0dip" android:layout_marginBottom="10.0dip" android:alpha="0.9" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.ShaiwuCreateBehavior">
+            <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@mipmap/release_icon" />
+            <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="发布晒物" />
+        </LinearLayout>
+        <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" app:layout_anchor="@id/recyclerView" app:layout_anchorGravity="bottom|right|center" layout="@layout/anchor_list_totop" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/loading" />
+</FrameLayout>

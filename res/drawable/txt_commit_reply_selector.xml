@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="?bbs_dialog_txt_cor1" />
+    <item android:state_enabled="true" android:color="?main_color_7" />
+    <item android:state_focused="true" android:color="?main_color_7" />
+    <item android:state_pressed="true" android:color="?main_color_7" />
+    <item android:color="?main_color_7" />
+</selector>

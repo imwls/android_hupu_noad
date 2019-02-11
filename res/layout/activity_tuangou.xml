@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <include layout="@layout/line_horizontal" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_tuangou" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@color/selector_tuangou_tab_textcolor" android:gravity="center" android:id="@id/rb_default" android:tag="all" android:background="@mipmap/radiogroup_tab_bg" android:layout_width="fill_parent" android:layout_height="43.0dip" android:button="@null" android:text="默认" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_tuangou_tab_textcolor" android:gravity="center" android:id="@id/rb_rqtg" android:tag="hot" android:background="@mipmap/radiogroup_tab_bg" android:layout_width="fill_parent" android:layout_height="43.0dip" android:button="@null" android:text="人气团购" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_tuangou_tab_textcolor" android:gravity="center" android:id="@id/rb_jjjs" android:tag="end" android:background="@mipmap/radiogroup_tab_bg" android:layout_width="fill_parent" android:layout_height="43.0dip" android:button="@null" android:text="即将结束" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_tuangou_tab_textcolor" android:gravity="center" android:id="@id/rb_xqyg" android:tag="start" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="43.0dip" android:button="@null" android:text="下期预告" android:layout_weight="1.0" />
+        </RadioGroup>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/anchor_list_totop" />
+</RelativeLayout>

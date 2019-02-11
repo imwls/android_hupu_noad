@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:background="?main_color_2" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/iv_equip_image" android:layout_width="106.0dip" android:layout_height="106.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="3.0dip">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/tv_equip_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/tv_equip_goods_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="3" android:layout_below="@id/tv_equip_goods_name" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt6" android:textColor="?main_color_4" android:id="@id/tv_equip_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt6" android:textColor="?main_color_1" android:id="@id/tv_equip_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

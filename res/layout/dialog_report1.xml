@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?main_color_4" android:ellipsize="end" android:gravity="center" android:id="@id/report_dialog_title" android:background="?v0_main_bg_color_1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:maxLines="1" android:singleLine="true" />
+    <View android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/share_item_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/report_list_view" android:background="?v0_main_bg_color_1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?v0_main_color_line01" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+    <View android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <Button android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/btn_cancel_report" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/cancel" />
+</LinearLayout>

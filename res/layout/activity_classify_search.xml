@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.games.search.view.SearchLayout android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <com.base.logic.component.widget.PinnedHeaderXListView android:id="@id/result_list" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="?v0_main_color_line01" android:dividerHeight="1.0px" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+    <com.hupu.games.search.view.SearchHistoryLayout android:id="@id/search_his_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_layout" />
+    <com.hupu.games.search.view.SearchSuggestionLayout android:id="@id/search_suggestion" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_layout" />
+    <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_4" android:id="@id/nodata" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抱歉，未找到相关结果" android:layout_centerInParent="true" />
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/loadingPro" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+    <RelativeLayout android:id="@id/ll_add" android:background="@color/gray_alpha_70" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/txt2" android:textColor="?game_textcolor_lineup_away_number" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="如果没有您的商品,请手动添加" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?game_textcolor_lineup_away_number" android:gravity="center" android:id="@id/tv_add" android:background="?shape_add_products" android:layout_width="68.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="添加商品" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

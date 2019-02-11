@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?game_bg_lineup_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/formation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/formation_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/field_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="13.0">
+                <ImageView android:id="@id/field_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="?game_football_formation_field_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/field_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/field_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:maxLines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/field_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:maxLines="1" android:layout_below="@id/field_name" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/referee_name" android:layout_width="0.0dip" android:layout_height="39.0dip" android:text="@string/formation_referee_info" android:singleLine="true" android:drawableLeft="?game_football_formation_referee_icon" android:drawablePadding="5.0dip" android:layout_weight="7.0" />
+        </LinearLayout>
+        <com.base.logic.component.widget.FormationView android:id="@id/formation" android:background="?football_field" android:layout_width="fill_parent" android:layout_height="600.0dip" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+    <View android:id="@id/trans_block" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/trans_block" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="?game_textcolor_lineup_player" android:id="@id/homeTxtTeam" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="?game_textcolor_lineup_player" android:id="@id/homeTxtFormation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="?game_textcolor_lineup_player" android:id="@id/awayTxtFormation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textColor="?game_textcolor_lineup_player" android:id="@id/awayTxtTeam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/weather_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginRight="5.0dip" android:src="?game_weather_cloudy" android:layout_alignTop="@id/formation_layout" android:layout_alignParentRight="true" />
+</RelativeLayout>

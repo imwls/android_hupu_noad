@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ebffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:id="@id/tv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="取消" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_free_title" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="200.0dip" android:text="双十一期间免费鉴别暂时关闭11月30日恢复" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_free" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="免费鉴别" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <ImageView android:id="@id/iv_bind_mobile" android:background="@mipmap/select_expert_unfinish_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="绑定手机" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip">
+                <ImageView android:id="@id/iv_three_support" android:background="@mipmap/select_expert_unfinish_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/tv_need_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="邀请N位好友获得免费资格，" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_2a67a6" android:id="@id/tv_request_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即分享" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_free_desc" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="该鉴别师免费鉴别人数已达上限看看其他鉴别师吧" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_free_identify" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:text="发布鉴别" />
+        </LinearLayout>
+        <View android:background="@color/color_e6e6e6" android:layout_width="300.0dip" android:layout_height="1.0dip" android:layout_marginTop="30.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="付费鉴别" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/tv_identify_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_pay_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_pay_identify" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:text="发布鉴别" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/tv_balance" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="余额:503金币" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_2a67a6" android:gravity="right" android:id="@id/tv_recharge" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="充值" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

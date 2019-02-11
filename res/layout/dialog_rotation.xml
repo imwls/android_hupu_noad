@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?game_bg_rotate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.hupu.android.ui.colorUi.ColorImageView android:background="@drawable/dialog_rotation_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="30.0sp" android:textColor="?game_textcolor_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/STR_ROTATION" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:background="@drawable/dialog_spilit_line" android:layout_width="fill_parent" android:layout_height="3.0dip" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="16.0sp" android:textColor="?game_textcolor_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/STR_ROTATION_TIPS" />
+    </LinearLayout>
+    <ImageView android:id="@id/btn_close" android:background="@drawable/bg_x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

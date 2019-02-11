@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_shopping_sku_attr_title" android:id="@id/dialog_shoppinggo_digit3c_tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="配色" />
+    <cn.shihuo.modulelib.views.BambooTagFlowLayout android:id="@id/dialog_shoppinggo_digit3c_bfl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+</LinearLayout>

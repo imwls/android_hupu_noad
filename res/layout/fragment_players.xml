@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_rating" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.android.ui.view.xlistview.HPXListView android:id="@id/list_player" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="?news_divideline" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/toolbarClose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_action_remove_black" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <WebView android:id="@id/webview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/fab" android:background="@drawable/button_normal1" android:layout_width="fill_parent" android:layout_height="38.0dip" android:alpha="0.9" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.ShaiwuCreateBehavior1">
+        <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="该干啥干啥" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

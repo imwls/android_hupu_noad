@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageButton android:id="@id/button_switch" android:background="@drawable/button_switch" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_imgs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/upload" />
+    <RelativeLayout android:id="@id/upload" android:background="#80131819" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/button_capture" android:background="@drawable/button_capture" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/button_cancel" android:background="@drawable/button_cancel" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="36.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/button_ok" android:background="@drawable/button_ok" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="36.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

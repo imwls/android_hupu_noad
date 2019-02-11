@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.shihuo.modulelib.views.widgets.SHImageView android:id="@id/iv_nomore" android:layout_width="fill_parent" android:layout_height="21.0dip" fresco:viewAspectRatio="12.6" fresco:actualImageScaleType="center" fresco:actualImageResource="@mipmap/nomore_daodile"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" />

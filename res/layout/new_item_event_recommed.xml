@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="121.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_4" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="" />
+    <RelativeLayout android:id="@id/ll_item_body_in" android:background="?shardow_home" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_title">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/iv_head" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/iv_head">
+            <TextView android:textSize="18.0sp" android:textColor="?txt_calend" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="?txt_press_calend" android:gravity="center" android:id="@id/tv_repic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" android:drawableLeft="?icon_reply" android:drawablePadding="2.0dip" android:layout_below="@id/tv_name" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/rl_name" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center|right" android:id="@id/tv_desc1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff96999f" android:gravity="center|right" android:id="@id/tv_desc2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" android:layout_below="@id/tv_desc1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

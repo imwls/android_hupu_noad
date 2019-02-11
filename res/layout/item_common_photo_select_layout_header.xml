@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/select_layout" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/id_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_camera_item" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/camera_title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="相机" android:layout_below="@id/id_item_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/id_item_select" android:background="@null" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="?send_no_select" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

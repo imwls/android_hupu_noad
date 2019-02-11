@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?discovery_bg_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar_foresight" android:layout_width="fill_parent" android:layout_height="fill_parent" app:loading_layoutid="@layout/loading_layout_style_default" app:is_show_error="false">
+        <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/webview_no_data" android:background="?v0_main_bg_color_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

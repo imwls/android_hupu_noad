@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_left" android:background="?game_bg_outs_event_dialog_left" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/home_injured" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?game_football_event_injured_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="?game_txt_color_foot_event_item" android:gravity="center_vertical" android:id="@id/txt_home_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="450.0dip" android:maxLines="1" />
+            <TextView android:gravity="center|right" android:id="@id/txt_home_event1" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/txt_football_live_event" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/home_img_1" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="?game_icon_outs_event_goal_img" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/txt_home_event2" android:layout_width="wrap_content" style="@style/txt_football_live_event" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/home_img_2" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/line_top" android:background="?main_color_4" android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <TextView android:id="@id/txt_event_time" style="@style/txt_football_live_time" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/line_bottom" android:background="?main_color_4" android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_right" android:background="?game_bg_outs_event_dialog_right" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/away_img_1" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="?game_icon_outs_event_goal_img" android:scaleType="center" />
+            <TextView android:gravity="center|left" android:id="@id/txt_away_event1" android:width="0.0dip" android:layout_weight="1.0" style="@style/txt_football_live_event" />
+            <TextView android:textSize="14.0sp" android:textColor="?game_txt_color_foot_event_item" android:gravity="center_vertical" android:id="@id/txt_away_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="450.0dip" android:maxLines="1" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/away_injured" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?game_football_event_injured_icon" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/away_img_2" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:scaleType="center" />
+            <TextView android:gravity="center|left" android:id="@id/txt_away_event2" android:layout_width="fill_parent" style="@style/txt_football_live_event" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

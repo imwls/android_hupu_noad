@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_launch" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:paddingTop="@dimen/set_group_interval" android:paddingBottom="@dimen/set_group_interval" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_default" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/default_txt" android:layout_marginLeft="@dimen/set_item_img_padding" android:text="@string/item_launch_default" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/tb_default" android:background="?myinfo_toggle_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.hupu.android.ui.colorUi.ColorView android:layout_alignLeft="@id/default_txt" android:layout_alignParentBottom="true" style="@style/view_divider1" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_bbs" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/txt_bbs" android:layout_marginLeft="@dimen/set_item_img_padding" android:text="@string/item_launch_bbs" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/tb_bbs" android:background="?myinfo_toggle_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.hupu.android.ui.colorUi.ColorView android:layout_alignLeft="@id/txt_bbs" android:layout_alignParentBottom="true" style="@style/view_divider1" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_news" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/txt_news" android:layout_marginLeft="@dimen/set_item_img_padding" android:text="@string/item_launch_news" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/tb_news" android:background="?myinfo_toggle_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+</LinearLayout>

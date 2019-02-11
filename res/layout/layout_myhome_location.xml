@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_myhome_edit_area" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorView android:id="@id/title_divider" android:layout_below="@id/layout_title_bar" style="@style/view_divider1" />
+    <ListView android:id="@id/location_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?v0_main_color_line01" android:dividerHeight="@dimen/divider_height1" android:layout_below="@id/title_divider" />
+    <ListView android:id="@id/location_area_list" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?main_color_3" android:dividerHeight="@dimen/divider_height1" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

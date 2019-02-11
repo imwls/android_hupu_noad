@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/video_content" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.hupu.live.player.media.IjkVideoView android:layout_gravity="center" android:id="@id/video_player" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/port_buttom" android:background="@color/bg_a80_transparent" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="?anchoman_text_color" android:layout_gravity="center_vertical" android:id="@id/online_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/zoom_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="?tv_zoom" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton android:gravity="center" android:id="@id/btn_back" android:background="@drawable/webview_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</FrameLayout>

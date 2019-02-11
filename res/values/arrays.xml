@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="box_info">
+        <item>@string/box_gold</item>
+        <item>@string/box_slive</item>
+        <item>@string/box_copper</item>
+    </string-array>
+    <string-array name="box_info_description">
+        <item>@string/box_gold_description</item>
+        <item>@string/box_slive_description</item>
+        <item>@string/box_corper_description</item>
+    </string-array>
+    <array name="googleProgressColors">
+        <item>@color/googleColor1</item>
+        <item>@color/googleColor2</item>
+        <item>@color/googleColor3</item>
+        <item>@color/googleColor4</item>
+    </array>
+    <array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </array>
+    <string-array name="indexable_letter">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="key_score">
+        <item>section1</item>
+        <item>section2</item>
+        <item>section3</item>
+        <item>section4</item>
+        <item>overtime1</item>
+        <item>overtime2</item>
+        <item>overtime3</item>
+        <item>overtime4</item>
+        <item>overtime5</item>
+        <item>score</item>
+    </string-array>
+    <string-array name="launch_list_entries">
+        <item>外部商户订单</item>
+        <item>远程订单</item>
+    </string-array>
+    <string-array name="pref_entries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </string-array>
+    <string-array name="pref_entries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </string-array>
+    <string-array name="pref_entry_summaries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </string-array>
+    <string-array name="pref_entry_summaries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </string-array>
+    <string-array name="pref_entry_values_pixel_format">
+        <item></item>
+        <item>fcc-rv16</item>
+        <item>fcc-rv24</item>
+        <item>fcc-rv32</item>
+        <item>fcc-yv12</item>
+        <item>fcc-_es2</item>
+    </string-array>
+    <string-array name="pref_entry_values_player">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <array name="refreshColors">
+        <item>@color/color_d33333</item>
+        <item>@color/color_bdbdbd</item>
+        <item>@color/color_f2f2f2</item>
+        <item>@color/cardview_dark_background</item>
+    </array>
+    <string-array name="shopSize">
+        <item>35.5及以下</item>
+        <item>36</item>
+        <item>36.5</item>
+        <item>37</item>
+        <item>37.5</item>
+        <item>38</item>
+        <item>38.5</item>
+        <item>39</item>
+        <item>39.5</item>
+        <item>40</item>
+        <item>40.5</item>
+        <item>41</item>
+        <item>41.5</item>
+        <item>42</item>
+        <item>42.5</item>
+        <item>43</item>
+        <item>43.5</item>
+        <item>44</item>
+        <item>44.5</item>
+        <item>45</item>
+        <item>45.5</item>
+        <item>46</item>
+        <item>46.5</item>
+        <item>47</item>
+        <item>47.5</item>
+        <item>48及以上</item>
+    </string-array>
+    <string-array name="title_score">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+        <item>@string/o1</item>
+        <item>@string/o2</item>
+        <item>@string/o3</item>
+        <item>@string/o4</item>
+        <item>@string/o5</item>
+        <item>@string/total</item>
+    </string-array>
+</resources>

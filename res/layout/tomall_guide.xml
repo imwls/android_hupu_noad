@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/toMallLoading" android:background="@drawable/bg_red_tomallloading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="10.0dip" android:alpha="214.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tv_mall_go" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在前往" />
+    <ImageView android:id="@id/iv_mall" android:visibility="gone" android:layout_width="59.0dip" android:layout_height="26.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tv_mall_wait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请耐心等待..." />
+</LinearLayout>

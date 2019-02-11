@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/duihuan_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="90.0dip" android:layout_height="90.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换礼品：" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换数量：" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换条件：" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_con" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_d7d7d7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货人" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_name" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:hint="姓名" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系电话" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_phone" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:hint="手机或固话" android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择地区" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_sheng" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:hint="省份" android:layout_weight="1.0" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_shi" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:hint="城市/区县" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细地址" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_address" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:hint="街道门牌信息" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:gravity="top" android:id="@id/et_mark" android:background="@drawable/edit_yhq_bg" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:hint="请留下您需要备注的内容" android:lines="3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证码" android:ems="5" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/color_333333" android:textColorHint="#ffc6c6c6" android:id="@id/et_code" android:background="@drawable/edit_yhq_bg" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:hint="请输入验证码" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_code" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="@color/color_666666" android:id="@id/bt_cancel" android:background="@drawable/btn_gray_solid_bg_1" android:layout_width="fill_parent" android:layout_height="41.0dip" android:text="取消" android:layout_weight="1.0" />
+            <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:id="@id/bt_commit" android:background="@drawable/btn_red_solid_bg_1" android:layout_width="fill_parent" android:layout_height="41.0dip" android:text="确认" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

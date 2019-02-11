@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/img_ad_layout" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_post" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" app:filter_type="mask" app:has_filter="true" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/video_ad_layout" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_gravity="center" android:id="@id/top_title_video_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hupu.android.ui.colorUi.ColorFrameLayout android:layout_gravity="center" android:id="@id/videoParent" android:background="@color/normal_res_cor5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hupu.app.android.bbs.core.module.group.view.VideoFrameLayout android:layout_gravity="center" android:id="@id/videw_player_layout" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            </com.hupu.android.ui.colorUi.ColorFrameLayout>
+            <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:scrollbarStyle="outsideInset" android:id="@id/video_webview" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/temp_view" android:layout_below="@id/videoParent" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center|right|top" android:id="@id/img_post_close" android:background="@drawable/adver_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="13.0dip" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="@color/normal_res_cor2" android:gravity="center" android:id="@id/tv_adver_tip" android:background="@drawable/bg_poster_adver" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" android:text="" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </FrameLayout>
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/land_bt_back" android:background="?common_icon_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</FrameLayout>

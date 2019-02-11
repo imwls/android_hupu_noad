@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@mipmap/ic_action_overflow_white" android:id="@id/overFlow" android:orderInCategory="100" android:title="更多" app:showAsAction="always">
+        <menu>
+            <item android:icon="@mipmap/menu_home" android:id="@id/home" android:orderInCategory="20" android:title="首页" />
+            <item android:icon="@mipmap/menu_person" android:id="@id/center" android:orderInCategory="21" android:title="个人中心" />
+            <item android:icon="@mipmap/menu_message" android:id="@id/message" android:orderInCategory="22" android:title="" />
+        </menu>
+    </item>
+</menu>

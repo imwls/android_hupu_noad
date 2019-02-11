@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_rec_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" fresco:roundAsCircle="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/tv_userName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/tv_isOnline" android:background="@drawable/icon_select_expert_online" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="right" android:id="@id/tv_queue_max" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="1999" android:layout_weight="1.0" />
+            <View android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="left" android:id="@id/tv_queue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1999" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="left" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:lines="3" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/bg_select_expert_button" android:layout_width="80.0dip" android:layout_height="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="选他" />
+    </LinearLayout>
+</FrameLayout>

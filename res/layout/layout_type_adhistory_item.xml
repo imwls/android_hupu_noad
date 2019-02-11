@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="61.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次看到这里，点击刷新" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@mipmap/icon_refresh" />
+</LinearLayout>

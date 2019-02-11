@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_layout" android:background="@drawable/bg_archer_list_up" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:textColor="@color/res_cor1" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/res_cor1" android:gravity="center" android:layout_gravity="center" android:id="@id/ranking" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/logo" android:layout_width="24.0dip" android:layout_height="30.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/res_cor1" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="3.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/res_cor1" android:gravity="left" android:layout_gravity="center" android:id="@id/team_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/res_cor1" android:gravity="center" android:layout_gravity="center" android:id="@id/num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+</LinearLayout>

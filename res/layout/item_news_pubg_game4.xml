@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:orientation="horizontal" android:id="@id/fgames_top_two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/item_news_pubg_game2" />
+    <include android:orientation="horizontal" android:id="@id/fgames_bottom_two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-7.0dip" android:layout_weight="1.0" layout="@layout/item_news_pubg_game2" />
+</LinearLayout>

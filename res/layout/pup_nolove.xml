@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?my_content_color" android:gravity="center" android:id="@id/tv_nolove" android:background="?pubg_border" android:layout_width="120.0dip" android:layout_height="40.0dip" android:text="我不感兴趣" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

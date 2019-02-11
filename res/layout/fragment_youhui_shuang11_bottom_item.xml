@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="105.0dip" android:layout_height="105.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_shuang11_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_shuang11_item_logo" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="15.0dip" fresco:roundAsCircle="true" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/tv_shuang11_item_title" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="华为" android:maxLines="1" />
+            <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_shuang11_item_sub_title2" android:background="@drawable/bg_red_youhui_shuang11" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:maxLength="8" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="@color/new_res_cor2" android:layout_width="fill_parent" android:layout_height="185.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorButton android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/btn_black" android:background="?news_detail_btn_share" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/homepage_add_to_black" android:layout_below="@id/share_item_layout" />
+    <com.hupu.android.ui.colorUi.ColorView android:id="@id/share_divider" android:background="?news_divideline" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/share_common_hsv" />
+    <com.hupu.android.ui.colorUi.ColorButton android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/btn_cancel_black" android:background="?news_detail_btn_share" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cancel" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

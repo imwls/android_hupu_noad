@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.base.logic.component.widget.StickyNavLayout android:orientation="vertical" android:id="@id/stickyLayout" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/layout_title_bar" layout="@layout/layout_my_homepage_top" />
+        <include android:id="@id/layout_title_up" layout="@layout/layout_homepage_title" />
+        <com.base.logic.component.widget.HupuViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.base.logic.component.widget.StickyNavLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/title_show_hide" android:visibility="invisible" style="@style/base_title_bar">
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/mask_small" android:background="@color/transparent" style="@style/base_title_bar" />
+        <LinearLayout android:id="@id/ll_top_show" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="48.0dip" android:layout_centerHorizontal="true">
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/img_title_top" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/v0_txt2s" android:textStyle="bold" android:textColor="?common_title_txt" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/txt_title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back" android:background="?common_icon_back_white" style="@style/btn_back_white" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:layout_gravity="center_vertical" android:id="@id/bt_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="＋关注" android:layout_toLeftOf="@id/btn_more" style="@style/btn_right_txt_white" />
+            <com.hupu.android.ui.colorUi.ColorButton android:layout_gravity="center_vertical" android:id="@id/btn_more" android:background="?common_icon_share" style="@style/btn_right" />
+        </LinearLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</RelativeLayout>

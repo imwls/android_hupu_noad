@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?v0_main_bg_color_4" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@id/load_more_wheel" android:layout_width="40.0dip" android:layout_height="40.0dip" app:matProg_progressIndeterminate="true" app:matProg_barColor="#ffff0000" />
+</LinearLayout>

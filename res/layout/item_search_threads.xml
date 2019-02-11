@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/title" android:layout_alignParentLeft="true">
+        <TextView android:textSize="12.0sp" android:textColor="?search_special_txt_color" android:id="@id/special" android:background="?search_special_bg_color" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专题" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/sent_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/special" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/plate_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/sent_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/comments_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/comments_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="?bbs_reply_ic" android:layout_toLeftOf="@id/comments_num" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/light_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="0" android:layout_toLeftOf="@id/comments_ic" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/light_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="?bbs_light_ic" android:layout_toLeftOf="@id/light_num" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

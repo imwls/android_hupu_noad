@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.FlingBehaviorForViewPager">
+                <RelativeLayout android:id="@id/head" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                    <include layout="@layout/fragment_main_recyclerview_header" />
+                    <View android:id="@id/shadow" android:background="@mipmap/banner_bg" android:layout_width="fill_parent" android:layout_height="75.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <android.support.v7.widget.Toolbar android:gravity="center" android:id="@id/toolbar" android:background="#f5cc0101" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip" app:contentInsetLeft="0.0dip">
+                            <include layout="@layout/fragment_main_searchview" />
+                        </android.support.v7.widget.Toolbar>
+                        <RelativeLayout android:id="@id/ll_msg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="52.0dip">
+                            <cn.shihuo.modulelib.utils.SpecialTextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_msg" android:background="@mipmap/icon_bg_main_msg" android:paddingLeft="26.0dip" android:paddingTop="11.0dip" android:paddingRight="15.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:maxLines="2" android:lineSpacingExtra="5.0dip" />
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_msg" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+            <cn.shihuo.modulelib.views.MainTabViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tabLayoutParent" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/status_bar" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <FrameLayout android:id="@id/back" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="21.0dip" android:src="@mipmap/icon_back_1" />
+            </FrameLayout>
+            <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" app:tabIndicatorColor="@color/color_dd1712" app:tabIndicatorHeight="2.0dip" app:tabMode="scrollable" app:tabGravity="fill" app:tabMaxWidth="50.0dip" app:tabTextAppearance="@style/TextAppearance1" app:tabTextColor="@color/color_333333" app:tabSelectedTextColor="@color/color_dd1712" app:tabPaddingStart="0.0dip" app:tabPaddingEnd="0.0dip" />
+            <FrameLayout android:id="@id/search" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/home_search_white" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/bt_qiandao" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="68.0dip" android:src="@mipmap/icon_bg_qiandao_1" />
+    <include android:layout_gravity="bottom|center|right" android:id="@id/toTop" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" layout="@layout/anchor_list_totop" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.shihuo.modulelib.views.video.TextureVideoView android:id="@id/textureView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_bottom" android:background="@drawable/video_bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@mipmap/icon_video_pause" />
+        <TextView android:textColor="#ffffffff" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="00:00" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/bottom_seek_progress" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progressDrawable="@drawable/video_seekbar" android:minHeight="2.0dip" android:thumb="@mipmap/icon_video_thumb" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffffff" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="00:00" />
+        <ImageView android:id="@id/fullscreen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@mipmap/icon_video_fullscreen" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/bottom_progress" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progressDrawable="@drawable/video_bottom_progress" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_action_previous_item_white" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_toRightOf="@id/back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/loading" android:visibility="invisible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminateDrawable="@drawable/video_loading" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_nowifi" android:background="#b3000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_continue" android:background="@drawable/bg_red_2" android:layout_width="60.0dip" android:layout_height="23.0dip" android:layout_marginTop="15.0dip" android:text="继续播放" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_nonetwork" android:background="#b3000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/tv_desc_nonetwork" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，请检查网络" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_continue_nonetwork" android:background="@drawable/bg_red_2" android:layout_width="75.0dip" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:text="继续播放" />
+    </LinearLayout>
+    <FrameLayout android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7">
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重播" android:drawableTop="@mipmap/icon_replay" android:drawablePadding="15.0dip" />
+    </FrameLayout>
+</RelativeLayout>

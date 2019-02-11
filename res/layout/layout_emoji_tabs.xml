@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_emoji_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_main_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:id="@id/ll_buttons_tab" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btn_chose_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/btn_chose_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/btn_aite" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/color_main_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/bg_select_expert_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="37.0dip">
+            <ImageView android:background="@mipmap/ic_logo" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_marginTop="40.0dip" />
+            <TextView android:textSize="42.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="识货App鉴别" />
+            <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已累计鉴别超" />
+                <TextView android:textSize="26.0sp" android:textColor="@android:color/white" android:id="@id/tv_identifyNum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="双球鞋" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="多年行业经验 ｜ 9项检测 ｜ 专业正品鉴别" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/ll_guide" android:background="@mipmap/bg_rec_1" android:layout_width="345.0dip" android:layout_height="64.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_newInstruction" android:layout_width="0.0dip" android:layout_height="75.0dip" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/select_expert_newer_read" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:text="新手必看" />
+                </LinearLayout>
+                <View android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="40.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_queryReport" android:layout_width="0.0dip" android:layout_height="75.0dip" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/select_expert_query_report" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:text="报告查询" />
+                </LinearLayout>
+                <View android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="40.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_myList" android:layout_width="0.0dip" android:layout_height="75.0dip" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/select_expert_my_identify" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="5.0dip" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:text="我的鉴别" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

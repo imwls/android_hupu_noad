@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?myinfo_exchange_item_bg" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/prize_img" android:background="@drawable/bg_1x1" android:layout_width="fill_parent" android:layout_height="75.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/prize_status" android:background="?myinfo_icon_exchange_status_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:id="@id/prize_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:singleLine="true" />
+    <TextView android:textSize="10.0sp" android:textColor="?main_color_4" android:id="@id/coin_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/res_cor8" android:id="@id/join_num" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+</LinearLayout>

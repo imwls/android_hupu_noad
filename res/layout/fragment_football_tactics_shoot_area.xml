@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?game_football_tactics_card_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center" android:id="@id/shoot_area_card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="射门区域" android:singleLine="true" />
+    <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/shoot_area_card_des" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="给他们展示一些比赛战术分析的数据" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/left_area" android:background="?game_football_tactics_playground_no_dotted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                <com.base.logic.component.widget.FootballTacticsShootArea android:id="@id/left_area_ground" android:layout_width="fill_parent" android:layout_height="110.0dip" app:outerColor="?game_football_tactics_card_left_cor3" app:innerColor="?game_football_tactics_card_left_cor1" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/left_team_name2" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兰斯" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/right_area" android:background="?game_football_tactics_playground_no_dotted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip">
+                <com.base.logic.component.widget.FootballTacticsShootArea android:id="@id/right_area_ground" android:layout_width="fill_parent" android:layout_height="110.0dip" app:outerColor="?game_football_tactics_card_right_cor1" app:innerColor="?game_football_tactics_card_right_cor3" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/right_team_name2" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="巴黎圣日耳曼" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

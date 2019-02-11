@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:background="?main_color_2" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/iv_equip_image" android:layout_width="106.0dip" android:layout_height="106.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/tv_equip_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/tv_equip_goods_name">
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/iv_equip_avathor_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="9.0dip" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/tv_equip_avathor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

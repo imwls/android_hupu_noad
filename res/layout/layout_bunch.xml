@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="@color/cor_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textColor="?main_color_3w" android:id="@id/txt_title" android:visibility="visible" style="@style/txt_head_title_browser" />
+                <TextView android:textColor="?main_color_3w" android:id="@id/txt_title_en" android:visibility="gone" style="@style/txt_side_head_title_browser" />
+            </LinearLayout>
+            <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back" style="@style/btn_back_white" />
+            <com.hupu.android.ui.colorUi.ColorButton android:textColor="?main_color_3w" android:id="@id/btn_follow_top" android:visibility="gone" style="@style/btn_right_txt" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/adver_bg" android:layout_width="fill_parent" android:layout_height="90.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/teamlog" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+            <com.hupu.android.ui.colorUi.ColorLinearLayout android:id="@id/layout_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_3w" android:layout_gravity="center_vertical" android:id="@id/area_name_title" android:visibility="gone" android:text="地区: " style="@style/txt_team_player_top_info" />
+                <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/home_area_icon" android:layout_width="20.0dip" android:layout_height="13.0dip" app:filter_type="mask" app:has_filter="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_3w" android:layout_gravity="center_vertical" android:id="@id/area_name" android:layout_marginLeft="10.0dip" style="@style/txt_team_player_top_info" />
+            </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.widget.PagerSlidingTabStrip android:id="@id/page_indicator" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="44.0dip" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="@color/transparent" app:pstsTabPaddingLeftRight="@dimen/slid_tab_width" app:pstsShouldExpand="false" app:ptstCurrentTextColor="?main_color_5" app:ptstNormalTextColor="?main_color_3s" />
+    <com.base.logic.component.widget.HupuViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/running520_header_img_big" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/running520_header_ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="58.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/running413_header_ll_category" android:layout_width="fill_parent" android:layout_height="83.0dip" />
+            <include android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="15.0dip" layout="@layout/fragment_main_banner" />
+            <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_brands_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/running413_header_ll_brands" android:layout_width="fill_parent" android:layout_height="83.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/running_header_ll_ads" android:background="@color/color_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/running_header_iv_ads" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" app:viewAspectRatio="4.68" app:actualImageScaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running540_header_ll_shoes" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <android.support.v7.widget.RecyclerView android:id="@id/running540_header_rv_brands_shoes" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/running540_header_ll_adsource" android:layout_width="fill_parent" android:layout_height="44.0dip" android:showDividers="middle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_haojia" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/running520_header_tv_haojia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="每日好价" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:gravity="center_vertical" android:id="@id/running413_header_tv_haojia_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="查看更多" android:drawableRight="@mipmap/icon_haojia_red_next" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_haojia" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/running510_header_haojia_article_rl_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/color_f6f6f6" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/running510_header_haojia_article_tv_tag" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:id="@id/running510_header_haojia_article_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/running510_header_haojia_article_img" android:layout_width="40.0dip" android:layout_height="40.0dip" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitCenter" app:roundAsCircle="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_activity" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/running520_header_tv_hotactivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="热门活动" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_hot_activity" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_activity" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_wearlesson" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/running520_header_tv_wearlesson" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="穿搭课堂" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/running413_header_tv_wearlesson_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="查看更多" android:drawableRight="@mipmap/icon_app_next" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_wearlesson" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_wearlesson_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_wearlesson_article" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running520_header_ll_brandAndstars" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <android.support.v7.widget.RecyclerView android:id="@id/running520_header_rv_brands" android:background="@mipmap/bg_rec_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/running520_header_rv_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/running520_header_ll_stars" android:layout_width="fill_parent" android:layout_height="44.0dip" android:showDividers="middle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/running413_header_tv_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="欲望清单" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/running413_header_tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="查看更多" android:drawableRight="@mipmap/icon_app_next" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:layout_gravity="bottom" android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/running480_header_fl_column" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/running500_header_tv_column" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="8.0dip" android:text="相关栏目" />
+                <android.support.v7.widget.RecyclerView android:id="@id/running480_header_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/running413_header_ll_fashionelement" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/running520_header_tv_fashionelement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="穿搭课堂" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/running413_header_tv_fashionelement_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="查看更多" android:drawableRight="@mipmap/icon_app_next" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/running413_header_rv_fashionelement" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/running_header_ll_new_resource" android:background="@color/color_white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/running_header_img_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:layout_weight="1.0" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+        <android.support.v4.widget.Space android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/running_header_img_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

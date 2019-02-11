@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?game_bg_quiz_float" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?game_textcolor_style1" android:gravity="center" android:layout_gravity="center_horizontal" android:background="?dialog_caipiao_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/buy_caipiao_title" />
+    <TextView android:textSize="16.0sp" android:textColor="?main_color_5" android:id="@id/txt_casino_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/txt_casino_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="14.0dip" />
+    <View android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/radioGroup1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:id="@id/radio0" style="@style/CaipiaoBetButton" />
+        <TextView android:id="@id/radio1" style="@style/CaipiaoBetButton" />
+        <TextView android:id="@id/radio2" style="@style/CaipiaoBetButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/radioGroup2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:id="@id/radio3" style="@style/CaipiaoBetButton" />
+        <TextView android:id="@id/radio4" style="@style/CaipiaoBetButton" />
+        <TextView android:id="@id/radio5" android:text="@string/bet_other" style="@style/CaipiaoBetButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/otherBetLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:id="@id/bet_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <EditText android:textSize="13.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:layout_gravity="center" android:id="@id/other_bet_num" android:background="@drawable/bg_1x1" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/bet_other_hint" android:maxLength="6" android:numeric="integer" />
+        <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bet_double" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:id="@id/txt_bet_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="13.0sp" android:textColor="?main_color_4" android:id="@id/txt_bet_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <Button android:textSize="13.0dip" android:textColor="?main_color_5" android:id="@id/btn_caipiao_cancel" android:background="?common_btn_dialog_cancel" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:textSize="13.0dip" android:textColor="?game_textcolor_style1" android:id="@id/btn_caipiao_confirm" android:background="?common_btn_caipiao_dialog_confirm" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/submit_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_agree" android:background="@drawable/toggle_on" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/res_cor8" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/txt_agreement" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/link_color" android:layout_gravity="center_vertical" android:id="@id/txt_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_agreement_link" />
+    </LinearLayout>
+</LinearLayout>

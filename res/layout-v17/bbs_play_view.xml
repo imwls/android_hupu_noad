@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <tv.hupu.live.player.media.IjkVideoView android:layout_gravity="center" android:id="@id/play_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/pause_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/hp_danmaku" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/controller_layout" android:background="@drawable/bbs_buttom_gradient" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+            <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/video_play_btn_small" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/video_play_btn_small" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/video_pause_btn_small" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/video_pause_btn_small" />
+            <TextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/media_currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <SeekBar android:id="@id/media_progress" android:paddingLeft="0.0dip" android:paddingTop="10.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/biz_video_progressbar" android:thumb="@drawable/video_progress_thumb" android:thumbOffset="0.0dip" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/danmu_switch_port" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_danmu_open" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_sound" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/voice_close" />
+            <RelativeLayout android:id="@id/btn_expand_container" android:layout_width="35.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_expand" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biz_video_expand" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/progress_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:id="@id/progressbar_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?news_second_nav_btn_down" android:gravity="bottom|center|left" android:id="@id/progress_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在全力加载中" android:layout_centerInParent="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="20.0sp" android:textColor="?news_second_nav_btn_down" android:gravity="bottom|center|left" android:id="@id/progress_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress_loading_text" android:layout_alignBottom="@id/progress_loading_text" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/land_top_toolbar" android:background="@drawable/bbs_top_gradient" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_alignParentTop="true">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/btn_back_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="?common_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_alignParentStart="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="17.0sp" android:textColor="?news_second_nav_btn_down" android:ellipsize="end" android:id="@id/title_text_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/btn_back_land" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/land_bottom_toolbar" android:background="@drawable/bbs_buttom_gradient" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <SeekBar android:id="@id/land_media_progress" android:paddingLeft="-20.0dip" android:paddingTop="10.0dip" android:paddingRight="-20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/biz_video_progressbar" android:thumb="@drawable/video_progress_thumb" android:thumbOffset="0.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/land_media_progress">
+                <RelativeLayout android:id="@id/land_btn_expand_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_zoomout" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_room_out" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/btn_land_sound" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_close" android:layout_toLeftOf="@id/land_btn_expand_container" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/danmu_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/bbs_danmu_open" android:layout_toLeftOf="@id/btn_land_sound" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/land_controller_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/danmu_switch" android:layout_centerVertical="true">
+                    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/land_video_play_btn_small_layout" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/land_video_play_btn_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_btn_small" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/land_video_pause_btn_small_layout" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/land_video_pause_btn_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_pause_btn_small" />
+                    </LinearLayout>
+                    <TextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/land_media_currentTime" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/danmu_edit_open" android:background="@drawable/bbs_danmu_input_bg" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/normal_res_cor4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发射弹幕" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/quick_step_layout_land" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" layout="@layout/quick_step_layout" />
+</RelativeLayout>

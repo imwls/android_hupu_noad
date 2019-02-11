@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/column_sub_tv_none" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="您还没有关注任何栏目哦，为您推荐以下栏目～" />
+    <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/column_sub_rv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:scrollbars="none" />
+</LinearLayout>

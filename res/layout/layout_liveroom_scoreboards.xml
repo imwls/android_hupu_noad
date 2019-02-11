@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_portrait" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/normal_scoreboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_liveroom_scoreboard_normal" />
+    <include android:id="@id/olympic_confront_scoreboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_liveroom_scoreboard_olympic_confront" />
+    <include android:id="@id/olympic_confront_scoreboard_simple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_liveroom_scoreboard_olympic_confront_simple" />
+    <include android:id="@id/olympic_noconfront_scoreboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_liveroom_scoreboard_olympic_noconfront" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

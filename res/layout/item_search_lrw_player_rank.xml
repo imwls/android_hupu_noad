@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/search_lrw_rank_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="3.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/rank_des" android:layout_width="wrap_content" android:layout_height="65.0dip" android:layout_marginLeft="12.5dip" android:text="路人王实力榜" android:layout_toRightOf="@id/img" android:layout_centerVertical="true" />
+</RelativeLayout>

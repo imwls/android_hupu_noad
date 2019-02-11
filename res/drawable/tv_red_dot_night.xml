@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="30.0dip" android:width="30.0dip">
+        <bitmap android:gravity="top" android:src="@drawable/red_dot_night" android:antialias="true" />
+    </item>
+</layer-list>

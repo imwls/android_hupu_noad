@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.framework.android.ui.view.recyclerview.header.FrameAnimationView android:layout_gravity="center|top" android:id="@id/fixedBall" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_alignTop="@id/goal" android:layout_centerHorizontal="true" />
+    <com.hupu.framework.android.ui.colorUi.ColorImageView android:layout_gravity="center_horizontal" android:id="@id/goal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="?pull_refresh_goal" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</merge>

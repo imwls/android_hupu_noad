@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/layout_land" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_vertical" android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:id="@id/btn_home_land" android:background="?v0_main_bg_color_4" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_home_land" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="24.0sp" android:textColor="?main_color_5" android:id="@id/txt_home_land" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:id="@id/btn_away_land" android:background="?main_color_2" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_away_land" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="24.0sp" android:textColor="?main_color_5" android:id="@id/txt_away_land" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:layout_width="fill_parent" android:layout_height="3.0dip">
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/line_home" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/line_away" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <include layout="@layout/item_data_header_land" />
+    <com.hupu.android.ui.colorUi.ColorView android:background="?game_bg_statistics_divider1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.hupu.android.ui.colorUi.ColorListView android:id="@id/list_players_land" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:divider="?v0_main_color_line01" android:dividerHeight="1.0px" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#3f000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="140.0dip">
+            <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/video_cancel_btn" android:layout_width="45.0dip" android:layout_height="25.0dip" android:src="?bbs_video_cancel" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="?main_color_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加视频链接" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/video_add_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/edit_layout" android:background="?bbs_video_input" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/title_layout">
+                <ImageView android:id="@id/clear_btn" android:layout_width="38.0dip" android:layout_height="30.0dip" android:src="?bbs_video_del" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:id="@id/video_url_edit" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="添加视频链接" android:singleLine="true" android:layout_toLeftOf="@id/clear_btn" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/split" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/edit_layout" />
+            <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/split">
+                <TextView android:textSize="14.0sp" android:textColor="?main_color_4" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="支持解析B站、秒拍等视频" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/send_video_more" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="?football_statistic_more" android:scaleType="centerInside" android:layout_toRightOf="@id/tips_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

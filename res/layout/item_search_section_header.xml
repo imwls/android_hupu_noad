@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center|right" android:id="@id/result_num" android:background="?v0_main_bg_color_4" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/section_layout" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/result_num">
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/section_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/num_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

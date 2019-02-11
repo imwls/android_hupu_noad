@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" android:layout_alignParentTop="true" style="@style/bg_title_bar">
+        <ImageButton android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/txt_title" android:singleLine="true" android:layout_centerInParent="true" style="@style/txt_title" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/my_hupucoin" android:background="?common_icon_nav" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="28.5dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/hupu_coin_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="?admiration_dollar_icon_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textColor="?main_color_5" android:ellipsize="end" android:gravity="center" android:id="@id/hupu_coin_num" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0" android:singleLine="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <com.hupu.android.ui.colorUi.ColorView android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/head_icon" android:layout_width="63.0dip" android:layout_height="63.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" android:layout_below="@id/layout_title_bar" android:layout_centerHorizontal="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+    <TextView android:textSize="@dimen/txt4" android:textColor="?main_color_5" android:id="@id/admiration_nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/head_icon" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginTop="30.0dip" android:layout_below="@id/admiration_nickName">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_below="@id/admiration_nickName">
+            <TextView android:id="@id/is_20_coin" android:text="" style="@style/BetButton" />
+            <TextView android:id="@id/is_50_coin" android:text="" style="@style/BetButton" />
+            <TextView android:id="@id/is_100_coin" android:text="" style="@style/BetButton" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_below="@id/admiration_nickName">
+            <TextView android:id="@id/is_200_coin" android:text="" style="@style/BetButton" />
+            <TextView android:id="@id/is_1000_coin" android:text="" style="@style/BetButton" />
+            <TextView android:id="@id/is_2000_coin" android:text="" style="@style/BetButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/confirmButton" android:background="?common_btn_dialog_confirm" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="赞赏" android:layout_below="@id/linearLayout" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="?main_color_4" android:id="@id/alertTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="注：您赞赏虎扑币将全部折合人民币打入作者账户，虎扑官方不收取任何费用。" android:layout_below="@id/confirmButton" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

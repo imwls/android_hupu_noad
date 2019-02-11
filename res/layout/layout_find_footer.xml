@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="35.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/footer_tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看\n更多" />
+    <ImageView android:background="@mipmap/ic_find_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

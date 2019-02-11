@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_lv_item_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="180.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_person_head_img" android:layout_width="20.0dip" android:layout_height="20.0dip" fresco:fadeDuration="1000" fresco:placeholderImage="@mipmap/zhanweifu_header" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/item_person_head_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/item_person_head_img" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/layout_single10_tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:drawableLeft="@mipmap/icon_shiwu_like" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/layout_single10_tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="20" android:drawableLeft="@mipmap/icon_shiwu_comment" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

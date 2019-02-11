@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="?v0_main_bg_color_4" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/loading_view" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="#ffb42127" />
+</LinearLayout>

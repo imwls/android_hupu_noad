@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/select_photo_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_item_image" android:layout_width="fill_parent" android:layout_height="100.0dip" android:src="@drawable/pictures_no" android:scaleType="centerCrop" />
+    <RelativeLayout android:gravity="center|right|top" android:id="@id/rtSelectBtn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignRight="@id/id_item_image" android:layout_alignParentTop="@id/id_item_image">
+        <ImageView android:id="@id/id_item_select" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="?choose_no_select" android:minWidth="20.0dip" android:minHeight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/gif_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_send_posts_gif_flag" android:scaleType="centerCrop" android:layout_alignRight="@id/id_item_image" android:layout_alignBottom="@id/id_item_image" />
+</RelativeLayout>

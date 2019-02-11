@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/ll_body" android:background="?pubg_border" android:layout_width="181.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_bxj" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_4" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:text="步行街主干道" android:layout_toRightOf="@id/iv_icon" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="14.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="" android:maxLines="3" android:layout_below="@id/rl_bxj" android:layout_alignParentBottom="true" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

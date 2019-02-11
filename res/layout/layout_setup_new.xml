@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_setup" style="@style/txt_title" />
+    </RelativeLayout>
+    <ScrollView android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <RelativeLayout android:id="@id/layout_follow" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_my_follow" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/bind_auth_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <RelativeLayout android:id="@id/layout_acount_bind_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_bind_account" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_black_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_black_name" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/moble_no_pic" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ToggleButton android:id="@id/toggle_no_pic" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:checked="true" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/upload_pic_add_watermark" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ToggleButton android:id="@id/toggle_watermark" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:checked="true" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_notify" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="推送通知" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/notify_arrow" style="@style/img_relative_arrow_right_setup" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_video" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="视频播放设置" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/video_arrow" style="@style/img_relative_arrow_right_setup" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_clean" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_clean" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <TextView android:textColor="?main_color_5" android:layout_gravity="center|right" android:id="@id/txt_del" android:layout_toLeftOf="@id/clean_arrow" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/clean_arrow" style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_more_manage" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="更多页管理" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_launch" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_launch" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <TextView android:textColor="?main_color_5" android:layout_gravity="center|right" android:id="@id/txt_launch" android:layout_toLeftOf="@id/launch_arrow" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/launch_arrow" style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/set_group_interval">
+                <RelativeLayout android:id="@id/layout_contacts_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/title_contacts" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_feedback_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/feedback" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/iv_feedback_red_point" android:background="@drawable/icon_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_toLeftOf="@id/iv_feedback_arrow" android:layout_centerVertical="true" style="@style/txt_reddot_text" />
+                    <ImageView android:id="@id/iv_feedback_arrow" style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_net_monitor_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/set_group_interval">
+                <RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/net_monitor" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <RelativeLayout android:id="@id/layout_reward_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/reward" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_check_version_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/check_version" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+                <View style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_welcome_layout" android:background="?v0_main_bg_color_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="@string/welcome" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <ImageView style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+                <View android:visibility="gone" style="@style/view_divider1" />
+                <RelativeLayout android:id="@id/layout_about" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="关于我们" android:layout_weight="1.0" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <TextView android:textColor="?main_color_5" android:id="@id/txt_version" android:text="v4.4.0" android:layout_toLeftOf="@id/version_arrow" style="@style/txt_item_myinfo" />
+                    <ImageView android:id="@id/version_arrow" style="@style/img_relative_arrow_right_setup" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:id="@id/btn_submit" android:visibility="invisible" android:layout_height="46.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/title_unbind_phone" style="@style/common_button_submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

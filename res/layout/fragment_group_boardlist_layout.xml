@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorFrameLayout android:id="@id/rootView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.app.android.bbs.core.common.ui.view.xlistview.XListView android:id="@id/lv_boardlist" android:background="?v0_main_bg_color_4" android:scrollbars="none" android:fadingEdge="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="2.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" android:layout_alignParentRight="true">
+            <RelativeLayout android:id="@id/edit_board_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textColor="#ff1e88e2" android:gravity="center" android:id="@id/edit_board_btn" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.hupu.android.ui.colorUi.ColorFrameLayout android:id="@id/frame_groups" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.hupu.app.android.bbs.core.common.ui.view.xlistview.XListView android:id="@id/plv_groups" android:background="?v0_main_bg_color_1" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+                <include android:id="@id/no_data_default_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bbs_no_group_layout" />
+            </com.hupu.android.ui.colorUi.ColorFrameLayout>
+        </LinearLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+</com.hupu.android.ui.colorUi.ColorFrameLayout>

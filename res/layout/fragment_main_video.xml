@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/root_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hupu.app.android.bbs.core.common.ui.view.BBSTagView android:id="@id/bbs_tag_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="37.0dip" />
+    <com.hupu.app.android.bbs.core.module.launcher.ui.views.DanmakuListView android:scrollbarStyle="insideInset" android:id="@id/video_listView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="5.0dip" android:layout_below="@id/bbs_tag_view" android:fastScrollEnabled="false" android:overScrollMode="never" />
+    <TextView android:textColor="?main_color_4" android:gravity="center" android:id="@id/tv_nodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <com.hupu.app.android.bbs.core.module.launcher.ui.views.Danmu2InputView android:id="@id/danmu_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

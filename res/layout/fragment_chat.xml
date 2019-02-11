@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/bg_layout" android:background="?v0_main_bg_color_4" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.view.xlistview.HPXListView android:id="@id/list_chat" android:background="?v0_main_bg_color_4" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-1.0dip" android:layout_marginBottom="45.0dip" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="10.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hint_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="16.0sp" android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_chat" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="16.0sp" android:textColor="?main_color_4" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_chat_hint" />
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

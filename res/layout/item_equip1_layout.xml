@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="?main_color_2" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/iv_equip_avathor_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentTop="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="17.0dip" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/iv_equip_avathor_icon" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/tv_equip_avathor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt7" android:textColor="?main_color_4" android:id="@id/tv_equip_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_below="@id/tv_equip_avathor_name" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/tv_equip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    <com.base.logic.component.widget.EquipMultiImageLayout android:orientation="horizontal" android:id="@id/ll_equip_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:gravity="center_vertical" android:id="@id/rl_equip_card" android:background="?main_color_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/iv_equip_card_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/tv_equip_card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" android:layout_toLeftOf="@id/iv_arrow_icon" android:layout_toRightOf="@id/iv_equip_card_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/icon_equip_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

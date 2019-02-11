@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:loading_layoutid="@layout/loading_layout_style_default" app:is_show_error="false">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.base.logic.component.widget.arbScroller.ArbitrarilyScrollViewBasket android:id="@id/data_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/toast_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toast_info" android:layout_centerInParent="true" style="@style/txt_list_empty" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:empty="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/line_horizontal" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="40.0dip" empty:tabIndicatorColor="@color/color_dd1712" empty:tabIndicatorHeight="2.0dip" empty:tabBackground="@android:color/white" empty:tabMode="fixed" empty:tabGravity="fill" empty:tabTextAppearance="@style/TextAppearance2" empty:tabTextColor="@color/color_333333" empty:tabSelectedTextColor="@color/color_dd1712" />
+            <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <cn.shihuo.modulelib.views.EmptyView android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" empty:icon="@mipmap/icon_empty_gold_recording" empty:text="您暂时没有金币记录" empty:showButton="false" />
+    </FrameLayout>
+</LinearLayout>

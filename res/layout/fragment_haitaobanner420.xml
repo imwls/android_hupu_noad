@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.shihuo.modulelib.views.VerticalSwipeRefreshLayout android:orientation="vertical" android:id="@id/banner_haitao_refresh" android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.BambooScrollView android:id="@id/banner_haitao_scroll" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.bigkoo.convenientbanner.ConvenientBanner android:id="@id/banner_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="134.0dip" app:layout_collapseMode="parallax" app:canLoop="true" />
+            <include layout="@layout/line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/banner_haitao_ll_resource" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <ImageView android:background="@mipmap/icon_haitao_toutiao" android:layout_width="83.0dip" android:layout_height="wrap_content" />
+                <View android:background="@color/color_e6e6e6" android:layout_width="1.0px" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" />
+                <cn.shihuo.modulelib.views.widget.CustomMarqueeView android:id="@id/banner_haitao_marquee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <include layout="@layout/line_horizontal" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/icon_haitao_zhi" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="海外直邮" />
+                </LinearLayout>
+                <View android:background="@color/color_e6e6e6" android:layout_width="1.0px" android:layout_height="15.0dip" />
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/icon_haitao_zhe" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="实时折扣" />
+                </LinearLayout>
+                <View android:background="@color/color_e6e6e6" android:layout_width="1.0px" android:layout_height="15.0dip" />
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/icon_haitao_shan" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="闪电下单" />
+                </LinearLayout>
+                <View android:background="@color/color_e6e6e6" android:layout_width="1.0px" android:layout_height="15.0dip" />
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/icon_haitao_ten" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="10元包税" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/line_horizontal" />
+            <LinearLayout android:orientation="vertical" android:id="@id/banner_haitao_ll_types" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <cn.shihuo.modulelib.views.NoScrollGridView android:id="@id/banner_haitao_gv_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
+        </LinearLayout>
+    </cn.shihuo.modulelib.views.BambooScrollView>
+</cn.shihuo.modulelib.views.VerticalSwipeRefreshLayout>

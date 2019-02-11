@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/shopping_detail_swiperefresh" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.shihuo.modulelib.views.BambooScrollView android:orientation="vertical" android:id="@id/shopping_detail_scrollview" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/template_shopping_detail_header" />
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/shopping_detail_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" android:singleLine="true" />
+                    <RelativeLayout android:id="@id/shopping_detail_rl_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/shopping_detail_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:maxLines="2" android:lineSpacingExtra="3.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff278ccf" android:gravity="center" android:id="@id/shopping_detail_tv_detail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="详情" android:drawableRight="@mipmap/icon_right_next" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/shopping_detail500_ll_both" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="center" android:id="@id/shopping_detail500_ll_both_reputation" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全网口碑" android:drawableLeft="@mipmap/ic_shoes_d_praise" android:drawablePadding="5.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/shopping_detail500_both_reputation_tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="@color/color_f0f0f0" android:layout_width="1.0px" android:layout_height="29.0dip" />
+                    <LinearLayout android:gravity="center" android:id="@id/shopping_detail500_ll_both_pc" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="识货测评" android:drawableLeft="@mipmap/ic_shoes_d_evaluating" android:drawablePadding="5.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/shopping_detail500_both_pc_tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <cn.shihuo.modulelib.views.zhuanqu.widget.ReputionLayout android:id="@id/shopping_detail500_ll_repution" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/shopping_detail500_ll_repution_hint" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全网口碑" android:drawableLeft="@mipmap/ic_shoes_d_praise" android:drawablePadding="5.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/shopping_detail500_repution_tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/shopping_detail500_ll_repution_next" android:background="@mipmap/icon_app_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <co.lujun.androidtagview.TagContainerLayout android:id="@id/shopping_detail_tag_group_one" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/shopping_detail500_ll_repution_next" android:layout_toRightOf="@id/shopping_detail500_ll_repution_hint" android:layout_centerVertical="true" app:container_border_color="@android:color/transparent" app:container_background_color="@android:color/transparent" app:container_max_lines="1" app:container_gravity="right" app:tag_corner_radius="1.5dip" app:tag_horizontal_padding="5.0dip" app:tag_text_size="11.0sp" app:tag_text_color="@color/color_666666" app:tag_border_color="@color/color_f5f5f5" app:tag_background_color="@color/color_f5f5f5" app:tag_theme="none" />
+                </cn.shihuo.modulelib.views.zhuanqu.widget.ReputionLayout>
+                <RelativeLayout android:id="@id/shopping_detail500_ll_pc" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="center" android:id="@id/shopping_detail500_ll_pc_hint" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="识货测评" android:drawableLeft="@mipmap/ic_shoes_d_evaluating" android:drawablePadding="5.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/shopping_detail500_pc_tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(10)" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/shopping_detail500_pc_next" android:background="@mipmap/icon_app_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:gravity="center|right" android:id="@id/shopping_detail500_pc_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/shopping_detail500_pc_next" android:layout_toRightOf="@id/shopping_detail500_ll_pc_hint" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/shopping_detail520_ll_activity" android:background="@color/color_white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/shopping_detail520_ll_ac_img" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:id="@id/shopping_detail520_tv_ac_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_gravity="center_vertical" android:id="@id/shopping_detail520_tv_ac_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="3个活动进行中" android:drawableRight="@mipmap/icon_app_next" android:drawablePadding="5.0dip" />
+                </LinearLayout>
+                <View android:id="@id/line" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:id="@id/shopping_detail_ll_peise" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="97.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shopping_detail_ll_size" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="72.0dip" android:layout_height="fill_parent">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尺码" />
+                        <include android:layout_width="25.0dip" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="12.0dip" layout="@layout/line_horizontal" />
+                        <me.grantland.widget.AutofitTextView android:textSize="17.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/shopping_detail_cm_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="All" android:maxLines="1" app:minTextSize="10.0sp" />
+                    </LinearLayout>
+                    <include layout="@layout/line_vertical" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/shopping_detail_ll_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <include android:id="@id/shopping_detail_line_style" android:layout_width="1.0px" android:layout_height="fill_parent" layout="@layout/line_vertical" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shopping_detail_ll_ps" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="72.0dip" android:layout_height="fill_parent">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配色" />
+                        <include android:layout_width="25.0dip" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="12.0dip" layout="@layout/line_horizontal" />
+                        <me.grantland.widget.AutofitTextView android:textSize="17.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/shopping_detail_ps_tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="All" android:maxLines="1" app:minTextSize="10.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@mipmap/bg_shopping_touying" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/shopping_detail_ll_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/shopping_detail_btn_subscribe" android:background="@drawable/bg_price_sub" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="25.0dip" android:text="降价订阅" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <include layout="@layout/line_horizontal" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/shopping_detail_rl_nochannel" android:background="@android:color/white" android:paddingBottom="45.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                            <ImageView android:id="@id/icon_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_no_channel" android:layout_centerHorizontal="true" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:id="@id/shopping_detail_nochannel_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_nochannel_info" android:layout_below="@id/icon_channel" android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                        <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/shopping_detail_ll_sub_ps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/sub" android:background="@mipmap/bt_bg_s2" android:layout_width="122.0dip" android:layout_height="42.0dip" android:layout_marginTop="15.0dip" android:text="渠道上架提醒" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/shopping_detail_tv_more" android:background="@mipmap/bt_bg_s2" android:layout_width="122.0dip" android:layout_height="42.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:text="查看更多配色" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/shopping_detail_ll_other" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                        <TextView android:textColor="@color/color_333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="其它结果" />
+                    </LinearLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <cn.shihuo.modulelib.views.NoScrollListView android:id="@id/shopping_detail_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/color_f0f0f0" android:dividerHeight="1.0px" />
+                        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/shopping_detail_progressbar" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="8.0sp" android:textColor="@color/color_929292" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="识货" android:layout_centerInParent="true" />
+                            <android.support.v4.widget.ContentLoadingProgressBar android:id="@id/progressBar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true" style="@android:style/Widget.Holo.ProgressBar.Small" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <include layout="@layout/view_horizontal" />
+                <cn.shihuo.modulelib.views.widget.ShPledgeLayout android:id="@id/shopping_detail_shpledge" android:background="@color/color_fafafa" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="10.0dip" app:showMoreText="true" />
+                <View android:id="@id/shopping_view_anchor" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <include layout="@layout/template_shopping_detail_reputation" />
+                <include layout="@layout/template_shopping_detail_like" />
+                <View android:id="@id/shopping_detail_footer_view_send" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+            </LinearLayout>
+        </cn.shihuo.modulelib.views.BambooScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/shopping_detail_ll_send" android:background="#f2ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:background="@mipmap/icon_shopping_reputation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_dd1712" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="发布口碑" />
+    </LinearLayout>
+    <cn.shihuo.modulelib.views.widget.PromptLayout android:id="@id/shopping_detail_fl_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_e43232" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_share_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/weixing" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="微信好友" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_share_weixinquan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/penyouquan" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="朋友圈" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_share_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/qqhaoyou" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="QQ好友" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_share_qzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/qqkongjian" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="QQ空间" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:weightSum="6.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.9">
+            <ImageView android:id="@id/btn_share_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/weibo" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="新浪微博" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.9">
+            <ImageView android:id="@id/btn_share_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fuzhi" />
+            <TextView android:textSize="11.0dip" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="复制链接" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

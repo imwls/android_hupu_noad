@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/my_userinfo" style="@style/txt_title" />
+    </RelativeLayout>
+    <ScrollView android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/user_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_weixin_login" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="?account_icon_weixin_logined" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" />
+                    <TextView android:id="@id/weixin_login_text" android:layout_marginLeft="10.0dip" android:text="@string/weixin_login_text" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/res_cor11" android:id="@id/btn_weixin_bind" android:background="?myinfo_icon_bind" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="60.0dip" android:minHeight="30.0dip" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_qq_login" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="?account_icon_qq_logined" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" />
+                    <TextView android:id="@id/qq_login_text" android:layout_marginLeft="10.0dip" android:text="@string/qq_login_text" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/res_cor11" android:id="@id/btn_qq_bind" android:background="?myinfo_icon_bind" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="60.0dip" android:minHeight="30.0dip" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_phone" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="?account_icon_phone_logined" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" />
+                    <TextView android:id="@id/phone_login_text" android:layout_marginLeft="10.0dip" android:text="@string/phone_login" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/res_cor11" android:id="@id/btn_phone_bind" android:background="?myinfo_icon_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="60.0dip" android:minHeight="30.0dip" />
+                </LinearLayout>
+                <View style="@style/view_divider1" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_hupu" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="?account_icon_mail" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" />
+                    <TextView android:id="@id/hupu_login_text" android:layout_marginLeft="10.0dip" android:text="@string/hupu_login" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/divider_auth_name" android:visibility="gone" style="@style/view_divider1" />
+            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_5" android:id="@id/bind_info_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

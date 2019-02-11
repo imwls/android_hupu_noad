@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <cn.shihuo.modulelib.views.widgets.SHImageView android:id="@id/iv_photo" android:layout_width="37.0dip" android:layout_height="37.0dip" app:placeholderImage="@mipmap/zhanweifu" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="9.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_tip" android:background="@drawable/bg_tip_red" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

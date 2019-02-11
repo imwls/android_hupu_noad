@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gift_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/gift_icon_mask" android:background="@drawable/tv_bg_gift_select" android:visibility="invisible" android:layout_width="57.0dip" android:layout_height="57.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/gift_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/tv_p_gift_def" android:scaleType="centerCrop" android:layout_centerInParent="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="?gift_font_land" android:gravity="center" android:id="@id/gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="饮料" android:layout_below="@id/gift_icon_layout" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_6" android:gravity="center" android:id="@id/gift_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000虎扑币" android:layout_below="@id/gift_name" android:layout_centerHorizontal="true" />
+</RelativeLayout>

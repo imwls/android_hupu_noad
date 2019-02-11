@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_imgtv_image" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center_horizontal" android:id="@id/custom_imgtv_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

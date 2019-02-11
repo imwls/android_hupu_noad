@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadFailAndRetry" android:background="@color/normal_res_cor3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_base_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cry_pic" />
+        <TextView android:textSize="15.299988sp" android:id="@id/tv_base_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="加载失败，点击页面重试" android:drawableLeft="@drawable/icon_webview_error" />
+    </LinearLayout>
+    <include layout="@layout/loading" />
+</FrameLayout>

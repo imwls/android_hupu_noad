@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/iv_color_image" android:layout_width="25.0dip" android:layout_height="25.0dip" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/iv_color_image_cover" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="29.0dip" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_color_image_sel" android:background="@drawable/see_photo_select_color_image_sel" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?news_one_game_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="105.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_body" android:layout_width="fill_parent" android:layout_height="32.0dip" android:weightSum="10.0">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.8">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0sp" android:textColor="?main_color_4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/iv_anchor" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.2">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="10.0sp" android:textColor="?main_color_5" android:gravity="center_vertical" android:id="@id/tv_startTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="" android:layout_alignParentRight="true" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/iv_video_img" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="22.0dip" android:src="?gamelist_icon_video_col" android:layout_centerInParent="true" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0sp" android:textColor="@color/t_cmp_line_red" android:gravity="center_vertical" android:id="@id/tv_video_ing" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:text="直播中" android:layout_alignParentRight="true" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="12.0sp" android:textColor="@color/t_cmp_line_red" android:gravity="center_vertical" android:id="@id/tv_video_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:layout_alignParentRight="true" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:gravity="left" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginLeft="2.0dip" android:text="" android:maxLines="2" android:layout_below="@id/ll_body" />
+</RelativeLayout>

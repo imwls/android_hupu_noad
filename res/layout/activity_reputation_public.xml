@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/camera_public_tv_cancel" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="取消" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/camera_public_tv_title" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="发布口碑" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="15.0sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center|left|top" android:id="@id/camera_public_et_desc" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="5" />
+                <TextView android:gravity="right" android:id="@id/reputation_tv_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <cn.shihuo.modulelib.views.NoScrollGridView android:id="@id/camera_public_gv_imgs" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="1.5dip" android:verticalSpacing="1.5dip" android:numColumns="3" />
+            <include layout="@layout/line_horizontal" />
+            <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="同步到" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <CheckBox android:id="@id/camera_public_cbo_weixin" android:background="@drawable/bg_weixin_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                    <CheckBox android:id="@id/camera_public_cbo_qq" android:background="@drawable/bg_qq_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:button="@null" />
+                    <CheckBox android:id="@id/camera_public_cbo_sina" android:background="@drawable/bg_sina_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@null" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/reputation_img_ad" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:id="@id/camera_public_ll_send" android:background="@color/color_ff4343" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/camera_public_tv_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/camera_public_iv_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

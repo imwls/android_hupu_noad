@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_type_image" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.0" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitCenter" app:backgroundImage="@android:color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

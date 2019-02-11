@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.shihuo.modulelib.views.photodraweeview.MultiTouchViewPager android:id="@id/imgbrower_viewpager" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_gravity="center|top" android:id="@id/imgbrower_tv_pager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="122.0dip">
+        <ScrollView android:id="@id/imgbrower_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@id/imgbrower_tv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:lineSpacingExtra="2.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:id="@id/imgbrower_btn_download" android:background="@mipmap/icon_reputation_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/mll_zan" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignTop="@id/item_reputation_shaiwu_tv_time">
+                <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/imgbrower_btn_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜图中鞋" android:drawableLeft="@mipmap/icon_reputation_search" />
+                <ImageView android:id="@id/iv_count_zan" android:background="@mipmap/icon_praise_2" android:layout_width="15.5dip" android:layout_height="16.5dip" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_count_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/imgbrower_tv_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:drawableLeft="@mipmap/icon_comment_2" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

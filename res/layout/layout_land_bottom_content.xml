@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_a80_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/live_video_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/refesh_player_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="?tv_refresh_icon" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/tv_task_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/video_tv_task_btn" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_task_btn" android:layout_centerVertical="true" />
+        <TextView android:textSize="7.0sp" android:textColor="?main_color_1" android:gravity="center" android:id="@id/tv_task_dot" android:background="?tv_task_dot_bg" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:text="0" android:layout_alignRight="@id/video_tv_task_btn" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/to_reply_img_layout_land" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/tv_task_btn_layout" android:layout_toRightOf="@id/refesh_player_img" android:layout_centerVertical="true">
+        <ImageView android:id="@id/tv_hot_words" android:layout_width="31.0dip" android:layout_height="35.0dip" android:src="?tv_hotline_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/tv_send_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/video_tv_send_btn" android:paddingLeft="4.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_send_btn" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tv_send_btn_layout" android:layout_toRightOf="@id/tv_hot_words" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/input_layout_port" android:background="?tv_input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/danmu_tag_land" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_centerVertical="true">
+                    <TextView android:textSize="10.0sp" android:textColor="#ff5c5c5d" android:id="@id/land_tag1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="彩色" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff5c5c5d" android:id="@id/land_tag2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="弹幕" />
+                </LinearLayout>
+                <ImageView android:id="@id/damu_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="?tv_row_danmu" android:layout_toRightOf="@id/danmu_tag_land" android:layout_centerVertical="true" />
+                <View android:id="@id/split" android:background="?input_split" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/damu_row" />
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/split">
+                    <EditText android:textSize="14.0sp" android:textColor="#ff5c5c5d" android:textColorHint="#ff5c5c5d" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/reply_text_content_land" android:background="#00ffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:hint="发弹幕" android:maxLines="3" android:layout_centerVertical="true" android:imeOptions="actionDone|flagNoExtractUi" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/btn_send_msg_land_layout" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/btn_send_msg_land" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="?tv_send_msg_disable_icon" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

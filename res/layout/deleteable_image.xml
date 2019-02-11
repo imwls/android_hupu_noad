@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:maxWidth="300.0dip" android:maxHeight="300.0dip" android:minWidth="50.0dip" android:minHeight="50.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/delete" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="-50.0dip" android:src="@drawable/delete_upload_img_icon" android:layout_toRightOf="@id/img" />
+    <ImageView android:id="@id/gif_flag2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_send_posts_gif_flag" android:layout_alignRight="@id/img" android:layout_alignBottom="@id/img" />
+</RelativeLayout>

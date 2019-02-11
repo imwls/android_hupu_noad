@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_head_item" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="篮球鞋" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="共包含" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:id="@id/tv_category_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="件商品" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_ad" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_category" android:layout_width="fill_parent" android:layout_height="83.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_free_style" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_item1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        <View android:id="@id/view_line" android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_item2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_278ccf" android:gravity="center" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="查看更多文章" />
+            <ImageView android:background="@mipmap/icon_right_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/rl_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_one" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_category_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特价优惠" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_category_one" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+                </LinearLayout>
+                <View android:layout_gravity="center" android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="26.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_two" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_category_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气最高" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_category_two" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+                </LinearLayout>
+                <View android:layout_gravity="center" android:background="@color/color_f0f0f0" android:layout_width="1.0dip" android:layout_height="26.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_category_four" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_category_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部价格" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_category_four" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/category_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <HorizontalScrollView android:background="@color/color_f6f6f6" android:paddingLeft="10.0dip" android:paddingTop="7.5dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_filter_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider_search_result_filter" android:showDividers="middle" />
+            </HorizontalScrollView>
+            <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/select_expert_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emptyView" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/icon_empty_identify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:gravity="center_horizontal" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="鉴定师系统网络异常请稍后再试..." />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

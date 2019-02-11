@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="270.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/shopping_detail_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <cn.shihuo.modulelib.views.BambooCirclePageIndicator android:id="@id/shopping_detail_indicator" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:fillColor="@color/color_ff4343" app:radius="3.0dip" app:strokeColor="#11000000" />
+        <ImageButton android:id="@id/shopping_detail_imgbtn_play" android:background="@mipmap/ic_shoes_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

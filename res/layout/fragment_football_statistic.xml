@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.base.logic.component.widget.PinnedHeaderXListView2 android:id="@id/list_football_statistic" android:background="?main_color_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/divider" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/nodata_for_football_static" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true" />
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/probar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</RelativeLayout>

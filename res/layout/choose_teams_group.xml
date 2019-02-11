@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/league_layout" android:background="?follow_team_bg" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/leagu_logo" android:layout_width="56.0dip" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:gravity="center" android:id="@id/league_name" android:layout_toRightOf="@id/leagu_logo" android:layout_centerVertical="true" style="@style/txt_choose_league_group" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/follow_team_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/group_img" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/group_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="?follow_team_group_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

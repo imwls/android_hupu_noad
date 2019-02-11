@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/quick_step_layout" android:background="#b2000000" android:layout_width="200.0dip" android:layout_height="70.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/quick_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/quick_step_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_quick_step_icon" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:gravity="center" android:id="@id/quick_time_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快进" />
+                    <TextView android:textSize="14.0sp" android:textColor="?main_color_1" android:gravity="center" android:id="@id/quick_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" />
+                    <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/quick_time_layout" android:layout_centerHorizontal="true">
+                <TextView android:textColor="?main_color_1" android:layout_gravity="center_vertical" android:id="@id/quick_time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:12:16" />
+                <TextView android:textColor="?common_title_txt" android:layout_gravity="center_vertical" android:id="@id/quick_time_split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+                <TextView android:textColor="?common_title_txt" android:layout_gravity="center_vertical" android:id="@id/quick_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:45:19" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

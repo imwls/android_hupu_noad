@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:actualImageScaleType="centerCrop" fresco:actualImageResource="@mipmap/usercenter_head_bg" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/head" android:paddingLeft="25.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="165.0dip">
+                        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <RelativeLayout android:layout_width="30.0dip" android:layout_height="30.0dip">
+                                <ImageView android:id="@id/iv_news" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@mipmap/icon_mine_news" android:layout_centerInParent="true" />
+                                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_tip" android:background="@drawable/message_tip_bg_red" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                                <TextView android:id="@id/tv_point" android:background="@drawable/message_tip_bg_red" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip">
+                                <ImageView android:id="@id/iv_set" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@mipmap/icon_mine_setting" android:layout_centerInParent="true" />
+                                <View android:textColor="@android:color/white" android:gravity="center" android:id="@id/point_set" android:background="@drawable/menu_bradge" android:visibility="gone" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_weight="1.0">
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" fresco:roundAsCircle="true" />
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                                <ViewSwitcher android:id="@id/viewSwitcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/tv_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录  注册" />
+                                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                            <TextView android:textSize="12.0sp" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币" />
+                                            <TextView android:textSize="15.0sp" android:textColor="@color/color_e6e6e6" android:id="@id/tv_jinbi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+                                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_qiandao" android:background="@drawable/bg_qiandao" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip">
+                                                <ImageView android:layout_width="16.0dip" android:layout_height="17.0dip" android:src="@mipmap/icon_qiandao_no" />
+                                                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="签到送金币" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:id="@id/ll_logined" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                            <ImageView android:id="@id/iv_level" android:layout_width="25.0dip" android:layout_height="17.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.5dip" />
+                                        </LinearLayout>
+                                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                            <TextView android:textSize="12.0sp" android:textColor="@color/color_e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金币" />
+                                            <TextView android:textSize="15.0sp" android:textColor="@color/color_e6e6e6" android:id="@id/tv_jinbi2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+                                            <ViewSwitcher android:id="@id/viewSwitcher2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_qiandao1" android:background="@drawable/bg_qiandao" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip">
+                                                    <ImageView android:layout_width="16.0dip" android:layout_height="17.0dip" android:src="@mipmap/icon_qiandao_no" />
+                                                    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="签到送金币" />
+                                                </LinearLayout>
+                                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_qiandao2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip">
+                                                    <ImageView android:layout_width="16.0dip" android:layout_height="17.0dip" android:src="@mipmap/icon_qiandao_yes" />
+                                                    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="已签到" />
+                                                </LinearLayout>
+                                            </ViewSwitcher>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </ViewSwitcher>
+                                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tv_personinfo" android:paddingRight="-7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的主页" android:drawableRight="@mipmap/icon_arrow_right_mine" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_11" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的识货" />
+                    <View android:background="@drawable/line_bolangxian" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/gv_shihuo" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_haitao" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的海淘" />
+                    <View android:background="@drawable/line_bolangxian" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/gv_haitao" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:id="@id/divider_haitao" android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_tools" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="识货必备" />
+                    <View android:background="@drawable/line_bolangxian" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/gv_tools" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/loading" />
+</FrameLayout>

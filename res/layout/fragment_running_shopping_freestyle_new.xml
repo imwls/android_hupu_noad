@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_f7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.ScrollableLayout android:orientation="vertical" android:id="@id/scrollableLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:topMargin="48.0dip">
+                <LinearLayout android:id="@id/running_header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/fragment_running413_header_freestyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cn.shihuo.modulelib.views.widget.tablayout.SlidingTabLayout android:id="@id/fragment_freestyle_tablayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tl_indicator_color="@color/color_dd1712" app:tl_textAllCaps="true" app:tl_textBold="SELECT" />
+                    <include layout="@layout/line_horizontal" />
+                </LinearLayout>
+                <android.support.v4.view.ViewPager android:id="@id/shopping_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </cn.shihuo.modulelib.views.widget.ScrollableLayout>
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/anchorListToTop" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:src="@mipmap/dingbu_icon_normal" />
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin">
+                <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </android.support.v7.widget.Toolbar>
+        </FrameLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+</FrameLayout>

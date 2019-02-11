@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_solid_gray_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="75.0dip" android:layout_height="97.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_shopping_all" />
+        <TextView android:id="@id/item_shopping_tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginBottom="30.0dip" android:text="324" android:layout_alignParentBottom="true" />
+        <View android:id="@id/item_shopping_indicator" android:background="@color/color_ff4343" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

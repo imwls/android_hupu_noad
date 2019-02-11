@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.hupu.games" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <permission android:name="com.hupu.games.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hupu.games.permission.JPUSH_MESSAGE"/>
+    <permission android:name="com.hupu.games.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hupu.games.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <permission android:name="com.hupu.games.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hupu.games.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/icon_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.hupu.games.HuPuApp" android:persistent="true" android:supportsRtl="true" android:theme="@style/app_theme">
+        <meta-data android:name="com.base.core.imageloaderhelper.GlideModuleConfig" android:value="GlideModule"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.34"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.EnableLogging" android:value="false"/>
+        <activity android:alwaysRetainTaskState="true" android:hardwareAccelerated="true" android:name="com.hupu.android.ui.activity.FullVideoActivity" android:screenOrientation="landscape" android:taskAffinity="com.hupu.football.activity.LaunchActivity"/>
+        <activity android:name="com.alipay.android.app.sdk.WapPayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.detail.activity.AdmirationListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.detail.activity.AdmirationPayIconActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:launchMode="singleTop" android:name="com.hupu.games.activity.LaunchActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/Theme.AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="kanqiu"/>
+                <data android:scheme="huputiyu"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.h5.activity.WebViewActivity" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="kanqiu"/>
+                <data android:scheme="huputiyu"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:launchMode="singleTop" android:name="com.hupu.games.activity.AppIndeingActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/Theme.Normal">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.hupu.com" android:pathPattern="/.*.html.*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.activity.PosterActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.activity.PosterVideoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.activity.ExtensiveDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.HupuSplashActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.SHMainActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.EquipeDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.CatReplyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.hupu.games.detail.activity.CatReplyEmptyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:hardwareAccelerated="true" android:name="com.hupu.games.home.TestRecyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.hupu.games.home.activity.HupuHomeActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/Theme.HomeStyle" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.hupu.games.search.activity.IntegratedSearchActivity" android:screenOrientation="portrait" android:theme="@style/act_theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:hardwareAccelerated="true" android:name="com.hupu.games.home.activity.OkHttpTestActivity" android:screenOrientation="portrait" android:theme="@style/act_theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:hardwareAccelerated="true" android:name="com.hupu.games.search.activity.ClassifySearchActivity" android:screenOrientation="portrait" android:theme="@style/act_theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.match.liveroom.activity.LiveRoomActivity" android:screenOrientation="sensor" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.match.liveroom.activity.LiveRoomESActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.huputv.activity.VideoLiveRoomActivity" android:screenOrientation="sensor" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.hupu.games.huputv.activity.VideoDemandActivity" android:screenOrientation="sensor" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.hupu.app.android.bbs.core.module.pictureviewer.ui.activity.PicturesLocalViewerActivity" android:screenOrientation="portrait" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.SetupActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.BlackList" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.NotifyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.SetMoreManageActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.VideoSetActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.LaunchDefaultActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.AboutActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.NetworkInfoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:hardwareAccelerated="true" android:name="com.hupu.games.detail.activity.NewsDetailActivity_h5" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.TopicListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.NewsAtlasActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.PlayerRatingActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.PlayerRatingFootBallActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.UserRateActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.UserRateFootballActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.PhoneBindActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.AccountActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.LoginActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.TalkActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.TalkReportActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.TalkSetActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.account.activity.MyHomePageActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyHomePageEditActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyHomeEditSchoolActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyHomeLocationActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyFavorActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.WorldCupDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.BBSNaviDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.BBSNaviBoardActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.GiftRankListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.ReadedActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MessageActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.HupuOrderActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.PostOrderActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.GoldBeanWebViewActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.ContactsActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyBoxActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.ShakeBoxActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.hupu.games.detail.activity.ReplyListActivity_h5" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.HPPhoneAuthActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/float_dialog"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.PhoneInputActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.AccountLoginActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/float_dialog"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.AreaCodeActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.UserGoldActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyQuizListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.PlayersRatingActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.info.activity.BasketballTeamActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.info.activity.BunchActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.CaipiaoRechargeActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.MyCaipiaoListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.SoccerEventsActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.info.activity.FootballTeamActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.info.activity.PlayerInfoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:hardwareAccelerated="true" android:name="com.hupu.games.match.activity.BasketballShotActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.UserGoldInfoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.NavSortActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.DebugSettingActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/TranslucentTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.BridgeTestActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true" android:taskAffinity="com.hupu.games.activity.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent222049"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.hupu.games.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.hupu.games.wxapi.WXPayEntryActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:launchMode="singleTask" android:name="com.umeng.socialize.media.WBShareCallBackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="cn.jpush.android.ui.PopWinActivity"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.hupu.games.DataProvider" android:exported="false" android:name="cn.jpush.android.service.DataProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.hupu.games.service.JiGuangReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hupu.games.service.JPushResultReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.hupu.games"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.hupu.games.DownloadProvider" android:exported="true" android:name="cn.jpush.android.service.DownloadProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="XIAOMI_APPKEY" android:value="MI-5821713550243"/>
+        <meta-data android:name="XIAOMI_APPID" android:value="MI-2882303761517135243"/>
+        <provider android:authorities="com.hupu.games.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <receiver android:name="cn.jpush.android.service.PluginHuaweiPlatformsReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_ablitity" android:value="successRateAnalytics"/>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="1121952"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="c8e07c3af21c1dcbdd688537"/>
+        <receiver android:name="com.hupu.games.HuPuApp">
+            <intent-filter>
+                <action android:name="NOTIFY_QUIT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="5099bd95527015351b0000f4"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Umeng"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="78de4faa3e2f29d2d9972999842c41ca"/>
+        <meta-data android:name="HUTJ_APPKEY" android:value="b9798f95a7394de0"/>
+        <meta-data android:name="INTERVAL_DAYS" android:value="30"/>
+        <activity android:excludeFromRecents="true" android:name="com.umeng.socialize.editorpage.ShareActivity" android:theme="@style/Theme.UMDefault"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.HupuCoinMemberActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.HupuDollorOrderActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.HupuDollorPostOrderActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:name="com.hupu.games.update.UpdateService" android:process=":remote"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.activity.LauncherMainActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupThreadsListNewActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupBoardDetailActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupNewThreadActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupNewReplyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.common.ui.activity.HupuNewReplyActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupNewVideoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupVoteActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupAddVideoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupVideoShowActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.common.ui.activity.VideoRecordActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.common.ui.activity.VideoMainActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.common.ui.activity.BBSPhotoSelectActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.hupu.app.android.bbs.core.module.pictureviewer.ui.activity.PicturesViewerActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupReplyDetailsActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.video.InputActivity" android:screenOrientation="behind" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.msgcenter.ui.activity.NoticeMessageActivity" android:parentActivityName="com.hupu.app.android.bbs.core.module.launcher.ui.activity.LauncherMainActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupThreadActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.ThreadFullVideoActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="layoutDirection|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.video.BBSFullVideoActivity" android:screenOrientation="landscape" android:theme="@style/BBSAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="layoutDirection|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.video.BBSPortFullVideoActivity" android:screenOrientation="portrait" android:theme="@style/BBSAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="layoutDirection|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.video.HupuPortFullVideoActivity" android:screenOrientation="portrait" android:theme="@style/BBSAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="layoutDirection|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.launcher.ui.video.HupuLandFullVideoActivity" android:screenOrientation="landscape" android:theme="@style/BBSAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.XiaomiDataActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <meta-data android:name="QBSDKAppKey" android:value="b2AIZh2EGH7zUeIUWCER3ysy"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.h5.activity.CreditActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.HupuVideoListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.user.ui.activity.UserCenterCardActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/UserSpaceDialogTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.user.ui.activity.UserThreadListsActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.match.activity.LiveAtlasActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/full_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.NewsNativeAtlasActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.detail.activity.MsgListActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.FollowLeaguesNewActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.FollowTeamsNewActivityInit" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.account.activity.FollowTeamsSetupActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.EquipCommentActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.equipment.activity.EquipmentRankActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.appraisal.ChoiceAppraisalActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:name="com.hupu.games.home.activity.appraisal.ChoiceAppraModeActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/Transparent"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.appraisal.PublicationAppralActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.appraisal.MyAppraisalActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.appraisal.AddEuipActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/add_equip" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.games.home.activity.TestHeaderActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:name="com.hupu.app.android.bbs.core.common.ui.activity.MyCameraActivity" android:screenOrientation="portrait" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.games.home.activity.VerticalScreenActivity" android:taskAffinity="com.hupu.games.activity.LaunchActivity" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:name="com.hupu.games.service.AppReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.taobao.android.hotfix.IDSECRET" android:value="12427-1"/>
+        <meta-data android:name="com.taobao.android.hotfix.APPSECRET" android:value="56f8f797686bab759f9212b976109c12"/>
+        <meta-data android:name="com.taobao.android.hotfix.RSASECRET" android:value="MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCQ0fyXPTrYzBph/rUXavsTcjGENua69OTDI9xcq7FHts4UdowD4jn/U+EKxwcy+ahlKcZPxPfGygq4sJIwKZf6WHv467hzBDwwWbEBWUZEE6eZDN7I/ev8KY4x/j8ICKJJbsn6RJCUxYt+ZFADbk+u1YhiohzEpmlYB7R8FAb1f/DhLKfY71h0izUjWeQ2HfG9GRCMt4FlbBjkOCl8YKEMy+CwriYpyf81dYs6PGvVilSQ9gNk1c4YQVkdnC5IBzx7gbZuH1Jg0Vys9rwDP/6dAcvTQuQftH0+Kx33Uxv0WIo7eff0obbKZbmwyQJGpnRtc+5gooeQi4na+wTslMj1AgMBAAECggEBAIGU81AcgJhWYNEIiN9wYUKwLjBgs6nb0Qnu/5GIK3PA1bsnq/cZqM2XL0lmd0GcdJo4e/MKiq68QEWr8NLZlNxz6lH8EaoQww58Ys6TJDVr5M4k3v+3fT2/rTV8isfUeen9EQs36KrF7CBm/9ViEjidZpDi/5zSTnZvRoazoNpvjPOluKTZBAOh0g8Tz3eTC8qtO45uKDI72hu4Ip73lhJc/LPmn0IXbn+eHv32XqmgDXBU5yDONgGh3HvqgdbfAwLduiXOODKDWOnBWxEFGQ9Rtr9/Slpx94/4rbLMfvMb8SKy18+dVMLf7AQ0N3M0ZdK7GgdR2iXarnxUQhWJ6y0CgYEAwbE6TPkPP/FVbcIlA9lfM6qA9fd2pWHZkBtQlgecNpMwr3gD8cx6k2RUKYhvvhMkZcdi2JLSzoBjLA4+M231U/JpGujhI2mYcvdJ5kVhDKYwVLaN0MpJf0EGIsLJGO7xZIm+1smLb4VJCMy8nvpYjQui5szJdOrvEYKGnYtu9R8CgYEAv2gX6jS9HGHHiXsn6sbcTMvxKhGvjudSnwiSFqCTGSHMIBmkUbBqBJJP1S4p46A4t/D9afcDOero7Yd59s/iws39bXPx6/XJvPHljGuyjlK1qA2ovBo7mqavCwl3wHc4z22jJJ12tjBZ1dX8Zxt7D5jRgIuDvwayhNyLTb3UC2sCgYEAinRkh2c1hnC9r2KrUPAORIFqA+jr79ZdTcyos0YnXT+j+pogv7R6HmgGXVYBAm7ugq6fMs7pT+GognJ/9gVw65wJk8nKPaUa63tnYOpRMFiPjc6c2xXuqb9SYoC4fVE4TrTELQcO3B37kgXAAyhTKieaP789do0FbY/PKEjmfOMCgYA8Mj2LL8jl2y6I402bfa0dDeqro2JGHCQU1foz2Y5JkiKDWe0er8+33lfzIJCWAPa1irn4EHJYTbOxuDC4WYrkXyo7uQI1hlhK7vyVW+2M6yAsWRdfCRUDvzY/z1t1EUmxmrZ7NnZ2N+CY6rJ1ruPV9Oa2eaoWcsHEHSRGb9P3PwKBgQCbpSlfM9ZSSua3ufVr9qR/LeEeawJ6FMlPEKj6LqPfyPBLAJPLP6J2wpxfeUw0J2AKFMInZsy7MQqn0o8QWcvpy53m2jdoD6AqDNroX272ScadsIvMgv789RedtOWu1KtJs/QjtDffnuNgb1rR+x8rn2pJrsKZuHf5CSPaxLOylA=="/>
+        <meta-data android:name="PARTNER_CODE" android:value="hupu"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupBoardListActivity" android:screenOrientation="portrait" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupPostsReportActivity" android:screenOrientation="portrait" android:theme="@style/act_theme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.setting.ui.activity.SettingActivity" android:screenOrientation="portrait" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.GroupHotReplyListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.hupu.app.android.bbs.core.module.group.ui.activity.BBSMessageListActivity" android:screenOrientation="portrait" android:theme="@style/act_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hupu.app.android.bbs.core.common.ui.activity.BaseWebActivity" android:screenOrientation="portrait" android:theme="@style/act_theme"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:name="com.jockeyjs.JockeyService"/>
+        <meta-data android:name="BUG_HD_SDK_GENERAL_KEY" android:value="56c3827ced12ad36d3880809cbcc6dce"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.ColumnIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:label="白菜列表" android:name="cn.shihuo.modulelib.views.activitys.BaiCaiSearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.LoadCustomUrlActivity" android:screenOrientation="portrait"/>
+        <activity android:label="登录" android:name="cn.shihuo.modulelib.views.activitys.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:label="搜索" android:name="cn.shihuo.modulelib.views.activitys.NewSearch404Activity" android:screenOrientation="portrait"/>
+        <activity android:label="搜索结果" android:name="cn.shihuo.modulelib.views.activitys.NewSearchResult404Activity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.activitys.WXChooseImageActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货优惠" android:name="cn.shihuo.modulelib.views.activitys.YouHuiActivity" android:screenOrientation="portrait"/>
+        <activity android:label="详情" android:name="cn.shihuo.modulelib.views.activitys.YouHuiDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="海淘优惠" android:name="cn.shihuo.modulelib.views.activitys.HaiTaoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货发现" android:name="cn.shihuo.modulelib.views.activitys.FaXianActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货团购" android:name="cn.shihuo.modulelib.views.activitys.TuanGouActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货运动鞋" android:name="cn.shihuo.modulelib.views.activitys.ShoesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.BaseWebDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="优惠券" android:name="cn.shihuo.modulelib.views.activitys.YouHuiQuanActivity" android:screenOrientation="portrait"/>
+        <activity android:label="好礼兑换" android:name="cn.shihuo.modulelib.views.activitys.YouHuiQuanDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:label="我的收藏" android:name="cn.shihuo.modulelib.views.activitys.ShouCangActivity" android:screenOrientation="portrait"/>
+        <activity android:label="赞过的商品" android:name="cn.shihuo.modulelib.views.activitys.ZanActivity" android:screenOrientation="portrait"/>
+        <activity android:label="收货地址" android:name="cn.shihuo.modulelib.views.activitys.AddressListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="收货地址" android:name="cn.shihuo.modulelib.views.activitys.AddressEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="设置" android:name="cn.shihuo.modulelib.views.activitys.SetActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.WebViewOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:label="评价宝贝" android:name="cn.shihuo.modulelib.views.activitys.SendCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.PictureViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="评价宝贝" android:name="cn.shihuo.modulelib.views.activitys.CommentListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.ImagesViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="评价成功" android:name="cn.shihuo.modulelib.views.activitys.CommentSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="发布" android:name="cn.shihuo.modulelib.views.activitys.ShaiwuSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="我的文章" android:name="cn.shihuo.modulelib.views.activitys.ShaiWuMineActivity" android:screenOrientation="portrait"/>
+        <activity android:label="全部评论" android:name="cn.shihuo.modulelib.views.activitys.ShaiwuCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="详情" android:name="cn.shihuo.modulelib.views.activitys.ShaiwuDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="晒单成功" android:name="cn.shihuo.modulelib.views.activitys.ShaiwuSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="晒单成功" android:name="cn.shihuo.modulelib.views.activitys.BasePicImageActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货晒物" android:name="cn.shihuo.modulelib.views.activitys.ShaiwuChannelActivity" android:screenOrientation="portrait"/>
+        <activity android:label="我的钱包" android:name="cn.shihuo.modulelib.views.activitys.WalletActivity" android:screenOrientation="portrait"/>
+        <activity android:label="兑换码" android:name="cn.shihuo.modulelib.views.activitys.DuiHuanMaActivity" android:screenOrientation="portrait"/>
+        <activity android:label="兑换成功" android:name="cn.shihuo.modulelib.views.activitys.ExchangeSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="评论详情" android:name="cn.shihuo.modulelib.views.activitys.SingleCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="兑换记录" android:name="cn.shihuo.modulelib.views.activitys.ExchangeHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="确认订单" android:name="cn.shihuo.modulelib.views.activitys.WebViewJieSuanActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.activitys.ShoppingCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.DaigouDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="使用礼品卡" android:name="cn.shihuo.modulelib.views.activitys.SelectLipinkaActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/str_app_title_htsh" android:name="cn.shihuo.modulelib.views.activitys.HaiTaoHome420Activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/str_app_title_imgbrower" android:name="cn.shihuo.modulelib.views.activitys.ImageBrowerActivity" android:screenOrientation="portrait" android:theme="@style/PhotoTheme"/>
+        <activity android:label="@string/str_app_title_imgbrower" android:name="cn.shihuo.modulelib.views.activitys.ImageBrowerActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.wxchoose.WxChooseBrowerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.FenLeiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.DaigouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.zhuanqu.RunningActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="有用口碑" android:name="cn.shihuo.modulelib.views.activitys.ReputationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.zhuanqu.PhotoBrowerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ShoppingWebDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.SearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ComponentShoppingListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ComponentShoppingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货团购" android:name="cn.shihuo.modulelib.views.activitys.TuanGou400Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.activitys.MessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.SearchPicsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="true" android:label="全网搜索" android:name="cn.shihuo.modulelib.views.activitys.SearchAllWebsiteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="详情" android:name="cn.shihuo.modulelib.views.activitys.ShiwuDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.SelectPhotoBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.CameraSeletePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.SelectPhotoBrowerBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.CameraBrowerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.SubscriptionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ColumnDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.shihuo.modulelib.views.activitys.VideoActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen.BlackBackground" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="cn.shihuo.modulelib.views.widget.camera.CameraEditActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.widget.camera.CameraPublicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ShoppingLibListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="发现" android:name="cn.shihuo.modulelib.views.activitys.Find417Activity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.HaiTaoBaiCaiSearchActivity" android:screenOrientation="portrait"/>
+        <service android:name="cn.shihuo.modulelib.views.service.UpdateService" android:process=":update"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.PersonInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:label="赞过的用户" android:name="cn.shihuo.modulelib.views.activitys.PersonsOfPraiseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:label="通知消息" android:name="cn.shihuo.modulelib.views.activitys.MessageListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="消息" android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.activitys.MessageTotalActivity" android:screenOrientation="portrait"/>
+        <activity android:label="识货小助手" android:name="cn.shihuo.modulelib.views.activitys.ShihuoHelperActivity" android:screenOrientation="portrait"/>
+        <activity android:label="我的鉴定" android:name="cn.shihuo.modulelib.views.activitys.IdentifyListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="发布鉴定" android:name="cn.shihuo.modulelib.views.activitys.IdentifySendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:label="最近浏览" android:name="cn.shihuo.modulelib.views.activitys.BrowseHistoryListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="推荐店铺" android:name="cn.shihuo.modulelib.views.activitys.RecommendShopActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="我的礼品" android:name="cn.shihuo.modulelib.views.activitys.MineLiPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="金币记录" android:name="cn.shihuo.modulelib.views.activitys.GoldRecordingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="详情" android:name="cn.shihuo.modulelib.views.activitys.AlibabaH5WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="栏目订阅" android:name="cn.shihuo.modulelib.views.activitys.ColumnListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="降价通知" android:name="cn.shihuo.modulelib.views.activitys.SaleNoticeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="cn.shihuo.modulelib.views.zhuanqu.ReputationPublicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="球鞋鉴别" android:name="cn.shihuo.modulelib.views.activitys.SelectExpertActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="待评价" android:name="cn.shihuo.modulelib.views.activitys.EvaluateListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.HuaTiActivity" android:screenOrientation="portrait"/>
+        <activity android:label="全网口碑" android:name="cn.shihuo.modulelib.views.activitys.ReputationAllActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.HuaTiListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.ComponentTypesActivity"/>
+        <activity android:label="个人信息" android:name="cn.shihuo.modulelib.views.activitys.UserBaseInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="设置昵称" android:name="cn.shihuo.modulelib.views.activitys.ModifyNickNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:label="优惠券" android:name="cn.shihuo.modulelib.views.activitys.CouponListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="识货拼团" android:name="cn.shihuo.modulelib.views.activitys.PinTuanDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.WebViewOrderActivityV470" android:screenOrientation="portrait"/>
+        <activity android:label="高端潮流" android:name="cn.shihuo.modulelib.views.zhuanqu.LightLuxuryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="球星上脚" android:name="cn.shihuo.modulelib.views.activitys.StarOnFootActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="看图选鞋" android:name="cn.shihuo.modulelib.views.activitys.SeePhotoSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/str_app_title_imgbrower" android:name="cn.shihuo.modulelib.views.activitys.ImageBrowerForSeePhotoSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:label="用途选鞋" android:name="cn.shihuo.modulelib.views.activitys.ShoeUseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="内容收藏" android:name="cn.shihuo.modulelib.views.activitys.CollectionGoodsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="店铺收藏" android:name="cn.shihuo.modulelib.views.activitys.CollectionShopsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="全网白菜" android:name="cn.shihuo.modulelib.views.activitys.AllWebBaiCaiListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="潮流折扣专区" android:name="cn.shihuo.modulelib.views.activitys.FreestyleSaleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="品牌特卖" android:name="cn.shihuo.modulelib.views.activitys.SampleSaleActivity" android:screenOrientation="portrait"/>
+        <activity android:label="最近浏览" android:name="cn.shihuo.modulelib.views.activitys.BrowseRecentlyActivity" android:screenOrientation="portrait"/>
+        <activity android:label="商品活动" android:name="cn.shihuo.modulelib.views.zhuanqu.ShoppingEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="流行元素" android:name="cn.shihuo.modulelib.views.activitys.FashionElementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.TestHupuActivity"/>
+        <activity android:label="穿搭课堂" android:name="cn.shihuo.modulelib.views.activitys.WearLessonActivity" android:screenOrientation="portrait"/>
+        <activity android:label="潮流二级类目" android:name="cn.shihuo.modulelib.views.activitys.FreeStyleActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.ZhuanQuSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.zhuanqu.PhoneListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="团购搜索" android:name="cn.shihuo.modulelib.views.activitys.TuanGouSearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.PrefectureListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.PrefectureSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:label="品牌列表" android:name="cn.shihuo.modulelib.views.activitys.BrandListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.PZGActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.PZGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.SelectShoesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.zhuanqu.detail.ShoppingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.zhuanqu.detail.digit3csupplier.Digit3cOfSupplierActivity" android:screenOrientation="portrait"/>
+        <activity android:label="排行榜" android:name="cn.shihuo.modulelib.views.activitys.PaiHangBangIndexActivity" android:screenOrientation="portrait"/>
+        <activity android:label="热销排行" android:name="cn.shihuo.modulelib.views.activitys.PaiHangBangListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="cn.shihuo.modulelib.views.activitys.PaiHangBangDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="鉴别师记录" android:name="cn.shihuo.modulelib.views.activitys.ExpertIdentifyListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.react.ReactNativeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="全部品牌" android:name="cn.shihuo.modulelib.views.activitys.DressBrandListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.shihuo.modulelib.views.activitys.SpecialBrandListActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.hupu.games.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.hupu.games.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.hupu.games"/>
+        <activity android:name="com.ali.auth.third.ui.webview.BaseWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.ali.auth.third.ui.LoginWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.ali.auth.third.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.ali.auth.third.accountlink.ui.BindResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.ali.auth.third.accountlink.ui.UnbindWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.ali.auth.third.ui.QrLoginConfirmActivity"/>
+        <activity android:name="com.ali.auth.third.ui.QrLoginActivity" android:theme="@style/ali_auth_qr_activity_style"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.alibclinkpartner.ui.ALPWebviewActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.alibclinkpartner.ui.ALPCallbackActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.alibclinkpartner.ui.ALPEntranceActivity">
+            <intent-filter>
+                <action android:name="com.alibaba.intent.action.GETWAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="linkpartner" android:pathPrefix="/entrance" android:scheme="tbopen"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alibaba.baichuan.android.trade.ui.AlibcWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alibaba.baichuan.android.trade.ui.AlibcBackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="alisdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+        <service android:exported="false" android:name="anetwork.channel.aidl.NetworkService">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="mtopsdk.xstate.XStateService">
+            <intent-filter>
+                <action android:name="mtopsdk.xstate.aidl.IXState"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="android.test.runner"/>
+        <activity android:exported="false" android:name="com.alibaba.baichuan.trade.biz.auth.AlibcAuthActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.alibaba.sdk.android.feedback.windvane.CustomHybirdActivity" android:screenOrientation="portrait" android:theme="@style/ali_feedback_contentoverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.alibaba.sdk.android.feedback.impl.ErrorPageActivity" android:screenOrientation="portrait" android:theme="@style/ali_feedback_contentoverlay"/>
+        <service android:name="com.alibaba.mtl.appmonitor.AppMonitorService"/>
+        <provider android:authorities="com.hupu.games.alifb_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.alibaba.sdk.android.feedback.util.FBFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/alifb_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.dylanvann.fastimage.OkHttpProgressGlideModule" android:value="GlideModule"/>
+        <activity android:name="com.masteratul.exceptionhandler.DefaultErrorScreen"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:theme="@android:style/Theme.Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <service android:exported="true" android:name="com.meizu.cloud.pushsdk.NotificationService"/>
+        <receiver android:exported="false" android:name="com.meizu.cloud.pushsdk.SystemReceiver">
+            <intent-filter>
+                <action android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

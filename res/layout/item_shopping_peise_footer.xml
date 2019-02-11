@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_solid_gray_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="75.0dip" android:layout_height="97.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/ic_shopping_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+        <TextView android:textColor="@color/color_666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收取\n配色" />
+    </LinearLayout>
+</LinearLayout>

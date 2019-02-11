@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="?v0_index_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="13.0dip" android:textColor="?my_content_color" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_centerVertical="true" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?dialog_title_text_color" android:id="@id/tv_no" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="暂不" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="13.0dip" android:textColor="?main_color_2" android:gravity="center" android:id="@id/tv_set" android:background="?hot_default" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="设为默认" android:layout_toLeftOf="@id/tv_no" android:layout_centerVertical="true" />
+</RelativeLayout>

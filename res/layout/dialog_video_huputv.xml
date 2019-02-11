@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hupu_tv_item" android:layout_width="wrap_content" android:layout_height="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:gravity="center" android:id="@id/huputv_name" android:background="?video_entrance_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginRight="5.0dip" android:maxWidth="200.0dip" android:singleLine="true" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/hptv_name_no_bg" android:layout_width="wrap_content" android:layout_height="34.0dip" />
+</RelativeLayout>

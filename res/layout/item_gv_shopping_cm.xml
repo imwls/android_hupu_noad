@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_size_ll" android:background="@drawable/selector_shopping_style" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.shihuo.modulelib.views.widget.fonttextview.PriceFontTextView android:textSize="17.0sp" android:textColor="@color/color_333333" android:id="@id/item_size_tv_cm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:id="@id/item_size_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_bar_layout" />
+    <com.hupu.app.android.bbs.core.common.dal.h5.view.JockeyJSWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

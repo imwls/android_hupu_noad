@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/line_horizontal" />
+    <cn.shihuo.modulelib.views.widget.tablayout.SlidingTabLayout android:id="@id/tabLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tl_indicator_color="@color/color_dd1712" app:tl_textAllCaps="true" app:tl_textBold="SELECT" />
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

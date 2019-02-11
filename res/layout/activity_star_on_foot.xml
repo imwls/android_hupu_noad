@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0" app:tabIndicatorColor="@color/color_dd1712" app:tabIndicatorHeight="2.0dip" app:tabMode="scrollable" app:tabGravity="fill" app:tabTextAppearance="@style/TextAppearance1" app:tabTextColor="@color/color_333333" app:tabSelectedTextColor="@color/color_dd1712" app:tabPaddingStart="0.0dip" app:tabPaddingEnd="0.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/menu" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/star_on_foot_menu" />
+    </LinearLayout>
+    <cn.shihuo.modulelib.views.MainTabViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

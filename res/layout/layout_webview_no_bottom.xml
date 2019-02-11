@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_webview_title" />
+    <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/ad_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar" />
+    <include android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_below="@id/layout_title_bar" layout="@layout/layout_webview_error" />
+</RelativeLayout>

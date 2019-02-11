@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.shihuo.modulelib.views.X5SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.shihuo.modulelib.views.BaseWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </cn.shihuo.modulelib.views.X5SwipeRefreshLayout>
+    <cn.shihuo.modulelib.views.widget.WebProgressView android:id="@id/webProgress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <include layout="@layout/retry" />
+    <include layout="@layout/tomall_guide" />
+</FrameLayout>

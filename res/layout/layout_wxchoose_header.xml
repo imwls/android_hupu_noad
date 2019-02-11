@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wxchoose_rl_header" android:background="@color/color_wxchoose_toolbar" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/wxchoose_imgbtn_back" android:background="@drawable/ic_arrow_back_white_24dp" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/wxchoose_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图片" android:layout_toRightOf="@id/wxchoose_imgbtn_back" android:layout_centerVertical="true" />
+    <TextView android:enabled="false" android:textSize="15.0sp" android:textColor="@color/selector_send_textview" android:gravity="center" android:id="@id/wxchoose_btn_send" android:background="@drawable/bg_wx_send" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

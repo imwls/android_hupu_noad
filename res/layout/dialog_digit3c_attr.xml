@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/popupWindowClickbleArea" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="@color/color_white" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.flexbox.FlexboxLayout android:id="@id/flexboxlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:flexWrap="wrap" app:alignItems="flex_start" app:alignContent="flex_start" app:dividerDrawableHorizontal="@drawable/divider_nodetail" app:showDivider="beginning|middle" />
+    </LinearLayout>
+</ScrollView>

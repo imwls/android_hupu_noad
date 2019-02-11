@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStartWithNavigation="0.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/tv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="清空" />
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="57.0dip">
+                <ImageView android:background="@drawable/browsehistory_empty_icon" android:layout_width="89.0dip" android:layout_height="72.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="暂无浏览记录" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

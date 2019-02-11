@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/downSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/downSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M" android:singleLine="true" android:layout_toLeftOf="@id/splid" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/splid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:singleLine="true" android:layout_toLeftOf="@id/fileSize" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/fileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M" android:singleLine="true" android:layout_alignParentRight="true" />
+        <com.hupu.android.ui.view.HpProgressView android:id="@id/downProgress" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

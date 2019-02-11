@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:id="@id/layout_discovery" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/img_logo" android:layout_width="@dimen/set_item_logo" android:layout_height="@dimen/set_item_logo" android:layout_marginLeft="@dimen/set_item_img_padding" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height" android:layout_marginLeft="@dimen/set_item_img_padding">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/txt_name" style="@style/txt_item_more" />
+            <com.hupu.android.ui.view.RedDotTextView android:id="@id/red_point" android:background="?bg_red_dot_none" android:layout_marginLeft="5.0dip" android:layout_marginTop="12.0dip" android:layout_toRightOf="@id/txt_name" android:layout_alignParentTop="true" app:filter_type="mask" app:has_filter="true" style="@style/txt_reddot" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?reddot_color_num" android:id="@id/red_point_number" android:background="?icon_reddot_num" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="999" android:layout_toRightOf="@id/txt_name" android:layout_alignParentTop="true" style="@style/txt_reddot_number" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/red_point_txt" android:background="?bg_red_dot_txt" android:text="文字" android:layout_toLeftOf="@id/right_arrow" android:layout_centerVertical="true" style="@style/txt_reddot_text" />
+            <com.hupu.android.ui.view.RedDotTextView android:id="@id/red_point_link" android:background="?bg_red_dot_txt" android:text="文字链" android:layout_toLeftOf="@id/right_arrow" android:layout_centerVertical="true" style="@style/txt_reddot_text" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/right_arrow" android:src="?common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/img_linear_arrow_right_setup" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/child_divider_line" android:background="?v0_main_color_line01" android:layout_alignParentBottom="true" style="@style/view_divider1" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

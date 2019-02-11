@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/report_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="请选择举报理由" />
+    <com.hupu.android.ui.colorUi.ColorView android:id="@id/divider" android:visibility="gone" style="@style/view_divider1" />
+</LinearLayout>

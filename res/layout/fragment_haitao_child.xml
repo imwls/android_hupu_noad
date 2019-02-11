@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.shihuo.modulelib.views.VerticalSwipeRefreshLayout android:orientation="vertical" android:id="@id/banner_haitao_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.shihuo.modulelib.views.BambooScrollView android:id="@id/banner_haitao_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/banner_haitao_view" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <cn.shihuo.modulelib.views.NoScrollGridView android:id="@id/banner_haitao_gv_category" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="5" />
+            <include layout="@layout/line_horizontal" />
+            <LinearLayout android:orientation="vertical" android:id="@id/banner_haitao_ll_types" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <cn.shihuo.modulelib.views.NoScrollGridView android:id="@id/banner_haitao_gv_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
+        </LinearLayout>
+    </cn.shihuo.modulelib.views.BambooScrollView>
+</cn.shihuo.modulelib.views.VerticalSwipeRefreshLayout>

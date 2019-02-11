@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <cn.shihuo.modulelib.views.BambooScrollView android:orientation="vertical" android:id="@id/shopping_detail_scrollview" android:background="@android:color/white" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/template_shopping_detail_header_v550" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/shopping_detail_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" android:singleLine="true" />
+                <include layout="@layout/include_detail_phb" />
+                <FrameLayout android:id="@id/shopping_detail_fl_attr_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip">
+                    <RelativeLayout android:id="@id/digit3c_detail_rl_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/digit3c_detail_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:maxLines="2" android:lineSpacingExtra="3.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff278ccf" android:gravity="center" android:id="@id/digit3c_detail_tv_detail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="详情" android:drawableRight="@mipmap/icon_right_next" android:drawablePadding="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView android:id="@id/digit3c_detail_rv_attr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <cn.shihuo.modulelib.views.zhuanqu.widget.bezier.BezierMoreLayout android:id="@id/digit3c_detail_bezier_more" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/digit3c_detail_tv_recommend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="为你推荐" />
+            <FrameLayout android:id="@id/digit3c_detail_fl_recommend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:background="@drawable/bg_digit3c_size" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="75.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:id="@id/digit3c_detail_recommend_tv_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="13.0dip" android:maxLines="3" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/digit3c_detail_recommend_tv_store" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:drawableLeft="@mipmap/icon_shop_digit3c" android:drawablePadding="2.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                        <Button android:textSize="13.0sp" android:textColor="@color/selector_buy_red" android:gravity="center" android:id="@id/digit3c_detail_recommend_btn_buy" android:background="@drawable/selector_btn_buy" android:layout_width="wrap_content" android:layout_height="27.0dip" android:minWidth="55.0dip" android:text="购买" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/digit3c_detail_recommend_tv_discount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/bg_digit3c_size" android:paddingLeft="7.0dip" android:paddingTop="6.0dip" android:paddingRight="7.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/digit3c_detail_recommend_img" android:layout_width="80.0dip" android:layout_height="80.0dip" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="centerCrop" />
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/digit3c_detail_tv_version_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="版本" />
+            <android.support.v7.widget.RecyclerView android:id="@id/digit3c_detail_rv_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/digit3c_detail_ll_attr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机行情" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="识货APP为你收集" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/digit3c_detail_ll_color" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/digit3c_detail_ll_size" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <include layout="@layout/template_shopping_detail_ceping" />
+            <include layout="@layout/template_shopping_detail_reputation_v550" />
+            <include layout="@layout/template_shopping_detail_like_v550" />
+        </LinearLayout>
+    </cn.shihuo.modulelib.views.BambooScrollView>
+    <include layout="@layout/toolbar" />
+</FrameLayout>

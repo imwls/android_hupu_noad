@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?common_bg_alert" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="下载中" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="18.0dip" android:maxWidth="240.0dip" android:progress="0" android:layout_below="@id/title_text" style="@style/ProgressBar_Mini" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_5" android:id="@id/process_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/progress" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt5" android:textColor="?main_color_5" android:id="@id/total_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/progress" android:layout_alignParentRight="true" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt2" android:textColor="?main_color_4" android:id="@id/cancel_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="取消更新" android:layout_below="@id/process_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_mrbt_photo" android:layout_width="113.0dip" android:layout_height="113.0dip" android:layout_marginRight="10.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_444444" android:id="@id/tv_mrbt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="title" android:maxLines="2" android:layout_toRightOf="@id/iv_mrbt_photo" />
+    <TextView android:id="@id/tv_mrbt_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="到手价 " android:layout_toRightOf="@id/iv_mrbt_photo" android:layout_below="@id/tv_mrbt_title" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_d33333" android:id="@id/tv_mrbt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="300" android:layout_toRightOf="@id/tv_mrbt_hint" android:layout_alignBottom="@id/tv_mrbt_hint" />
+    <TextView android:textColor="@color/color_a4a4a4" android:id="@id/tv_mrbt_business" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:drawableLeft="@mipmap/merchant_icon" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/iv_mrbt_photo" android:layout_below="@id/tv_mrbt_hint" android:layout_centerVertical="true" />
+</RelativeLayout>

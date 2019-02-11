@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.base.logic.component.widget.HupuPinnedHeaderListView android:id="@id/lineup_list" android:background="?game_bg_lineup_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="@color/transform" android:dividerHeight="0.0dip" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/txt_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

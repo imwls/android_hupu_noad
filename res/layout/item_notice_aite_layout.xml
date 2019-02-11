@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/iv_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:src="?bbs_def_header" app:riv_oval="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:id="@id/tv_title_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:text="21321" android:layout_toRightOf="@id/iv_head" />
+        <TextView android:textSize="16.0sp" android:textColor="?main_color_5" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="发表了评论并@了你" android:layout_toRightOf="@id/iv_head" android:layout_below="@id/tv_title_username" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:text="7小时前" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="?bbs_main_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:background="?common_bg_title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:textSize="17.0sp" android:id="@id/txt_title" android:text="详情" style="@style/txt_title" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.base.logic.component.widget.PhotoVideoSwitchView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

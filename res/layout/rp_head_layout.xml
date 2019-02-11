@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/top_title_layout" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/top_title" android:background="?v0_main_bg_color_4" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="?main_color_1" android:id="@id/top_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="本场攒人品" android:layout_centerVertical="true" />
+            <View android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</RelativeLayout>

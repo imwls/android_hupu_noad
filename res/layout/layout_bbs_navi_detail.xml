@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back" style="@style/btn_back" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_title" style="@style/txt_title" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.recyler.view.refreshlayout.RefreshLayout android:id="@id/ptrlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar" cube_ptr:ptr_resistance="1.7" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0" cube_ptr:ptr_duration_to_close="500" cube_ptr:ptr_duration_to_close_header="500" cube_ptr:ptr_pull_to_fresh="true" cube_ptr:ptr_keep_header_when_refresh="true" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false" />
+    </com.hupu.android.recyler.view.refreshlayout.RefreshLayout>
+</RelativeLayout>

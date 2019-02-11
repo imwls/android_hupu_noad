@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/guess_layout_port" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/top_info" android:background="?main_color_2" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/guess_close" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?player_close" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0sp" android:textColor="?main_color_4" android:ellipsize="end" android:gravity="center" android:id="@id/time_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="10秒后关闭" android:singleLine="true" android:layout_below="@id/guess_close" android:layout_alignParentRight="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/usr_title" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:text="" android:layout_toLeftOf="@id/time_sub" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="?main_color_4" android:id="@id/grues_descrip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="30%的人选择选项1" android:layout_below="@id/usr_title" />
+        </RelativeLayout>
+        <View android:id="@id/line1" android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/top_info" />
+        <RelativeLayout android:id="@id/grid_layout" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="81.0dip" android:layout_below="@id/line1">
+            <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="81.0dip" android:overScrollMode="never">
+                <com.hupu.games.huputv.views.AutoWidthGridView android:gravity="center" android:id="@id/guess_name_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_layout" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/grid_layout">
+            <View android:id="@id/line2" android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="15.0sp" android:textColor="?bg_gift_coin_font" android:gravity="center" android:id="@id/enter_commit" android:background="?main_color_1" android:layout_width="100.0dip" android:layout_height="45.0dip" android:text="确认提交" android:layout_below="@id/line2" android:layout_alignParentRight="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_1" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请选择一个选项" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

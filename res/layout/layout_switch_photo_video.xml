@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="205.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/id_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="?danmu_input_text_cor" android:gravity="center" android:id="@id/tv_video" android:background="?pv_press_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频" />
+        <TextView android:textSize="12.0sp" android:textColor="?danmu_input_text_cor" android:gravity="center" android:id="@id/tv_photo" android:background="?pv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="图片" android:layout_toRightOf="@id/tv_video" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_num" android:background="?pv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

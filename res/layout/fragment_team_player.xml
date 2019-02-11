@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.hupu.android.ui.colorUi.ColorListView android:id="@id/list_player" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?v0_main_color_line01" android:dividerHeight="@dimen/divider_height1" android:layout_below="@id/layout_head" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.widget.HPLoadingLayout>

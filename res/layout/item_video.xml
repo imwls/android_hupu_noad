@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.app.android.bbs.core.module.launcher.ui.video.HuPuVideoFrameLayout android:id="@id/bf_video" android:layout_width="fill_parent" android:layout_height="205.0dip" />
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/bf_img" android:layout_width="fill_parent" android:layout_height="205.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+</RelativeLayout>

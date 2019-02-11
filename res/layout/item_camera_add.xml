@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_camera_add_image" android:layout_width="120.0dip" android:layout_height="120.0dip" app:placeholderImageScaleType="centerCrop" />
+    <ImageView android:id="@id/item_camera_add_iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_camera_delete" android:layout_alignParentRight="true" />
+</RelativeLayout>

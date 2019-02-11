@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_gray_clip_dialog" android:paddingTop="110.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_444444" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="给个好评呗" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_999999" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="识货的成长需要你的支持" />
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_user_evaluate_btn_haoping" android:background="@drawable/bg_user_evaluate" android:layout_width="225.0dip" android:layout_height="35.0dip" android:layout_marginTop="30.0dip" android:text="鼓励，给五星好评" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/dialog_user_evaluate_tv_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="等下再说" android:layout_weight="1.0" />
+            <View android:background="@color/color_f0f0f0" android:layout_width="2.0px" android:layout_height="18.0dip" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/dialog_user_evaluate_tv_tucao" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="我要吐槽" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/ic_user_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

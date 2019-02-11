@@ -1,0 +1,138 @@
+package com.base.logic.component.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.hupu.android.ui.activity.HPBaseActivity;
+import com.hupu.android.ui.colorUi.ColorLinearLayout;
+import com.hupu.android.ui.colorUi.ColorRelativeLayout;
+
+import com.hupu.android.ui.dialog.DialogType;
+import com.hupu.android.ui.dialog.HPDialogManager;
+import com.hupu.android.ui.dialog.HPExcuteDialogFragmentCallBack;
+import com.hupu.android.ui.exchangeModel.DialogExchangeModel;
+import com.hupu.android.util.HPDisplayUtil;
+import com.hupu.android.util.ObjectUtils;
+import com.hupu.android.util.imageloader.ImageLoader;
+import com.hupu.android.util.imageloader.ImageRequest;
+import com.hupu.app.android.bbs.core.common.model.RecommendPosts;
+import com.hupu.app.android.bbs.core.module.group.ui.activity.GroupBoardDetailActivity;
+import com.hupu.app.android.bbs.core.module.group.ui.activity.GroupThreadsListNewActivity;
+import com.hupu.games.R;
+
+import java.util.List;
+
+/**
+ * 精彩话题
+ */
+public class TopicItem extends ColorRelativeLayout  {
+    public static final String TAG = "TOPIC";
+    private ColorLinearLayout linearLayout;
+    public TopicItem(Context context) {
+        super(context);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.item_topic_layout, this);
+        ImageView iv_close = (ImageView)findViewById(R.id.iv_close);
+        iv_close.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogExchangeModel.DialogExchangeModelBuilder builder1 = new DialogExchangeModel.DialogExchangeModelBuilder(DialogType.EXCUTE, TAG);
+                builder1.setDialogTitle("").setDialogContext("确定删除吗？").setPostiveText("确定").setNegativeText("取消");
+                HPDialogManager.showHPDialog(((HPBaseActivity)getContext()).getSupportFragmentManager(), builder1.creat(), null, ((HPBaseActivity)getContext()) );
+            }
+        });
+        //initView();
+    }
+
+    public TopicItem(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.item_topic_layout, this);
+        ImageView iv_close = (ImageView)findViewById(R.id.iv_close);
+        iv_close.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogExchangeModel.DialogExchangeModelBuilder builder1 = new DialogExchangeModel.DialogExchangeModelBuilder(DialogType.EXCUTE, "topic");
+                builder1.setDialogTitle("").setDialogContext("确定删除吗？").setPostiveText("确定").setNegativeText("取消");
+                HPDialogManager.showHPDialog(((HPBaseActivity)getContext()).getSupportFragmentManager(), builder1.creat(), null, ((HPBaseActivity)getContext()) );
+            }
+        });
+        //initView();
+    }
+
+    public TopicItem(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.item_topic_layout, this);
+        ImageView iv_close = (ImageView)findViewById(R.id.iv_close);
+        iv_close.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogExchangeModel.DialogExchangeModelBuilder builder1 = new DialogExchangeModel.DialogExchangeModelBuilder(DialogType.EXCUTE, "topic");
+                builder1.setDialogTitle("").setDialogContext("确定删除吗？").setPostiveText("确定").setNegativeText("取消");
+                HPDialogManager.showHPDialog(((HPBaseActivity)getContext()).getSupportFragmentManager(), builder1.creat(), null, ((HPBaseActivity)getContext()) );
+            }
+        });
+        //initView();
+    }
+
+
+
+    public void initView(List<RecommendPosts> recommendPostsList){
+        if(linearLayout==null) {
+            linearLayout = (ColorLinearLayout) findViewById(R.id.ll_horizon);
+        }
+        linearLayout.removeAllViews();
+        if(ObjectUtils.isNotEmpty(recommendPostsList)){
+            for(int i= 0 ;i<recommendPostsList.size();i++){
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+                layoutParams.leftMargin = HPDisplayUtil.convertDIP2PX(getContext(),10);
+                layoutParams.width = HPDisplayUtil.convertDIP2PX(getContext(),181);
+                layoutParams.height = HPDisplayUtil.convertDIP2PX(getContext(),113);
+                RecommendPosts posts = recommendPostsList.get(i);
+                linearLayout.addView(createRelative(posts),layoutParams);
+            }
+        }
+
+    }
+
+
+    public RelativeLayout createRelative(final RecommendPosts entity){
+        RelativeLayout relativeLayout =  (RelativeLayout)
+                LayoutInflater.from(getContext()).inflate(R.layout.topic_card_layout, this, false);
+        ImageView iv_icon = (ImageView)relativeLayout.findViewById(R.id.iv_icon);
+        TextView tv_name = (TextView)relativeLayout.findViewById(R.id.tv_name);
+        TextView tv_desc = (TextView)relativeLayout.findViewById(R.id.tv_desc);
+        TextView tv_repic = (TextView)relativeLayout.findViewById(R.id.tv_repic);
+        TextView tv_light = (TextView)relativeLayout.findViewById(R.id.tv_light);
+
+        ImageLoader.loadImage(new ImageRequest().imageView(iv_icon).url(entity.forum_logo));
+        tv_name.setText(entity.forum_name);
+        tv_desc.setText(entity.title);
+        tv_repic.setText(entity.replies);
+        tv_light.setText(entity.lightReply);
+        relativeLayout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+<<<<<<< HEAD
+                GroupBoardDetailActivity
+                        .
+                        startActivity((HPBaseActivity)getContext(),Integer.parseInt(entity.fid),entity.forum_name,false);
+=======
+                GroupThreadsListNewActivity.startActivity((HPBaseActivity)getContext(),Integer.parseInt(entity.fid),entity.forum_name,false);
+>>>>>>> dc315c79878826d102ad9fcc90bd58c09ab89364
+            }
+        });
+        return relativeLayout;
+
+    }
+
+}

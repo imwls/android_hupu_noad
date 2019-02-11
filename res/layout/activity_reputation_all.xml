@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStartWithNavigation="0.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/tv_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="发口碑" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/reputation_swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/reputation_recycler" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include android:layout_gravity="bottom|center|right" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" layout="@layout/anchor_list_totop" />
+    </FrameLayout>
+</LinearLayout>

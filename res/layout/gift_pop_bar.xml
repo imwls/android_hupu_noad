@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gift_bar" android:layout_width="wrap_content" android:layout_height="40.0dip">
+        <RelativeLayout android:id="@id/gif_bar_layout" android:layout_width="240.0dip" android:layout_height="fill_parent">
+            <View android:background="?gift_port_bg" android:layout_width="240.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/gift_user_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/gift_user_img" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="?pop_bar_text_color" android:gravity="center" android:id="@id/gift_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小猪咕噜路" />
+                <TextView android:textSize="11.0sp" android:textColor="?pop_bar_text_color_half" android:gravity="center" android:id="@id/gift_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送出100个666" />
+            </LinearLayout>
+            <ImageView android:id="@id/usr_gift_icon" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="55.0dip" android:src="?gift_666_ic" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/gift_number_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-50.0dip" android:layout_toRightOf="@id/gif_bar_layout" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

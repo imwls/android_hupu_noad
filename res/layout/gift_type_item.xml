@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/grid_item_port" android:background="?gift_port_bg_select" android:clickable="true" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/gift_type" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginTop="24.0dip" android:src="?gift_666_ic" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:id="@id/gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/gift_type" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="?main_color_4" android:id="@id/gift_descript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/gift_name" android:layout_centerHorizontal="true" />
+        <View android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/gift_descript" />
+        <ImageView android:id="@id/gift_more_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?gift_more_ic" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/gift_choose_ic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="?chose_ic" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

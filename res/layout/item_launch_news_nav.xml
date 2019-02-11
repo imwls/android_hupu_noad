@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_news" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height">
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?main_color_5" android:id="@id/txt_news" android:layout_marginLeft="@dimen/set_item_img_padding" android:text="@string/item_launch_news" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/tb_news" android:background="?myinfo_toggle_on" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.hupu.android.ui.colorUi.ColorView android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_alignLeft="@id/default_txt" android:layout_alignParentBottom="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</LinearLayout>

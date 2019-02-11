@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/whole_page" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/main_content" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="565.0dip" android:layout_alignParentBottom="true" app:progressBarShow="false" />
+    <TextView android:textSize="20.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/load_fail" android:background="?main_color_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="565.0dip" android:text="加载失败" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/loadinglayout" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="565.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/mycamera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" /> ／
+</FrameLayout>
+    <RelativeLayout android:background="@color/gray_alpha_70" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_take" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_takes" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/btn_reload" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="104.0dip" android:src="@drawable/btn_cancel" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_sure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="104.0dip" android:layout_marginRight="104.0dip" android:src="@drawable/btn_sure" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_auth" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

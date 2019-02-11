@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gifts" android:background="?game_bg_gift_layout" android:paddingLeft="10.0dip" android:paddingRight="50.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="-50.0dip" android:layout_toLeftOf="@id/btn_gift_green_layout" android:layout_alignTop="@id/btn_gift_green_layout" />
+    <TextView android:textSize="12.0dip" android:textColor="?game_textcolor_gift_green" android:gravity="bottom|center" android:id="@id/gift_total_1" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="333" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <include android:id="@id/btn_gift_green_layout" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_below="@id/gift_total_1" android:layout_alignParentRight="true" layout="@layout/item_live_room_gift_button" />
+</RelativeLayout>

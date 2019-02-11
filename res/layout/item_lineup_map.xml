@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/player_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <View android:id="@id/lineup_much_placeh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26.0dip" />
+        <View android:id="@id/lineup_small_placeh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/res_cor2" android:gravity="center" android:id="@id/lineup_player_number" android:background="@drawable/lineup_home_player_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/lineup_player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

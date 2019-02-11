@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ooo.oxo.library.widget.PullBackLayout android:id="@id/puller" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.app.android.bbs.core.common.ui.view.CustomViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/pic_controler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/view_origin_pic" android:background="@drawable/pic_view_origin_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="@color/normal_res_cor2" android:gravity="center" android:id="@id/view_origin_tv" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="查看原图(12M)" />
+                <ImageButton android:id="@id/cancel_request" android:background="@color/transparent" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/cancel_request" android:layout_toRightOf="@id/view_origin_tv" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/btn_save" android:background="@drawable/bbs_btn_savepic_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/vote_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="52.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/vote_pop_controler_open" android:background="@drawable/bg_vote_pop_open" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="27.0dip" android:text="参与评分" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/vote_pop_controler_close" android:background="@drawable/bg_vote_pop_close" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="27.0dip" android:text="收起评分" android:layout_alignParentLeft="true" />
+            <LinearLayout android:id="@id/vote_myscore_ll" android:background="@drawable/bg_ping_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginLeft="3.0dip" android:text="我的评分：" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/vote_myscore" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/vote_info_ll" android:background="@drawable/bg_ping_info" android:layout_width="70.0dip" android:layout_height="86.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="评分" />
+                <TextView android:textSize="22.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/avgvote_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/vote_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ping_pop_vote" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/pop_vote1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/pop_vote2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</ooo.oxo.library.widget.PullBackLayout>

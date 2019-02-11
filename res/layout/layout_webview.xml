@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/sub_web_layout" android:layout_width="1.0px" android:layout_height="1.0px" />
+        <include android:id="@id/layout_title" layout="@layout/layout_webview_title" />
+        <View android:id="@id/temp_view" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentBottom="true" />
+        <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/temp_view" android:layout_below="@id/layout_title" />
+        <include android:id="@id/error" android:background="?v0_main_bg_color_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_above="@id/temp_view" android:layout_below="@id/layout_title" layout="@layout/layout_webview_error" />
+        <include android:id="@id/layout_tool_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/webview" android:layout_alignParentBottom="true" layout="@layout/layout_reply_bar" />
+        <View android:id="@id/share_bg_ll" android:background="@color/exciting_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_ll" android:background="?b_share_bg" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/share_wechat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?b_share_wechat" android:layout_weight="1.0" />
+            <ImageView android:id="@id/share_friends" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?b_share_friends" android:layout_weight="1.0" />
+            <ImageView android:id="@id/share_qq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="?b_share_qq" android:layout_weight="1.0" android:layout_below="@id/share_des" />
+            <ImageView android:id="@id/share_sina" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="?b_share_sina" android:layout_weight="1.0" />
+            <ImageView android:id="@id/share_save" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="?b_share_save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:layout_gravity="bottom|center|right" android:id="@id/btn_in" android:background="@drawable/btn_web_in_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+    <FrameLayout android:id="@id/fullscreen_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/video_layout" android:background="@color/exciting_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_above="@id/layout_bottom" android:layout_alignBottom="@id/scoreboards" />
+</RelativeLayout>

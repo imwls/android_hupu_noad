@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_f0f3f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/search_icon" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="搜索关键字：" />
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/holo_red_dark" android:id="@id/tv_keywords" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

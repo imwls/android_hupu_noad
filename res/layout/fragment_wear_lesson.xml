@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/line_horizontal" />
+    <RelativeLayout android:background="@color/color_f7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/anchor_list_totop" />
+    </RelativeLayout>
+</LinearLayout>

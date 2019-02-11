@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?game_bg_lineup_background" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/left_coach_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/left_team" android:background="@drawable/bg_formation_player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/left_coach_img" android:layout_width="36.0dip" android:layout_height="38.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:layout_below="@id/left_team" android:layout_centerHorizontal="true" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/left_coach_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/left_coach_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/center_txt" android:background="@drawable/bg_formation_bench_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="替补席" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="?game_bench_divider_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_below="@id/center_txt" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/right_coach_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/right_team" android:background="@drawable/bg_formation_player_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/right_coach_img" android:layout_width="36.0dip" android:layout_height="38.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:layout_below="@id/right_team" android:layout_centerHorizontal="true" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_lineup_player" android:id="@id/right_coach_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/right_coach_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

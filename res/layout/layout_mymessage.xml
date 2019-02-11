@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar">
+        <TextView android:textSize="14.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/no_data_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂时还没有收到消息" android:layout_centerInParent="true" />
+        <com.hupu.android.ui.view.xlistview.HPXListView android:scrollbarStyle="insideOverlay" android:id="@id/listView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0px" android:overScrollMode="never" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/probar" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</RelativeLayout>

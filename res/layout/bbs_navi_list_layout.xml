@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorHorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:id="@id/ll_horizon" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hupu.android.ui.colorUi.ColorHorizontalScrollView>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

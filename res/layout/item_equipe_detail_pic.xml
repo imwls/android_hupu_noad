@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center" android:id="@id/iv_pictures" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" app:filter_type="mask" app:has_filter="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/item_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentTop="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="2.0dip" />
+    <ImageView android:id="@id/item_arrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="?egame_item_arrow" android:scaleType="centerInside" android:layout_alignParentTop="true" />
+    <TextView android:textSize="11.0sp" android:textColor="?main_color_5" android:id="@id/item_time" android:layout_width="30.0dip" android:layout_height="15.0dip" android:layout_below="@id/item_img" />
+</RelativeLayout>

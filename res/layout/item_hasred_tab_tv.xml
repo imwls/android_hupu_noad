@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textStyle="bold" android:gravity="center" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.hupu.android.ui.view.RedDotTextView android:id="@id/red_point" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/txt_name" style="@style/txt_reddot" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/red_point_number_num" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/txt_name" style="@style/txt_reddot_number" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/red_point_number_text" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/txt_name" style="@style/txt_reddot_number" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

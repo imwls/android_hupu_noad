@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.camera.CameraPreview android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/cover_top_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignTop="@id/camera_preview" />
+    <View android:id="@id/cover_bottom_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignBottom="@id/camera_preview" />
+    <ImageButton android:id="@id/camera_imgbtn_takepicture" android:background="@mipmap/ic_camera_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/camera_iv_close" android:background="@mipmap/ic_camera_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/camera_iv_flash" android:background="@mipmap/ic_camera_flashlight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="right" android:id="@id/camera_iv_swap" android:background="@mipmap/ic_camera_reversal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

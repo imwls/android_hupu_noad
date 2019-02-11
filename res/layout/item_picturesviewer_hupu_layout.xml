@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_pictures_item_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/default_img" android:background="@drawable/news_is_no_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <pl.droidsonroids.gif.GifImageView android:layout_gravity="center" android:id="@id/iv_pictures" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    <com.hupu.app.android.bbs.core.common.ui.view.CircleProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="70.0dip" android:layout_height="70.0dip" app:mlpb_progress_stoke_width="5.0dip" app:mlpb_show_arrow="true" app:mlpb_arrow_width="10.0dip" app:mlpb_arrow_height="5.0dip" app:mlpb_progress_text_visibility="visible" />
+</FrameLayout>

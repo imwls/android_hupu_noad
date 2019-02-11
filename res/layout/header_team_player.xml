@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|left" android:id="@id/team_player_offical_head" android:background="?v0_main_bg_color_4" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="27.0dip" android:text="@string/offical" style="@style/txt_team_player_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coach_layout_v" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:id="@id/layout_basketball_head" android:background="?v0_main_bg_color_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="27.0dip">
+        <TextView android:gravity="left" android:paddingLeft="10.0dip" android:text="@string/STR_PLAYER" android:layout_weight="8.0" style="@style/txt_team_player_title" />
+        <TextView android:gravity="left" android:text="@string/STR_ROLE" android:layout_weight="4.0" style="@style/txt_team_player_title" />
+        <TextView android:gravity="right" android:id="@id/basketball_team_salery_score" android:paddingRight="10.0dip" android:text="@string/STR_SALARY" android:layout_weight="4.0" style="@style/txt_team_player_title" />
+    </LinearLayout>
+</LinearLayout>

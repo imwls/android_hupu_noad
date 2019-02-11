@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="虎扑币会员" style="@style/txt_title" />
+    </RelativeLayout>
+    <ScrollView android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginTop="@dimen/set_group_interval">
+                    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/user_icon_img" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_margin="@dimen/set_item_img_padding" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+                    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/menu_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_icon_img" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                    <TextView android:textColor="?main_color_5" android:id="@id/choose_pay_txt" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="请选择开通方式" style="@style/txt_item_myinfo" />
+                    <RelativeLayout android:id="@id/member_monthly_rl" android:background="?bg_member_dollorcoin_select" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+                        <TextView android:textColor="?main_color_5" android:id="@id/monthly_txt" android:layout_marginLeft="10.0dip" android:text="连续包月" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+                        <TextView android:textColor="?main_color_1" android:layout_marginLeft="10.0dip" android:text="¥10" android:layout_toRightOf="@id/monthly_txt" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+                        <ToggleButton android:id="@id/month_tg_bt" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/member_single_rl" android:background="?bg_member_dollorcoin" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textColor="?main_color_5" android:id="@id/single_txt" android:layout_marginLeft="10.0dip" android:text="1个月" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+                        <TextView android:textColor="?main_color_1" android:layout_marginLeft="10.0dip" android:text="¥10" android:layout_toRightOf="@id/single_txt" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+                        <ToggleButton android:id="@id/sigle_tg_bt" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:checked="true" android:textOn="@null" android:textOff="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="支付方式" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <RelativeLayout android:background="?bg_member_dollorcoin_select" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_item_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                        <ImageView android:id="@id/alipay_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alipay_ic_member" android:layout_centerVertical="true" />
+                        <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="支付宝支付" android:layout_toRightOf="@id/alipay_icon" android:layout_centerVertical="true" style="@style/txt_item_myinfo" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/feedback_layout" android:background="?v0_main_bg_color_1" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/set_group_interval">
+                    <TextView android:textColor="?main_color_5" android:layout_marginLeft="10.0dip" android:text="会员福利" android:layout_alignParentLeft="true" style="@style/txt_item_myinfo" />
+                    <TextView android:textSize="@dimen/set_title_text_size" android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1.可一次性获得100虎扑币\n2.连续包月每天登录可获得1枚虎扑币，最多获得30枚" />
+                </LinearLayout>
+                <Button android:id="@id/btn_submit" android:layout_height="46.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="确认支付" style="@style/common_button_submit" />
+            </LinearLayout>
+            <com.hupu.android.ui.view.ProgressWheel android:id="@id/probar" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/toolbar" />
+        <include layout="@layout/line_horizontal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <cn.shihuo.modulelib.views.EmptyView android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@android:color/white" android:id="@id/bt_add" android:background="@drawable/button_purple" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="添加新地址" android:drawableLeft="@mipmap/icon_add" />
+    </LinearLayout>
+</LinearLayout>

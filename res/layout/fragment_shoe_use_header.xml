@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginLeft="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="30.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/iv_photo" android:layout_width="60.0dip" android:layout_height="60.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="112.0dip" android:layout_height="112.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_464646" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_d33333" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+            <TextView android:textColor="@color/color_a4a4a4" android:id="@id/tv_business" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@mipmap/merchant_icon" android:drawablePadding="6.0dip" />
+            <TextView android:textColor="@color/color_a4a4a4" android:gravity="right" android:id="@id/tv_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

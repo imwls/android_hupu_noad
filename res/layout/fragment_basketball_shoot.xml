@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?main_color_3" android:fitsSystemWindows="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/whole_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="560.0dip" android:layout_alignParentTop="true" app:progressBarShow="false" />
+        <RelativeLayout android:id="@id/share_ll" android:background="?b_share_bg" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_below="@id/main_content">
+            <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/share_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="给好友分享投篮点分布图" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/share_qq" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginTop="6.0dip" android:src="?b_share_qq" android:layout_below="@id/share_des" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/share_friends" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:src="?b_share_friends" android:layout_toLeftOf="@id/share_qq" android:layout_below="@id/share_des" />
+            <ImageView android:id="@id/share_wechat" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="11.0dip" android:src="?b_share_wechat" android:layout_toLeftOf="@id/share_friends" android:layout_below="@id/share_des" />
+            <ImageView android:id="@id/share_sina" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:src="?b_share_sina" android:layout_toRightOf="@id/share_qq" android:layout_below="@id/share_des" />
+            <ImageView android:id="@id/share_save" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:src="?b_share_save" android:layout_toRightOf="@id/share_sina" android:layout_below="@id/share_des" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="加载失败" android:layout_centerInParent="true" />
+        <com.hupu.android.ui.view.ProgressWheel android:id="@id/loading_spin" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+    </RelativeLayout>
+</ScrollView>

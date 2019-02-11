@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/pubg_card" android:background="?v0_main_bg_color_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.app.android.bbs.core.common.ui.view.BindLayout android:id="@id/pubg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_cover" android:layout_width="100.0dip" android:layout_height="60.0dip" android:src="@drawable/liangle_bg" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:gravity="center" android:id="@id/live_name" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_below="@id/img_cover" />
+    </RelativeLayout>
+</RelativeLayout>

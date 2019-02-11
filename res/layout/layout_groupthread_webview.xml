@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/wv_for_vp_item" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent" hupuWebView:progressBarShow="false" xmlns:hupuWebView="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

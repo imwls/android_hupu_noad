@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/tuangou400_ll_no_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip">
+            <ImageView android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="8.0dip" android:src="@mipmap/icon_tuangou_nodata" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有找到相关商品哦" android:layout_below="@android:id/icon1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/tuangou400_tv_recommend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为您推荐其它商品" />
+    </LinearLayout>
+</LinearLayout>

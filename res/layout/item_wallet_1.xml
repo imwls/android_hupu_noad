@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="+金币" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_gold1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/tv_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_task_msg1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <ImageView android:background="@drawable/my_wallet_finish_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/tv_task_msg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_go1" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="70.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:text="做任务" />
+    </LinearLayout>
+    <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="+金币" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_gold2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/tv_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_task_msg2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <ImageView android:background="@drawable/my_wallet_finish_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/tv_task_msg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_go2" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="70.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:text="做任务" />
+    </LinearLayout>
+</LinearLayout>

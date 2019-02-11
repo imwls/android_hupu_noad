@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/fragment_index" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.widget.PagerSlidingTabStrip android:id="@id/page_indicator" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="35.0dip" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="?home_bg_indicator" app:pstsIndicatorHeight="3.0dip" app:pstsTabPaddingLeftRight="0.0dip" app:pstsShouldExpand="false" app:pstsItemMargin="10.0dip" app:ptstCurrentTextColor="?home_textcolor_current_indicator" app:ptstNormalTextColor="?home_textcolor_indicator" />
+    <View android:id="@id/divider" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/page_indicator" />
+    <com.hupu.android.ui.colorUi.ColorViewPager android:id="@id/e_game_pager" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider" />
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/loading_spin" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+    <TextView android:textSize="16.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/no_data_txt" android:background="?v0_main_bg_color_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="该比赛暂无数据,去「直播」看看吧" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

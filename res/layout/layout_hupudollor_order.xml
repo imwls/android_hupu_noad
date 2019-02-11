@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_my_hupucoin" style="@style/txt_title" />
+        <Button android:id="@id/hupucoin_log" android:text="@string/title_my_hupucoin_log" style="@style/btn_right_txt" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+    <ScrollView android:id="@id/trends_scroll" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <TextView android:textSize="@dimen/v0_txt3" android:textColor="?main_color_5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/my_hupucoin_num" />
+                <TextView android:textSize="@dimen/v0_txt3" android:textColor="?main_color_6" android:id="@id/txt_hupudollor_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <ProgressBar android:id="@id/gold_Porgress" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_hupucoin_member" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_group_interval">
+                <TextView android:textStyle="bold" android:layout_marginLeft="10.0dip" android:text="我的虎扑币会员" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                <ImageView style="@style/img_linear_arrow_right_setup" />
+            </LinearLayout>
+            <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/v0_txt2" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/title_myhupu_pay" />
+                <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_pay" android:background="@drawable/bg_menu_left_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/divider_width" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_pay_channel" android:background="@drawable/bg_menu_left_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/divider_width" />
+            <FrameLayout android:id="@id/adver_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/adver" android:layout_width="fill_parent" android:layout_height="118.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="3.0dip" />
+                <View android:layout_gravity="bottom" android:background="@drawable/bg_hupu_order_adver" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+                <TextView android:textSize="@dimen/txt2" android:textColor="?common_title_txt" android:layout_gravity="bottom" android:id="@id/content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+            <LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/migu_bt" android:background="?myinfo_hupudollor_migu_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+                <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示:" />
+                <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_3" android:id="@id/txt_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_pay_prompt" android:layout_below="@id/lay_pay" />
+                    <TextView android:textSize="@dimen/txt5" android:textColor="?myinfo_common_blue" android:id="@id/txt_pay_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_contacts_msg" android:layout_below="@id/lay_pay" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3." android:layout_below="@id/lay_pay" />
+                    <TextView android:textSize="@dimen/txt5" android:textColor="?myinfo_common_blue" android:id="@id/txt_my_hupucoin_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/hupucoin_help_txt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

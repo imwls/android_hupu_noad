@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/res_cor2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" android:layout_width="fill_parent" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/my_box" style="@style/txt_title" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/txt_num" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_marginRight="8.0dip" android:drawablePadding="4.0dip" style="@style/btn_right_txt" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_below="@id/layout_title_bar" app:filter_type="mask" app:has_filter="true" />
+    <TextView android:textSize="18.0sp" android:textColor="?main_color_6" android:id="@id/txt_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

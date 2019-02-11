@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout android:orientation="vertical" android:id="@id/keyboardListenLayout" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ripple="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?bbs_main_color" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.hupu.android.ui.colorUi.ColorButton android:textColor="?main_color_5" android:id="@id/btn_push" android:background="?bbs_edit_border" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="发送" android:layout_alignParentRight="true" />
+            <com.hupu.android.ui.colorUi.ColorEditText android:textSize="14.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:id="@id/et_comment" android:background="?bbs_edit_border" android:paddingLeft="5.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:hint="回复楼主" android:layout_toLeftOf="@id/btn_push" style="@style/HupuEditTextStyle" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorView android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_common_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout_title_bar" style="@style/bbs_bg_title_bar">
+            <ImageButton android:id="@id/btn_back" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?common_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/btn_add" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_title" android:text="22楼" style="@style/bbs_txt_title" />
+            <com.hupu.app.android.bbs.core.common.ui.view.ProgressWheel android:id="@id/progress" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toRightOf="@id/txt_title" android:layout_centerVertical="true" app:matProg_barColor="@color/white" app:matProg_barWidth="2.0dip" app:matProg_linearProgress="true" />
+        </RelativeLayout>
+        <include layout="@layout/line_simple_layout" />
+    </LinearLayout>
+    <com.hupu.app.android.bbs.core.common.ui.view.xlistview.XListView android:scrollbarStyle="insideOverlay" android:id="@id/listView" android:background="?main_color_2" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/ll_comment_layout" android:layout_below="@id/ll_common_titlebar" />
+</com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout>

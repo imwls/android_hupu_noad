@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.shihuo.modulelib.views.widget.easyrecyclerview.swipe.SwipeRefreshLayout android:id="@id/ptr_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:scrollbars="horizontal|vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/empty" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/progress" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/error" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</cn.shihuo.modulelib.views.widget.easyrecyclerview.swipe.SwipeRefreshLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/no_attention_icon" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="45.0dip" android:src="?no_follow_ic" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt3" android:textColor="?main_color_4" android:id="@id/alert_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="设置关注队伍，查看关注队伍的新闻" android:layout_below="@id/no_attention_icon" android:layout_centerHorizontal="true" />
+    <com.hupu.android.ui.colorUi.ColorButton android:textSize="@dimen/txt5" android:textColor="?news_second_nav_btn_down" android:id="@id/setFollowbtn" android:background="?common_btn_dialog_confirm" android:layout_width="145.0dip" android:layout_height="35.0dip" android:layout_marginTop="15.0dip" android:text="设置关注的队伍" android:layout_below="@id/alert_text" android:layout_centerHorizontal="true" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/item_news_classification_alert_info" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

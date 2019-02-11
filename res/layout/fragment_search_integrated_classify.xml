@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/search_news" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="?search_news" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/search_news" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/search_bbs" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="?search_bbs" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/search_bbs" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/search_video" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="?search_video" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/search_video" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/search_team" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="?search_team" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="?main_color_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/search_team" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

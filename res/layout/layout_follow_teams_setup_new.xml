@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/select_teams_setup" style="@style/txt_title" />
+        <Button android:id="@id/btn_done" android:text="@string/done" style="@style/btn_right_txt_red" />
+    </RelativeLayout>
+    <include layout="@layout/layout_follow_team_new_include" />
+</LinearLayout>

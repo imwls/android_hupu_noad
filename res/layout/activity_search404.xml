@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStartWithNavigation="0.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/main_top_edit_bg_gray" android:paddingLeft="8.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0">
+                <include layout="@layout/include_search_icon" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/normal_res_cor5" android:textColorHint="@color/normal_res_cor4" android:id="@id/newsearch_et" android:background="@null" android:paddingLeft="26.0dip" android:paddingTop="1.0dip" android:paddingRight="26.0dip" android:paddingBottom="1.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入商品" android:singleLine="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_search_title" android:layout_gravity="center_vertical" android:id="@id/newsearch_tv_cancel" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <include android:id="@id/line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/toolbar" layout="@layout/line_horizontal" />
+    <ScrollView android:background="@android:color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:layout_below="@id/line">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="热门搜索" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small" />
+                <co.lujun.androidtagview.TagContainerLayout android:id="@id/tag_group" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:container_border_color="#00000000" app:container_background_color="#00000000" app:tag_border_width="1.0px" app:tag_corner_radius="2.0dip" app:tag_horizontal_padding="10.0dip" app:tag_text_size="14.0sp" app:tag_text_color="#ff666666" app:tag_border_color="@color/color_aeaeae" app:tag_background_color="#00000000" app:tag_clickable="true" app:tag_theme="none" />
+            </FrameLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="历史搜索" />
+            <cn.shihuo.modulelib.views.NoScrollListView android:id="@id/search_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_search_selector" android:divider="@color/color_e6e6e6" android:dividerHeight="1.0px" />
+            <Button android:textColor="@color/color_ff4343" android:layout_gravity="center" android:id="@id/newsearch_btn_clear" android:background="@drawable/btn_search_history_bg" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="清除搜索历史" />
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@id/listView" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transbg" android:divider="@color/color_e6e6e6" android:dividerHeight="1.0px" android:layout_below="@id/line" android:footerDividersEnabled="false" />
+</RelativeLayout>

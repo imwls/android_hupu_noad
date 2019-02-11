@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_talk_set" style="@style/txt_title" />
+    </RelativeLayout>
+    <ScrollView android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/myhome_rl_info" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="@dimen/myinfo_head_height" android:layout_marginTop="@dimen/set_group_interval">
+                <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/user_icon_img" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/menu_name_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_icon_img" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/set_title_text_size" android:textColor="?main_color_5" android:id="@id/txt_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt6" android:textColor="?myinfo_reputation_txt" android:gravity="center_vertical" android:id="@id/txt_reputation" android:background="?myinfo_reputation_bg" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_4" android:id="@id/txt_join_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_4" android:id="@id/txt_location_school" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <com.hupu.android.ui.colorUi.ColorLinearLayout android:id="@id/layout_myhomepage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="26.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/set_myinfo_text_right_size" android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:id="@id/menu_name_mypage" android:text="@string/txt_talk_set_info" style="@style/txt_item_myhomepage" />
+                    <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/menu_name_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?common_arrow_right" />
+                </com.hupu.android.ui.colorUi.ColorLinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/set_title_text_size" android:layout_marginLeft="10.0dip" android:text="加入黑名单" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                <com.hupu.android.ui.colorUi.ColorToggleButton android:id="@id/switch_mask" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <View style="@style/view_divider1" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_talk_set_clear_msg" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/set_title_text_size" android:layout_marginLeft="10.0dip" android:text="清空私信记录" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                <ImageView android:id="@id/auth_arrow_right" style="@style/img_linear_arrow_right_setup" />
+            </LinearLayout>
+            <View style="@style/view_divider1" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_talk_set_report" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/set_title_text_size" android:layout_marginLeft="10.0dip" android:text="举报" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+                <ImageView style="@style/img_linear_arrow_right_setup" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.hupu.android.ui.view.ProgressWheel android:id="@id/probar" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</RelativeLayout>

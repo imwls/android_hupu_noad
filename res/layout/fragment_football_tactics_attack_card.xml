@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?game_football_tactics_card_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?main_color_5" android:gravity="center" android:id="@id/attack_card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="进攻方向" />
+    <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/attack_card_des" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="给他们展示一些比赛战术分析的数据" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/left_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:background="?game_football_tactics_playground_with_dotted" android:layout_width="fill_parent" android:layout_height="218.0dip">
+                <LinearLayout android:id="@id/left_arrows" android:layout_width="fill_parent" android:layout_height="109.0dip">
+                    <RelativeLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/left_arrow_1" android:background="?game_football_left_arrow_thin" android:layout_width="41.0dip" android:layout_height="32.0dip" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/left_arrow_2" android:background="?game_football_left_arrow_thin" android:layout_width="41.0dip" android:layout_height="109.0dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_below="@id/left_arrows">
+                    <TextView android:textSize="11.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/left_txt_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0%" android:layout_weight="1.0" />
+                    <TextView android:textSize="11.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/left_txt_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="100%" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/left_arrows">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="左半场" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="右半场" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/left_team_name1" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="兰斯" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:background="?game_football_tactics_playground_with_dotted" android:layout_width="fill_parent" android:layout_height="218.0dip">
+                <LinearLayout android:id="@id/right_arrows" android:layout_width="fill_parent" android:layout_height="109.0dip">
+                    <RelativeLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/right_arrow_1" android:background="?game_football_right_arrow_thin" android:layout_width="41.0dip" android:layout_height="47.0dip" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/right_arrow_2" android:background="?game_football_right_arrow_thin" android:layout_width="41.0dip" android:layout_height="94.0dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_below="@id/right_arrows">
+                    <TextView android:textSize="11.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/right_txt_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="20%" android:layout_weight="1.0" />
+                    <TextView android:textSize="11.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/right_txt_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="80%" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/right_arrows">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="左半场" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="右半场" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="11.0sp" android:textColor="?main_color_4" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/right_team_name1" android:background="?game_football_tactics_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="巴黎圣日耳曼" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

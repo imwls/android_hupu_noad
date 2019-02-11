@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_div" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <com.hupu.games.match.fragment.egame.EGameDetailScroll android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_div">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_1" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/general" layout="@layout/fragment_egame_detail_general" />
+            <RelativeLayout android:id="@id/detail_tabs" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/general">
+                <TextView android:textSize="13.0sp" android:textColor="?egame_subtab_txt_cor" android:gravity="center" android:id="@id/btn_detail_contrast" android:background="?egame_subtab_bg" android:focusable="true" android:layout_width="85.0dip" android:layout_height="30.0dip" android:text="@string/contrast_detail" android:layout_centerInParent="true" />
+                <TextView android:textSize="13.0sp" android:textColor="?egame_subtab_txt_cor" android:gravity="center" android:id="@id/btn_team_contrast" android:background="?egame_subtab_bg" android:focusable="true" android:layout_width="85.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/team_general" android:layout_toLeftOf="@id/btn_detail_contrast" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="?egame_subtab_txt_cor" android:gravity="center" android:id="@id/btn_skill_contrast" android:background="?egame_subtab_bg" android:focusable="true" android:layout_width="85.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="@string/rune" android:layout_toRightOf="@id/btn_detail_contrast" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/detail_frag_container" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/detail_tabs" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.games.match.fragment.egame.EGameDetailScroll>
+    <TextView android:textSize="16.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/no_data_txt" android:background="?v0_main_bg_color_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="该比赛暂无数据,去「直播」看看吧" />
+</RelativeLayout>

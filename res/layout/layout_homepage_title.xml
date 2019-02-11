@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.base.logic.component.widget.MyHomePagePagerSlidingTabStrip android:id="@id/page_indicator" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="?home_bg_indicator" app:pstsIndicatorHeight="3.0dip" app:pstsTabPaddingLeftRight="12.0px" app:pstsShouldExpand="true" app:ptstCurrentTextColor="?main_color_5s" app:ptstNormalTextColor="?main_color_3s" />
+    <com.hupu.android.ui.colorUi.ColorView android:background="?v0_main_color_line01" style="@style/view_divider1" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

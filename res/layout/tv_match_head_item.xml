@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/head_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+            <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/mask_icon" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/tv_head_mask" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:filter_type="mask" app:has_filter="true" app:riv_oval="true" />
+            <ImageView android:id="@id/leve_img" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="24.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#fff2f2f2" android:ellipsize="end" android:gravity="center" android:id="@id/name_icon" android:layout_width="74.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/icon_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

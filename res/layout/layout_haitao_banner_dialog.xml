@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/dialog_haitao_banner_img" android:layout_width="280.0dip" android:layout_height="280.0dip" app:viewAspectRatio="1.0" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" app:roundedCornerRadius="5.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageButton android:id="@id/dialog_haitao_banner_imgbtn_close" android:background="@mipmap/icon_dialog_close_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="131.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?main_color_4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="电影" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_item_body_in" android:background="?shardow_home" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_title">
+        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/iv_head" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/iv_head">
+            <TextView android:textSize="16.0sp" android:textColor="?txt_calend" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff7b7e86" android:id="@id/tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:layout_below="@id/tv_name" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/tv_status" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:text="22：22开始" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_collection" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:text="集锦" android:drawableTop="?icon_collection" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

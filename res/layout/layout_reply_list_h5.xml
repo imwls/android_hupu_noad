@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/all_replys_txt" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/newsListWebView" android:background="?main_color_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/to_reply_img" android:layout_below="@id/layout_title_bar" app:progressBarShow="false" />
+    <ImageView android:id="@id/commit_layout_bg" android:background="@color/trans_20_land" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar" />
+    <RelativeLayout android:id="@id/commit_layout" android:background="?bbs_publish_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.hupu.android.ui.colorUi.ColorEditText android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:gravity="center_vertical" android:id="@id/reply_text_content" android:background="?bbs_edit_title_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/reply_hint_text" android:maxLines="4" android:layout_toLeftOf="@id/commit_reply" android:layout_alignParentLeft="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="@drawable/txt_commit_reply_selector" android:id="@id/commit_reply" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_commit_reply" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:gravity="center|left" android:id="@id/to_reply_img" android:background="?bbs_publish_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/my_replys_txt" android:drawableLeft="?v0_bbs_pan_icon" android:drawablePadding="7.0dip" android:layout_toLeftOf="@id/reply" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/bottom_line" android:background="?news_divideline" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/to_reply_img" />
+    <FrameLayout android:id="@id/loadinglayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="46.0dip" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

@@ -1,0 +1,173 @@
+.class public Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;
+.super Lcom/alibaba/sdk/android/oss/model/OSSRequest;
+.source "SourceFile"
+
+
+# instance fields
+.field private bucketName:Ljava/lang/String;
+
+.field private delimiter:Ljava/lang/String;
+
+.field private encodingType:Ljava/lang/String;
+
+.field private keyMarker:Ljava/lang/String;
+
+.field private maxUploads:Ljava/lang/Integer;
+
+.field private prefix:Ljava/lang/String;
+
+.field private uploadIdMarker:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 28
+    invoke-direct {p0}, Lcom/alibaba/sdk/android/oss/model/OSSRequest;-><init>()V
+
+    .line 29
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->bucketName:Ljava/lang/String;
+
+    .line 30
+    return-void
+.end method
+
+
+# virtual methods
+.method public getBucketName()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 33
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->bucketName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getDelimiter()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 96
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->delimiter:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getEncodingType()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 117
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->encodingType:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getKeyMarker()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 62
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->keyMarker:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getMaxUploads()Ljava/lang/Integer;
+    .locals 1
+
+    .prologue
+    .line 42
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->maxUploads:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public getPrefix()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 104
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->prefix:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getUploadIdMarker()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 82
+    iget-object v0, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->uploadIdMarker:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public setDelimiter(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 100
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->delimiter:Ljava/lang/String;
+
+    .line 101
+    return-void
+.end method
+
+.method public setEncodingType(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 127
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->encodingType:Ljava/lang/String;
+
+    .line 128
+    return-void
+.end method
+
+.method public setKeyMarker(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 72
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->keyMarker:Ljava/lang/String;
+
+    .line 73
+    return-void
+.end method
+
+.method public setMaxUploads(Ljava/lang/Integer;)V
+    .locals 0
+
+    .prologue
+    .line 52
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->maxUploads:Ljava/lang/Integer;
+
+    .line 53
+    return-void
+.end method
+
+.method public setPrefix(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 108
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->prefix:Ljava/lang/String;
+
+    .line 109
+    return-void
+.end method
+
+.method public setUploadIdMarker(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 92
+    iput-object p1, p0, Lcom/alibaba/sdk/android/oss/model/ListMultipartUploadsRequest;->uploadIdMarker:Ljava/lang/String;
+
+    .line 93
+    return-void
+.end method

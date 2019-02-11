@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.logic.component.widget.arbScroller.ArbVerticalScroller android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.base.logic.component.widget.arbScroller.ArbLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.base.logic.component.widget.arbScroller.ArbLinearLayout android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.base.logic.component.widget.arbScroller.ArbFrameLayout android:id="@id/arb_root_frame" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.base.logic.component.widget.arbScroller.ArbHorScroller android:id="@id/hor_scroller" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="always">
+                <com.base.logic.component.widget.arbScroller.ArbLinearLayout android:orientation="vertical" android:id="@id/arb_root_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.base.logic.component.widget.arbScroller.ArbHorScroller>
+        </com.base.logic.component.widget.arbScroller.ArbFrameLayout>
+        <com.base.logic.component.widget.arbScroller.ArbLinearLayout android:orientation="vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.base.logic.component.widget.arbScroller.ArbLinearLayout>
+</com.base.logic.component.widget.arbScroller.ArbVerticalScroller>

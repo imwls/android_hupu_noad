@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="球员数据" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/item_player_rating_txt_inner" />
+        <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/no_data_txt" android:background="?main_color_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="球员信息正在收集中" />
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+</LinearLayout>

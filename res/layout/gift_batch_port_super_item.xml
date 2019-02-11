@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_1" android:gravity="center" android:id="@id/batch_text" android:background="?super_banch_p_bg" android:layout_width="78.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="x1" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/line_horizontal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/anchor_list_totop" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/line_horizontal" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bg_red_1" android:layout_width="150.0dip" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="取消收藏" />
+    </LinearLayout>
+</LinearLayout>

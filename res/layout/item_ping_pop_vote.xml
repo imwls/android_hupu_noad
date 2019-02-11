@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_img_item_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_ping_pop_vote" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip">
+        <TextView android:textSize="24.0dip" android:textColor="#ff434141" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

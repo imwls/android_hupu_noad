@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/shopping_detail_report_tv_link" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="链接失效" />
+    <include layout="@layout/view_horizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/shopping_detail_report_tv_shopping" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="商品不符合" />
+    <include layout="@layout/view_horizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/shopping_detail_report_tv_error" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="价格错误" />
+    <include layout="@layout/view_horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shopping_detail_report_ll_peise" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="配色不符合" />
+        <include layout="@layout/view_horizontal" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_ff4343" android:gravity="center" android:id="@id/shopping_detail_report_tv_cancel" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="取消" />
+</LinearLayout>

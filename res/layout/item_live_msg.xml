@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:gravity="center" android:id="@id/txt_team" android:layout_width="35.0dip" android:layout_height="53.0dip" android:singleLine="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <View android:id="@id/top_line" android:background="?v0_main_color_line01" android:layout_width="2.0dip" android:layout_height="10.0dip" />
+        <RelativeLayout android:id="@id/anchor_bg" android:background="?v0_game_bg_shape_live_msg" android:layout_width="30.0dip" android:layout_height="30.0dip">
+            <com.base.logic.component.animation.AutofitTextView android:textSize="10.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_time" android:padding="2.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:lineSpacingExtra="1.0px" />
+        </RelativeLayout>
+        <View android:id="@id/bottom_line" android:background="?v0_main_color_line01" android:layout_width="2.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <View android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="?v0_game_bg_shape_live_msg" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="@dimen/txt_quiz_title_text_size" android:textColor="?main_color_5" android:id="@id/txt_event" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/txt_answer" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_live" android:focusable="false" android:visibility="gone" android:layout_width="156.0dip" android:layout_height="91.0dip" android:src="@drawable/live_default" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+                <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center" android:id="@id/img_live_mask" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gif_mask" app:filter_type="mask" app:has_filter="true" />
+            </FrameLayout>
+            <LinearLayout android:gravity="left" android:id="@id/layout_casino" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="?game_textcolor_quiz_button" android:id="@id/btn_1" android:background="?game_bg_quiz_button" android:layout_width="95.0dip" android:layout_height="32.0dip" android:layout_marginRight="9.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+                <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="?game_textcolor_quiz_button" android:id="@id/btn_2" android:background="?game_bg_quiz_button" android:layout_width="95.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_odds" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/txt_odds1" android:background="@drawable/bg_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:id="@id/txt_odds2" android:background="@drawable/bg_play_no" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_casino_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/txt_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:id="@id/txt_people" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

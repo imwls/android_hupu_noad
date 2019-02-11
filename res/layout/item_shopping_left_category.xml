@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="42.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/selector_shopping_types" android:gravity="center" android:id="@id/left_category_tv_name" android:background="@drawable/selector_shopping_types_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/left_category_line" android:background="@color/color_ff4343" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/all_replys_txt" style="@style/txt_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_top" android:background="?home_bg_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/res_cor1" android:id="@id/btn_video_1" android:background="@drawable/btn_rank_type_selector" android:layout_width="0.0dip" android:layout_height="48.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:shadowColor="@color/res_cor4" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="0.0" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@drawable/text_selector" android:id="@id/btn_video_2" android:background="@drawable/btn_rank_type_selector" android:layout_width="0.0dip" android:layout_height="48.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:shadowColor="@color/res_cor4" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="0.0" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.hupu.android.ui.view.xlistview.HPXListView android:id="@id/list_video" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+</LinearLayout>

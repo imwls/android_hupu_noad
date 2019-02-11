@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/tv_task_bg" android:layout_width="256.0dip" android:layout_height="256.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="?gift_font_land" android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="选择你支持的球员，赠送Ta礼物" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/name_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_title">
+                <TextView android:textSize="12.0sp" android:textColor="?gift_font_land" android:gravity="center" android:id="@id/no_player_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="当前场上暂无球员" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff4d5cf7" android:gravity="center" android:id="@id/left_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:singleLine="false" android:maxLength="10" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffe1481f" android:gravity="center" android:id="@id/right_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:singleLine="false" android:maxLength="10" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/split" android:background="?v0_main_color_line01" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_below="@id/name_info" />
+            <RelativeLayout android:id="@id/submit_layout" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textColor="?tv_quality_text" android:gravity="center" android:id="@id/send_btn" android:background="?tv_task_disable_btn_bg" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="75.0dip" android:layout_height="wrap_content" android:text="立即赠送" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <GridView android:id="@id/gift_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="2" android:layout_above="@id/submit_layout" android:layout_below="@id/split" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_subTitle" android:background="@drawable/bg_red_stroke_1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/color_f0f0f0" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_goods" android:layout_width="wrap_content" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_999999" android:id="@id/tv_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/iv_photo" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img" android:layout_width="155.0dip" android:layout_height="110.0dip" app:placeholderImage="@mipmap/zhanweifu" app:roundedCornerRadius="2.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_title" android:layout_width="155.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="穿搭课堂" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/tv_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="宽松直筒裤怎么穿" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

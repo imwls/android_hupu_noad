@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_portrait" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gift_list_layout_port" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/line3" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/top_gift_rank" android:background="#b3000000" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_below="@id/line3">
+            <ImageView android:id="@id/row_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?red_raw_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_1" android:gravity="center_vertical" android:id="@id/gift_rank_link" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="礼物排行" android:layout_toLeftOf="@id/row_img" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/line2" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/top_gift_rank" />
+        <RelativeLayout android:id="@id/gift_list_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line2">
+            <RelativeLayout android:id="@id/gift_all_land_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gift_batch_land_layout" android:background="#b3000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_below="@id/gift_list_main">
+            <GridView android:gravity="center_vertical" android:id="@id/batch_gif_grid_land" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="8" />
+        </RelativeLayout>
+        <View android:id="@id/line1" android:background="?main_color_4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/gift_list_main" />
+        <RelativeLayout android:id="@id/gift_message" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/line1">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="?main_color_1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gif_coin_buy" android:background="?recharge_p_bg" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="44.0dip" android:layout_height="24.0dip" android:text="充值" />
+                <TextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gif_mun_coin" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0" android:drawableLeft="?gold_ic" />
+                <TextView android:textSize="14.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gif_mun_bean" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0" android:drawableLeft="?bean_ic" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="?main_color_2" android:gravity="center" android:id="@id/gift_send_btn" android:background="?gift_send_btn_disable" android:layout_width="60.0dip" android:layout_height="26.0dip" android:layout_marginRight="10.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/send_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/gift_send_btn" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="?main_color_5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择送出：" />
+                <TextView android:textSize="14.0sp" android:textColor="?main_color_1" android:layout_gravity="center_vertical" android:id="@id/send_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

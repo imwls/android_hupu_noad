@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <cn.shihuo.modulelib.views.photodraweeview.MultiTouchViewPager android:id="@id/imgbrower_viewpager" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center|top" android:id="@id/tv_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/iv_close" android:background="@drawable/search_result_close_bg" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/tv_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_dd1712" android:gravity="center" android:id="@id/tv_buy" android:background="@drawable/tag_bg_red_round_channel" android:layout_width="100.0dip" android:layout_height="34.0dip" android:layout_marginTop="30.0dip" android:text="去购买" />
+    </LinearLayout>
+</FrameLayout>

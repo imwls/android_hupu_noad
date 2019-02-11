@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/xlistview_footer_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.view.ProgressWheel android:id="@id/xlistview_footer_progressbar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="#ffb42127" />
+        <TextView android:textSize="16.0sp" android:textColor="?listview_more_txt_color" android:id="@id/xlistview_footer_text" android:paddingTop="8.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有更多了" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="?listview_more_txt_color" android:gravity="center" android:id="@id/xlistview_footer_load_earlier_info" android:paddingTop="8.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/look_earlier_info" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

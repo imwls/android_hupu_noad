@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/line_horizontal" />
+    <ImageView android:layout_width="203.0dip" android:layout_height="203.0dip" android:layout_marginTop="48.0dip" android:src="@mipmap/pingjiachenggong" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="亲，您的评价是我们成长的动力！" />
+    <Button android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/selector_button" android:layout_width="124.0dip" android:layout_height="36.0dip" android:layout_marginTop="34.0dip" android:text="完成" android:onClick="done" />
+</LinearLayout>

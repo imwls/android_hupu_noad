@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tags" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="49.5dip" android:divider="@drawable/divider_3" android:showDividers="middle">
+        <RadioButton android:textSize="12.0sp" android:textColor="@color/selector_3" android:gravity="center" android:id="@id/all" android:background="@drawable/bg_2" android:layout_width="fill_parent" android:layout_height="24.0dip" android:checked="true" android:button="@null" android:text="全部" android:layout_weight="1.0" />
+        <RadioButton android:textSize="12.0sp" android:textColor="@color/selector_3" android:gravity="center" android:id="@id/dptj" android:background="@drawable/bg_2" android:layout_width="fill_parent" android:layout_height="24.0dip" android:button="@null" android:text="单品推荐" android:layout_weight="1.0" />
+        <RadioButton android:textSize="12.0sp" android:textColor="@color/selector_3" android:gravity="center" android:id="@id/ycjx" android:background="@drawable/bg_2" android:layout_width="fill_parent" android:layout_height="24.0dip" android:button="@null" android:text="达人清单" android:layout_weight="1.0" />
+        <RadioButton android:textSize="12.0sp" android:textColor="@color/selector_3" android:gravity="center" android:id="@id/yhsw" android:background="@drawable/bg_2" android:layout_width="fill_parent" android:layout_height="24.0dip" android:button="@null" android:text="优质晒物" android:layout_weight="1.0" />
+    </RadioGroup>
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_update_for_you" android:background="#dcdd1712" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="37.5dip" />
+</FrameLayout>

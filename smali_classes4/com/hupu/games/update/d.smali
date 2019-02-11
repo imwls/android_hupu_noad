@@ -1,0 +1,120 @@
+.class public Lcom/hupu/games/update/d;
+.super Lcom/hupu/games/data/BaseEntity;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:I
+
+.field public b:Ljava/lang/String;
+
+.field public c:I
+
+.field public d:Ljava/lang/String;
+
+.field public e:Ljava/lang/String;
+
+.field public f:I
+
+.field public g:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 7
+    invoke-direct {p0}, Lcom/hupu/games/data/BaseEntity;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public paser(Lorg/json/JSONObject;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .prologue
+    .line 20
+    const-string v0, "result"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    .line 21
+    if-eqz v0, :cond_0
+
+    .line 22
+    const-string v1, "force"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/hupu/games/update/d;->a:I
+
+    .line 23
+    const-string v1, "version"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/hupu/games/update/d;->b:Ljava/lang/String;
+
+    .line 24
+    const-string v1, "code"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/hupu/games/update/d;->c:I
+
+    .line 25
+    const-string v1, "desc"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/hupu/games/update/d;->d:Ljava/lang/String;
+
+    .line 26
+    const-string v1, "url"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/hupu/games/update/d;->e:Ljava/lang/String;
+
+    .line 27
+    const-string v1, "network_type"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/hupu/games/update/d;->f:I
+
+    .line 28
+    const-string v1, "md5"
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/hupu/games/update/d;->g:Ljava/lang/String;
+
+    .line 30
+    :cond_0
+    return-void
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.0" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:lines="2" android:lineSpacingExtra="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_dd1712" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+        <cn.shihuo.modulelib.views.widget.fonttextview.PriceFontTextView android:textSize="17.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_no_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="暂无购买渠道" />
+</LinearLayout>

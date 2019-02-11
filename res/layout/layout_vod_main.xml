@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_portrait" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:loading_layoutid="@layout/loading_layout_style_default" app:is_show_error="false">
+        <RelativeLayout android:id="@id/view_parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_video" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_title_bar">
+                <com.hupu.games.huputv.views.HPTVLiveVodView android:id="@id/video_view" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <com.hupu.app.android.bbs.core.common.dal.h5.view.HupuWebView android:id="@id/video_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_video" />
+        </RelativeLayout>
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+    <include android:layout_width="250.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" layout="@layout/danmu_setting" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_quality" android:background="@drawable/quality_bg" android:visibility="gone" android:layout_width="66.0dip" android:layout_height="95.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="84.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:gravity="center" android:id="@id/switch_sc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="超清" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:gravity="center" android:id="@id/switch_hc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="高清" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="?common_title_txt" android:gravity="center" android:id="@id/switch_nor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="标清" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/cut_finish_layout" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/cut_imageview" android:background="#00000000" android:layout_width="290.0dip" android:layout_height="164.0dip" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/cut_imageview" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_cut_screen_ok" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/night_res_cor5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已保存至系统相册，可以分享给好友啦" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_layout" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/tv_wx_share_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/tv_wx_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_wx_share" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/night_res_cor5" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信好友" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tv_wx_share_group_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_toRightOf="@id/tv_wx_share_layout" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/tv_wx_share_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?tv_wx_share_group" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/night_res_cor5" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/tv_share_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginRight="28.0dip" android:src="?tv_cut_screen_cancel" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

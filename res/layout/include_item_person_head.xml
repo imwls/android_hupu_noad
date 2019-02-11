@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_person_head_img" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" fresco:fadeDuration="1000" fresco:placeholderImage="@mipmap/zhanweifu_header" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/item_person_head_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="Shawnma11" android:layout_toRightOf="@id/item_person_head_img" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:id="@id/item_person_head_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016-5-26" android:layout_toRightOf="@id/item_person_head_img" android:layout_below="@id/item_person_head_tv_name" />
+    </RelativeLayout>
+</merge>

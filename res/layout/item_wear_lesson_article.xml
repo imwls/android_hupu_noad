@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="210.0dip" android:layout_height="216.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img1" android:layout_width="140.0dip" android:layout_height="199.0dip" app:placeholderImage="@mipmap/zhanweifu" app:roundedCornerRadius="2.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img2" android:layout_width="69.0dip" android:layout_height="99.0dip" app:placeholderImage="@mipmap/zhanweifu" app:roundedCornerRadius="2.0dip" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img3" android:layout_width="69.0dip" android:layout_height="99.0dip" android:layout_marginTop="1.0dip" app:placeholderImage="@mipmap/zhanweifu" app:roundedCornerRadius="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/bg_wear_lesson_article_white_2dp" android:layout_width="170.0dip" android:layout_height="34.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/tv_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

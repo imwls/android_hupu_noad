@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.FlingBehaviorForViewPager">
+                <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingToolbarLayout" android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center_horizontal" android:id="@id/shop_iv_home" android:background="@mipmap/img_shop" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <ImageView android:layout_gravity="center" android:background="@drawable/img_shop_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                                    <EditText android:textSize="14.0sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_bdbdbd" android:layout_gravity="center" android:id="@id/shop_et_search" android:background="@drawable/bg_shop_edit" android:paddingLeft="10.0dip" android:layout_width="300.0dip" android:layout_height="43.0dip" android:hint="粘贴宝贝链接，验证识货推荐店铺" android:singleLine="true" android:drawableLeft="@mipmap/icon_shop_link" android:drawablePadding="10.0dip" android:inputType="text" android:imeOptions="actionSearch" />
+                                </FrameLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_shop_one" />
+                                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="行业十年\n权威认证" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_shop_two" />
+                                    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="伪造证书\n一键查验" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_shop_three" />
+                                    <TextView android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="售后保障\n安心购买" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:gravity="center" android:background="@android:color/white" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="网络伪造证书日益严重，谨慎购买以免上当受骗" />
+                            <include layout="@layout/line_horizontal" />
+                            <LinearLayout android:gravity="center" android:background="@android:color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <View android:background="@color/color_dadada" android:layout_width="15.0dip" android:layout_height="1.0dip" />
+                                <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="品牌旗舰店" />
+                                <View android:background="@color/color_dadada" android:layout_width="15.0dip" android:layout_height="1.0dip" />
+                            </LinearLayout>
+                            <co.lujun.androidtagview.TagContainerLayout android:id="@id/shop_tag_brand" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:vertical_interval="15.0dip" app:horizontal_interval="10.0dip" app:container_border_radius="0.0dip" app:container_border_color="#00000000" app:container_background_color="@android:color/white" app:container_enable_drag="false" app:container_max_lines="2" app:tag_corner_radius="2.0dip" app:tag_text_size="14.0sp" app:tag_text_color="@color/color_333333" app:tag_border_color="#00000000" app:tag_background_color="@color/color_f0f3f5" app:tag_clickable="true" app:tag_theme="none" />
+                            <include android:layout_width="fill_parent" android:layout_height="200.0dip" layout="@layout/fragment_main_banner" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" app:tabTextAppearance="@style/ShiHuoTabTextStyle" app:tabSelectedTextColor="@color/color_ff4343" app:tabPaddingStart="15.0dip" app:tabPaddingEnd="15.0dip" />
+                                <include layout="@layout/line_horizontal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                    <include android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin" layout="@layout/toolbar" />
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+            <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/shop_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" app:layout_anchor="@id/shop_recycler" app:layout_anchorGravity="bottom|right|center" layout="@layout/anchor_list_totop" />
+        </android.support.design.widget.CoordinatorLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+    <include layout="@layout/loading" />
+</FrameLayout>

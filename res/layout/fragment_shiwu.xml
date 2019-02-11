@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.FlingBehaviorForViewPager">
+                <android.support.design.widget.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                    <LinearLayout android:orientation="vertical" android:id="@id/find417_header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize">
+                        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_main_banner" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/find_channel_ll" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="71.0dip" />
+                        <include layout="@layout/line_horizontal" />
+                        <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门活动" />
+                        </LinearLayout>
+                        <FrameLayout android:background="@android:color/white" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                            <android.support.v7.widget.RecyclerView android:id="@id/shiwu_list_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TabLayout android:id="@id/find_tablayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" app:tabTextAppearance="@style/ShiHuoTabTextStyle" app:tabSelectedTextColor="@color/color_ff4343" app:tabPaddingStart="15.0dip" app:tabPaddingEnd="15.0dip" />
+                    <include layout="@layout/line_horizontal" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager android:id="@id/find_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <android.support.design.widget.FloatingActionButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/release_icon" app:elevation="6.0dip" app:layout_behavior="cn.shihuo.modulelib.views.behaviors.ShaiwuCreateBehavior" app:layout_anchor="@id/find_vp" app:layout_anchorGravity="bottom|center" app:rippleColor="#33728dff" app:pressedTranslationZ="12.0dip" app:useCompatPadding="true" app:backgroundTint="@color/color_ff4343" />
+            <include android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" app:layout_anchor="@id/find_vp" app:layout_anchorGravity="bottom|right|center" layout="@layout/anchor_list_totop" />
+        </android.support.design.widget.CoordinatorLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/loading" />
+</FrameLayout>

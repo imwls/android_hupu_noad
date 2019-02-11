@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textColor="@color/color_dd1712" android:id="@id/layout_shoppinggo_tv_tag" android:background="@drawable/tag_bg_red_round_channel" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="包邮" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/layout_shoppinggo_tv_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="告知商家 来自识货 享受包邮服务" android:singleLine="true" />
+</LinearLayout>

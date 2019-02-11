@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="291.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent_70" android:paddingBottom="15.0dip" android:layout_width="291.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/guess_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="" android:singleLine="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/name_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/guess_title" />
+        <View android:id="@id/split_line" android:background="#4dffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_below="@id/name_list" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff8b8888" android:gravity="center" android:id="@id/send_guess_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="参与竞猜" android:layout_below="@id/split_line" />
+        <ImageView android:id="@id/guess_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/bbs_float_close_day" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

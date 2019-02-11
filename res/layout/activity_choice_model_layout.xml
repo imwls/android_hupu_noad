@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?main_color_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" android:background="?common_bg_title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="17.0sp" android:textColor="?thread_btn_cor" android:id="@id/btn_back" android:background="@color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="?main_color_5" android:id="@id/tv_mfjd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费鉴定" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_1" android:id="@id/tv_mfjdjh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="" android:layout_below="@id/tv_mfjd" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/txt2" android:textColor="?game_textcolor_lineup_away_number" android:id="@id/btn_free_submit" android:background="?main_color_4" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="发布鉴定" android:layout_below="@id/tv_mfjdjh" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/ll_bind" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/btn_free_submit" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_7" android:id="@id/tv_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定手机" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_line" android:background="@color/bg_info_player_list_divider" android:layout_width="300.0dip" android:layout_height="1.0px" android:layout_marginTop="30.0dip" android:layout_below="@id/ll_bind" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textColor="?main_color_5" android:id="@id/tv_ffjd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="付费鉴定" android:layout_below="@id/tv_line" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_1" android:id="@id/tv_ffjdjh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="" android:layout_below="@id/tv_ffjd" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/txt2" android:textColor="?game_textcolor_lineup_away_number" android:id="@id/btn_pay_submit" android:background="?main_color_4" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="发布鉴定" android:layout_below="@id/tv_ffjdjh" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/btn_pay_submit" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_5" android:id="@id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_7" android:id="@id/tv_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

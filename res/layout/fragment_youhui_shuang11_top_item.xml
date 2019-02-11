@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:background="@drawable/bg_youhui_shuang_11" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/iv_shuang11_img1" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/tv_shuang11_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="运动" />
+</LinearLayout>

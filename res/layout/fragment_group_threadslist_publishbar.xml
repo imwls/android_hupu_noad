@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/root_main" android:background="?bbs_board_inner_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="horizontal" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/bbs_st_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/bbs_sort_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/new_reply" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="最新回复" />
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/sort_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_pulldown_icon" android:layout_toRightOf="@id/new_reply" android:layout_centerVertical="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorView android:background="?bbs_splitline" android:layout_width="1.0px" android:layout_height="40.0dip" />
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/bbs_pub_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/bbs_publish_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/send_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_send_icon" android:layout_centerVertical="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="发新帖" android:layout_toRightOf="@id/send_icon" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.colorUi.ColorView android:background="?bbs_splitline" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

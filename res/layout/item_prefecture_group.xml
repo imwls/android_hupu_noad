@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/ll_out_group" android:layout_width="79.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_group" android:background="@drawable/selector_prefecture_list_category" android:layout_width="fill_parent" android:layout_height="25.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:ellipsize="end" android:gravity="center" android:id="@id/tv_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="62.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/iv_group" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/selector_arrow_up_down" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

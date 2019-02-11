@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_brand" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_sample" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="索尼" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_dsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="全场限时5折起" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/tv_new" android:background="@mipmap/icon_samplesale_new" android:layout_width="34.0dip" android:layout_height="17.0dip" android:layout_marginLeft="5.0dip" android:text="NEW" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_item1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img1" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_quan1" android:background="@mipmap/icon_samplesale_sale_bg" android:layout_width="50.0dip" android:layout_height="16.0dip" android:layout_marginBottom="5.0dip" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center_horizontal" android:id="@id/tv_title1" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_quan_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券后" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_item2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img2" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_quan2" android:background="@mipmap/icon_samplesale_sale_bg" android:layout_width="50.0dip" android:layout_height="16.0dip" android:layout_marginBottom="5.0dip" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center_horizontal" android:id="@id/tv_title2" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_quan_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券后" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_item3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img3" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_quan3" android:background="@mipmap/icon_samplesale_sale_bg" android:layout_width="50.0dip" android:layout_height="16.0dip" android:layout_marginBottom="5.0dip" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center_horizontal" android:id="@id/tv_title3" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_quan_desc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券后" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

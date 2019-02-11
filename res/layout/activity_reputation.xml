@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/reputation_swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/reputation_recycler" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include android:layout_gravity="bottom|center|right" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" layout="@layout/anchor_list_totop" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_tag" android:gravity="center" android:id="@id/item_rv_recommend_tv_name" android:background="@drawable/bg_shiwu_tag" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" />
+    <View android:id="@id/item_rv_recommend_view" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

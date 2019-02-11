@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/quiz_list_tiele" style="@style/txt_title" />
+        <RelativeLayout android:id="@id/gold_num" style="@style/layout_right">
+            <ImageView android:id="@id/gold_img" android:background="?myinfo_gold_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="?common_title_txt" android:id="@id/coin_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:layout_toRightOf="@id/gold_img" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/box_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="?mybox_icon_gold_s" android:layout_toRightOf="@id/coin_num" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="?common_title_txt" android:id="@id/box_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="..." android:layout_toRightOf="@id/box_img" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.hupu.android.ui.widget.HPLoadingLayout android:id="@id/probar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_guess_mark" android:background="?v0_main_bg_color_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/guess_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.base.logic.component.widget.PinnedHeaderXListView android:id="@id/list_player" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transform" android:cacheColorHint="#00000000" android:divider="?v0_main_color_line01" android:dividerHeight="@dimen/divider_height1" android:layout_below="@id/layout_guess_mark" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/res_cor8" android:gravity="center" android:layout_gravity="center" android:id="@id/img_no_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_my_quiz" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.hupu.android.ui.widget.HPLoadingLayout>
+</RelativeLayout>

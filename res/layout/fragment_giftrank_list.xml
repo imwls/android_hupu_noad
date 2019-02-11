@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.widget.PagerSlidingTabStrip android:id="@id/page_indicator" android:layout_width="fill_parent" android:layout_height="48.0dip" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="?home_bg_indicator" app:pstsIndicatorHeight="3.0dip" app:pstsShouldExpand="true" app:ptstCurrentTextColor="?home_textcolor_current_indicator" app:ptstNormalTextColor="?home_textcolor_indicator" />
+        <com.base.logic.component.widget.HupuViewPager android:id="@id/myfavor_view_pager" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.view.ProgressWheel android:layout_gravity="center" android:id="@id/probar" android:layout_width="100.0dip" android:layout_height="100.0dip" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

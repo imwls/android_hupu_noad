@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_team_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="220.0dip">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/adver_bg" android:background="#ff1a2227" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+        <com.hupu.android.ui.colorUi.ColorView android:id="@id/bg_head" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="18.0sp" android:textColor="?info_textcolor_style1" android:id="@id/txt_title" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" style="@style/txt_team_player_top_title" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="12.0sp" android:textColor="?info_textcolor_style1" android:id="@id/txt_title_en" android:layout_marginBottom="10.0dip" android:text="" android:layout_below="@id/txt_title" android:layout_centerHorizontal="true" style="@style/txt_team_player_top_info" />
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/layout_info" android:background="?team_info_shape_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:gravity="center" android:id="@id/layout_score" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="15.0dip" android:layout_above="@id/team_bbs_link">
+                <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/teamlog" android:layout_width="55.0dip" android:layout_height="44.0dip" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+                    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/layout_score_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/teamlog" android:layout_centerInParent="true">
+                        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/team_rank_head" style="@style/txt_team_player_top_info_title" />
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/team_rank_value" style="@style/txt_team_player_top_info" />
+                        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+                        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_horizontal" android:id="@id/layout_market_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/market_value_title" style="@style/txt_team_player_top_info_title" />
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/market_value" style="@style/txt_team_player_top_info" />
+                        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+                        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_horizontal" android:id="@id/layout_home_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/home_area_title" style="@style/txt_team_player_top_info_title" />
+                            <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/home_area" style="@style/txt_team_player_top_info" />
+                        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+                    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+                </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            <com.hupu.android.ui.colorUi.ColorView android:id="@id/divider" style="@style/view_divider1" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textStyle="bold" android:textColor="?main_color_1" android:gravity="center" android:id="@id/team_bbs_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_centerHorizontal="true" style="@style/txt_team_player_top_info" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

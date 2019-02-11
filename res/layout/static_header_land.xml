@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center" android:id="@id/txt_title_land" style="@style/txt_statistics_data"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

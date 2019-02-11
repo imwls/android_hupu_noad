@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/league_left_list" android:background="?v0_main_bg_color_4" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="95.0dip" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <com.base.logic.component.widget.PinnedHeaderXListView android:id="@id/teams_right_list" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_toRightOf="@id/league_left_list" />
+    <com.hupu.android.ui.colorUi.ColorFrameLayout android:id="@id/loadinglayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="46.0dip" android:layout_below="@id/layout_title_bar" />
+</RelativeLayout>

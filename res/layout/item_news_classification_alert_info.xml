@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?bg_classification_alert_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/item_classification_alert_info" android:background="?bg_classification_alert_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="@dimen/txt5" android:textColor="?news_second_nav_btn_down" android:id="@id/firtEnterClassificationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_toLeftOf="@id/closeClassificationAlertInfo" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/closeClassificationAlertInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bg_classification_alert_info_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

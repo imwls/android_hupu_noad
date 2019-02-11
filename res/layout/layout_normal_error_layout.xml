@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:orientation="vertical" android:background="?main_color_3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorImageView android:textSize="16.0sp" android:textColor="?main_color_4" android:layout_gravity="center_horizontal" android:id="@id/webview_error_txt" android:background="?webview_icon_error_cry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt3" android:textColor="?main_color_4" android:layout_gravity="center_horizontal" android:id="@id/tv_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/webview_error_refresh" android:drawableLeft="?webview_icon_error_refresh" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

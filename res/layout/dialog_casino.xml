@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?game_bg_quiz_float" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="?game_textcolor_style1" android:gravity="center" android:layout_gravity="center_horizontal" android:background="?dialog_quiz_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/quiz_list_tiele" />
+        <TextView android:textSize="16.0dip" android:textColor="?main_color_5" android:id="@id/txt_casino_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="14.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="?main_color_4" android:id="@id/txt_casino_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="14.0dip" />
+        <View android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/radioGroup1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:id="@id/radio0" style="@style/BetButton" />
+            <TextView android:id="@id/radio1" style="@style/BetButton" />
+            <TextView android:id="@id/radio2" style="@style/BetButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/radioGroup2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:id="@id/radio3" style="@style/BetButton" />
+            <TextView android:id="@id/radio4" style="@style/BetButton" />
+            <TextView android:id="@id/radio5" style="@style/BetButton" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="?main_color_5" android:id="@id/txt_1" android:text="当前余额：..." style="@style/BetText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textSize="13.0dip" android:textColor="?main_color_5" android:id="@id/btn_cancel" android:background="?common_btn_dialog_cancel" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+            <Button android:textSize="13.0dip" android:textColor="?game_textcolor_style1" android:id="@id/btn_confirm" android:background="?common_btn_dialog_confirm" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:minWidth="120.0dip" android:minHeight="0.0dip" android:text="@string/submit_confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

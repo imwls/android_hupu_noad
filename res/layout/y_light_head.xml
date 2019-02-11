@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/y_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/y_lamp" android:layout_width="185.0dip" android:layout_height="115.0dip" android:src="@drawable/loading_pulltorefresh_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/y_light" android:layout_width="185.0dip" android:layout_height="115.0dip" android:src="@drawable/loading_pulltorefresh_light" android:layout_centerInParent="true" />
+    </FrameLayout>
+</LinearLayout>

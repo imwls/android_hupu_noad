@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout android:orientation="vertical" android:id="@id/keyboardListenLayout" android:background="?bbs_publish_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" android:background="?bbs_title_bg_normal" style="@style/bbs_bg_title_bar">
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor_light" android:id="@id/btn_cancel" android:background="@color/transparent" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor_blue" android:id="@id/btn_sure" android:background="@color/transparent" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="插入" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?thread_btn_cor" android:id="@id/txt_title" android:text="编辑投票" style="@style/bbs_txt_title" />
+    </RelativeLayout>
+    <include android:id="@id/line_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/layout_title_bar" layout="@layout/line_simple_layout" />
+    <RelativeLayout android:id="@id/check_selector_layout" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/line_top">
+        <LinearLayout android:orientation="horizontal" android:id="@id/check_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="?vote_text_color" android:gravity="center" android:id="@id/selete_radio" android:background="?vote_btn_bg" android:layout_width="100.0dip" android:layout_height="24.0dip" android:text="单选" />
+            <TextView android:textSize="14.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/selete_check" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="24.0dip" android:text="多选" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/line_title1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/check_selector_layout" layout="@layout/line_simple_layout" />
+    <ScrollView android:id="@id/voting_scroll" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line_title1" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/vote_tag_layout" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_alignParentLeft="true">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/titleTag" android:layout_width="30.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/vote_day" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            <EditText android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:id="@id/select_title_edit" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:maxLength="50" android:layout_toRightOf="@id/vote_tag_layout" />
+            <include android:id="@id/line_title2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/select_title_edit" layout="@layout/line_simple_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/checkbox_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line_title2" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/vote_text_layout" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/checkbox_layout" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0sp" android:textColor="?vote_text_bg" android:layout_gravity="center_vertical" android:id="@id/t_add_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+                <TextView android:textSize="15.0sp" android:textColor="?vote_text_bg" android:layout_gravity="center_vertical" android:id="@id/t_add_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="增加选项" />
+            </LinearLayout>
+            <include android:id="@id/split_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/vote_text_layout" layout="@layout/line_simple_layout" />
+            <RelativeLayout android:id="@id/select_number_layout" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/split_line">
+                <TextView android:textSize="15.0sp" android:textColor="?vote_text_bg" android:id="@id/select_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最多可选3项" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/voteselect_layout" android:background="#77000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/select_opt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="18.0sp" android:textColor="?main_color_4" android:id="@id/vote_select_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="18.0sp" android:textColor="?main_color_5" android:id="@id/vote_select_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.hupu.android.ui.view.wheelview.views.WheelView android:id="@id/vote_wheel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/select_opt" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </RelativeLayout>
+</com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout>

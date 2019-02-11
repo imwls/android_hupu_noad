@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="您有淘宝链接可以验证" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/dialog_shop_verify_tv_content" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="［识货推荐air Jordan 11 spacejam aj11 大灌篮 37890909898978］" android:maxLines="2" android:lineSpacingExtra="10.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="41.0dip">
+        <Button android:textSize="17.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/dialog_shop_verify_btn_cancel" android:background="@drawable/shape_shop_verify_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="以后再说" android:layout_weight="1.0" />
+        <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dialog_shop_verify_btn_ok" android:background="@drawable/shape_shop_verify_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="立即验证" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

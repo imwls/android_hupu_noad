@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/child_layout" android:background="?v0_main_bg_color_1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:gravity="center" android:id="@id/item_mid_title" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="射门" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/statistic_info" android:paddingLeft="50.0dip" android:paddingTop="5.0dip" android:paddingRight="13.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?football_statistic_more" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/item_mid_title" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/leftProgress" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+            <ProgressBar android:id="@id/rightProgress" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+        <TextView android:textColor="?main_color_5" android:gravity="right" android:id="@id/textLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15" android:layout_toLeftOf="@id/item_mid_title" android:layout_alignBottom="@id/item_mid_title" />
+        <TextView android:textColor="?main_color_5" android:gravity="left" android:id="@id/textRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11" android:layout_toRightOf="@id/item_mid_title" android:layout_alignBottom="@id/item_mid_title" />
+    </RelativeLayout>
+</FrameLayout>

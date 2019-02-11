@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/box_bonus_pop_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/txt_bonus_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/txt_get_now" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="25.0dip">
+        <Button android:textSize="20.0sp" android:textColor="@color/res_cor1" android:id="@id/btn_cancel" android:background="?common_btn_dialog_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="100.0dip" android:minHeight="0.0dip" android:text="@string/cancel" />
+        <Button android:textSize="20.0sp" android:textColor="@color/res_cor1" android:id="@id/btn_get_now" android:background="?common_btn_dialog_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="100.0dip" android:minHeight="0.0dip" android:text="@string/get_now" />
+    </LinearLayout>
+</LinearLayout>

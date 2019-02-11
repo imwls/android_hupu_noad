@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <pl.droidsonroids.gif.GifImageView android:id="@id/img" android:clickable="false" android:layout_width="100.0dip" android:layout_height="100.0dip" android:maxWidth="300.0dip" android:maxHeight="300.0dip" android:minWidth="100.0dip" android:minHeight="100.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/img_cover" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/delete" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/delete_upload_img_icon" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/gif_flag2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_send_posts_gif_flag" android:layout_alignRight="@id/img" android:layout_alignBottom="@id/img" />
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_btn_day" android:layout_centerInParent="true" />
+</RelativeLayout>

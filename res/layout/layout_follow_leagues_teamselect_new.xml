@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" android:background="?v0_main_bg_color_1" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:textSize="@dimen/v0_txt2s" android:textStyle="bold" android:textColor="?main_color_5" android:id="@id/txt_title" android:text="@string/title_team_select" style="@style/txt_title" />
+    </RelativeLayout>
+    <View android:layout_marginBottom="10.0dip" android:layout_alignLeft="@id/mobile_rl" style="@style/view_divider1" />
+    <ScrollView android:id="@id/scrollview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/league_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <TextView android:textSize="@dimen/v0_txt9" android:textColor="?main_color_5" android:gravity="center" android:id="@id/txt_name" android:background="?item_nav_sort_bg" android:layout_width="75.0dip" android:layout_height="40.0dip" android:text="推荐" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/v0_txt3s" android:textColor="?main_color_5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="默认为首页" />
+                    <com.hupu.android.ui.colorUi.ColorToggleButton android:id="@id/switch_hot" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:layout_marginTop="10.0dip" android:layout_alignLeft="@id/mobile_rl" style="@style/view_divider1" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/v0_txt2" android:textStyle="bold" android:textColor="?main_color_5" android:id="@id/my_channal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/has_select_leagues" />
+                <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_3" android:text="@string/has_select_leagues_tips" android:layout_toRightOf="@id/my_channal" style="@style/txt_title" />
+                <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_5" android:id="@id/btn_done" android:text="完成" android:layout_alignParentRight="true" style="@style/txt_title" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.base.logic.component.widget.dragGridView.DragGridView android:gravity="center" android:id="@id/select_list_team" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:numColumns="4" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/v0_txt2" android:textStyle="bold" android:textColor="?main_color_5" android:id="@id/unadd_channal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/not_select_leagues" />
+                <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_3" android:text="@string/not_select_leagues_tips" android:layout_toRightOf="@id/unadd_channal" style="@style/txt_title" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <com.base.logic.component.widget.HupuGridView android:gravity="center" android:id="@id/noselect_list_team" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:numColumns="4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

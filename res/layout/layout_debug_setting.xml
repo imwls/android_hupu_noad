@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/new_res_cor3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="测试环境设置" style="@style/txt_title" />
+        <Button android:id="@id/btn_save" android:text="保存" style="@style/btn_right_txt" />
+    </RelativeLayout>
+    <com.base.logic.component.widget.CustomScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="server" />
+            </LinearLayout>
+            <Button android:textColor="@color/res_cor1" android:layout_gravity="center_horizontal" android:id="@id/btn_reset" android:background="?common_icon_nav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="重置" />
+            <LinearLayout android:gravity="center_vertical" android:background="@color/bg_discover_item" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/res_cor2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="显示友盟 toast" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/emeng_notify" android:background="?myinfo_toggle_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:textOn="@null" android:textOff="@null" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/bg_discover_item" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/res_cor2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="显示神策 toast" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/sensor_notify" android:background="?myinfo_toggle_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:textOn="@null" android:textOff="@null" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/bg_discover_item" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/res_cor2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="maa加速" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/toggle_maa" android:background="?myinfo_toggle_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:textOn="@null" android:textOff="@null" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/bg_discover_item" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/res_cor2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Bridge测试\n️勾选开关后，请点击论坛TAB进入" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/bridge_debug" android:background="?myinfo_toggle_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:textOn="@null" android:textOff="@null" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/bg_discover_item" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/res_cor2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="清除clientId" android:layout_weight="1.0" />
+                <Button android:id="@id/clean_clent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="清除" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.base.logic.component.widget.CustomScrollView>
+</LinearLayout>

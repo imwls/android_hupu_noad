@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="145.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/type_adtxt_img" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_marginRight="10.0dip" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/type_adtxt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="女王节男人也要买买鞋！优购女王节活动正式开启" android:maxLines="2" android:layout_toRightOf="@id/type_adtxt_img" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/type_adtxt_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="十年经典nike leborn solider 10男子篮球鞋采用新颖的款" android:maxLines="2" android:layout_toRightOf="@id/type_adtxt_img" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="广告" android:layout_toRightOf="@id/type_adtxt_img" android:layout_alignParentBottom="true" />
+</RelativeLayout>

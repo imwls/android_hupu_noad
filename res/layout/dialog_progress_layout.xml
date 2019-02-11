@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/process_main_layout" android:layout_width="150.0dip" android:layout_height="90.0dip">
+        <com.hupu.android.ui.view.ProgressWheel android:id="@id/progressbar" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="#ffb42127" />
+    </RelativeLayout>
+</FrameLayout>

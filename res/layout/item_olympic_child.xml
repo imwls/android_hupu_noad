@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:id="@id/layout_header" android:background="?gamelist_bg_item" android:layout_width="fill_parent" android:layout_height="77.0dip" android:minHeight="77.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="11.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="wrap_content" android:layout_height="0.0px" android:layout_weight="1.0">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_team_up" android:layout_width="32.0dip" android:layout_height="25.0dip" android:src="@drawable/bg_home_nologo" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="16.0dip" android:textColor="?gamelist_textcolor_team" android:ellipsize="end" android:gravity="left" android:id="@id/txt_team_up" android:layout_width="165.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/img_team_up" android:layout_centerVertical="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="wrap_content" android:layout_height="0.0px" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_team_down" android:layout_width="32.0dip" android:layout_height="25.0dip" android:src="@drawable/bg_home_nologo" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="16.0dip" android:textColor="?gamelist_textcolor_team" android:ellipsize="end" android:gravity="left" android:id="@id/txt_team_down" android:layout_width="165.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/img_team_down" android:layout_centerVertical="true" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/score_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.base.logic.component.widget.HupuTextView android:textSize="20.0dip" android:textColor="?gamelist_textcolor_score" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/txt_score_up" android:paddingTop="11.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.base.logic.component.widget.HupuTextView android:textSize="20.0dip" android:textColor="?gamelist_textcolor_score" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/txt_score_down" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center|right" android:id="@id/img_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?gamelist_icon_date" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:orientation="horizontal" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/img_live_layout" android:layout_width="62.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_live" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/img_video_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_video" android:background="?gamelist_icon_video_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0dip" android:textColor="?main_color_5" android:id="@id/text_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/img_video" />
+            </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img_live_layout" android:layout_centerVertical="true">
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0dip" android:textColor="?gamelist_textcolor_process" android:ellipsize="end" android:gravity="bottom|center" android:layout_gravity="right" android:id="@id/txt_proccess_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="2.0dip" />
+            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0dip" android:textColor="?gamelist_textcolor_process" android:ellipsize="end" android:gravity="bottom|center" android:layout_gravity="right" android:id="@id/txt_proccess_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

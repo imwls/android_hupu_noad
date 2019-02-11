@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_a80_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/live_video_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_back" android:layout_centerVertical="true" style="@style/btn_back" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="?game_textcolor_style1" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title_room_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?game_textcolor_style1" android:ellipsize="end" android:id="@id/title_online_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/btn_share_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:gravity="center" android:id="@id/btn_share" android:background="?tv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tv_set_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/btn_share_layout" android:layout_centerVertical="true">
+        <ImageView android:id="@id/tv_danmu_set_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="?tv_danmu_set" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ToggleButton android:id="@id/danmu_switch_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="?tv_danm_btn" android:textOn="" android:textOff="" android:text="" android:layout_toLeftOf="@id/tv_danmu_set_btn" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="?tv_quality_text" android:gravity="center" android:id="@id/btn_top_qaulity" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="25.0dip" android:text="标清" android:layout_toLeftOf="@id/danmu_switch_btn" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

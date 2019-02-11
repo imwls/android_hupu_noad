@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_promt" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:id="@id/tv_promt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="识货如何做到正品保障？查看详情" android:drawableLeft="@drawable/icon_help_day" android:drawableRight="@drawable/icon_equip_arrow" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <com.base.logic.component.widget.EquipNewFunLayout android:id="@id/equip_fun_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.base.logic.component.widget.EquipClassLayout android:orientation="horizontal" android:id="@id/equip_class1_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <com.base.logic.component.widget.EquipClassLayout android:id="@id/equip_class2_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/iv_equip_image" android:background="@color/normal_res_cor3" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

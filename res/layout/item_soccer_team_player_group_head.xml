@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_head" android:layout_width="fill_parent" android:layout_height="27.0dip">
+        <TextView android:gravity="left" android:id="@id/txt_group" android:layout_marginLeft="10.0dip" android:text="@string/STR_PLAYER" android:layout_weight="10.0" style="@style/txt_football_team_player_title" />
+        <TextView android:gravity="right" android:id="@id/txt_ball_in_head" android:text="@string/team_player_ball_in" android:layout_weight="2.0" style="@style/txt_football_team_player_title" />
+        <TextView android:gravity="right" android:id="@id/txt_attack_head" android:text="@string/team_player_attack" android:layout_weight="2.0" style="@style/txt_football_team_player_title" />
+        <TextView android:gravity="right" android:id="@id/title_worth" android:paddingRight="10.0dip" android:text="@string/market_value" android:layout_weight="5.0" style="@style/txt_football_team_player_title" />
+    </LinearLayout>
+</RelativeLayout>

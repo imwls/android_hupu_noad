@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shopping_ll_intro" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="商品简介" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/tv_shopping_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_shopping_detail" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部简介" android:drawableRight="@mipmap/icon_app_next" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

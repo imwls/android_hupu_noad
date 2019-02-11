@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_gray_clip_dialog" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0sp" android:text="添加商品" />
+    <LinearLayout android:background="@drawable/bg_gray_clip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="品牌" />
+        <EditText android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center|left" android:id="@id/shopping_dialog_et_brand" android:background="@null" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="请填写品牌" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/bg_gray_clip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="商品" />
+        <EditText android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center|left" android:id="@id/shopping_dialog_et_shopping" android:background="@null" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="请填写商品型号或名称" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/shopping_dialog_btn_confirm" android:background="@drawable/bg_red_buy" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0sp" android:text="确定" />
+</LinearLayout>

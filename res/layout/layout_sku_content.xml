@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/dialog_shoppinggo_digit3c_ll_du" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip">
+        <include layout="@layout/layout_shoppinggo_du" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_shoppinggo_digit3c_ll_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/dialog_shoppinggo_digit3c_rv_coupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" />
+    <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_shoppinggo_digit3c_ll_option" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/dialog_channel_view" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+</LinearLayout>

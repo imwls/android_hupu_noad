@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_lv_item_white" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/item_star_tv_name" android:layout_width="69.0dip" android:layout_height="fill_parent" android:text="詹姆斯" />
+</LinearLayout>

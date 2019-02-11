@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="top" android:id="@id/pop_down" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.design.widget.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:layout_behavior="cn.shihuo.modulelib.views.behaviors.FlingBehaviorForViewPager">
+                <android.support.design.widget.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:layout_scrollFlags="exitUntilCollapsed|scroll">
+                    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize">
+                            <include android:layout_width="fill_parent" android:layout_height="134.0dip" layout="@layout/fragment_main_banner" />
+                            <include layout="@layout/fragment_youhui_searchview" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_brand_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_brand_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="24小时淘不停" android:layout_weight="1.0" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_brand_href" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他品牌特卖" android:drawableRight="@mipmap/icon_arrow_1" android:drawablePadding="5.0dip" />
+                            </LinearLayout>
+                            <include layout="@layout/item_layout_sample_sale" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_shuang11" android:background="@android:color/white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/ll_shuang11_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <cn.shihuo.modulelib.views.widget.easyrecyclerview.EasyRecyclerView android:id="@id/recyclerView_shuang11" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/tv_zone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="超值9块9" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_zone_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="24小时淘不停" android:layout_weight="1.0" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多商品" android:drawableRight="@mipmap/icon_arrow_1" android:drawablePadding="5.0dip" />
+                            </LinearLayout>
+                            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_zones" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="13.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_4" android:showDividers="beginning|middle" />
+                            </HorizontalScrollView>
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_ad" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" fresco:placeholderImageScaleType="centerCrop" fresco:roundedCornerRadius="20.0dip" fresco:roundWithOverlayColor="@android:color/white" />
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                </android.support.design.widget.CollapsingToolbarLayout>
+                <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <android.support.design.widget.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="44.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" fresco:tabIndicatorColor="@color/color_dd1712" fresco:tabIndicatorHeight="2.0dip" fresco:tabMode="scrollable" fresco:tabTextAppearance="@style/TextAppearance1" fresco:tabTextColor="@color/color_333333" fresco:tabSelectedTextColor="@color/color_dd1712" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/ll_menu" android:background="@mipmap/icon_tab_menu" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/iv_menu" android:paddingLeft="10.0dip" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/category_arrow" />
+                    </LinearLayout>
+                </FrameLayout>
+            </android.support.design.widget.AppBarLayout>
+            <cn.shihuo.modulelib.views.MainTabViewPager android:id="@id/viewPager" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <View android:id="@id/popupWindowMask" android:background="#30000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" />
+        </android.support.design.widget.CoordinatorLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+    <include layout="@layout/toolbar" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|center|right" android:id="@id/bt_layer" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="68.0dip" />
+</FrameLayout>

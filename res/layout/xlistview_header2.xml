@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorGifImageView android:id="@id/img_bg_poster" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitEnd" app:filter_type="mask" app:has_filter="true" />
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/xlistview_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hupu.android.ui.widget.HPFadeRefreshView android:id="@id/xlistview_header_progressbar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:drawable_res="@drawable/loading_pulltorefresh_light" app:is_show_bling="false" />
+            <com.hupu.android.ui.widget.HPFadeRefreshView android:id="@id/xlistview_header_progressbar2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:drawable_res="@drawable/loading_pulltorefresh_light" app:is_show_bling="false" />
+            <com.hupu.android.ui.widget.HPFadeRefreshView android:id="@id/xlistview_header_progressbar3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:drawable_res="@drawable/loading_pulltorefresh_light2" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    </FrameLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

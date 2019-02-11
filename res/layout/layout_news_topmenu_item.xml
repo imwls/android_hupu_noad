@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt4" android:textColor="?main_color_4" android:gravity="center" android:layout_gravity="bottom" android:id="@id/msg_topmenu_tv" android:background="?game_sub_nav_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="29.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip" android:minWidth="60.0dip" android:singleLine="true" />
+    <com.hupu.android.ui.colorUi.ColorTextView android:textSize="8.5sp" android:textColor="@color/normal_res_cor2" android:gravity="center" android:id="@id/newLeftTopCorner" android:background="@drawable/new_right_top_tv_shape" android:visibility="invisible" android:layout_width="29.0dip" android:layout_height="12.0dip" android:layout_marginLeft="40.0dip" android:layout_marginBottom="25.0dip" android:text="NEW" />
+</com.hupu.android.ui.colorUi.ColorFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/phonelist_brands_ll_root" android:background="@drawable/selector_phonelist_tab" android:layout_width="70.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/phonelist_brands_img" android:layout_width="70.0dip" android:layout_height="28.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/selector_color_gray62white" android:gravity="center" android:id="@id/phonelist_brands_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+</LinearLayout>

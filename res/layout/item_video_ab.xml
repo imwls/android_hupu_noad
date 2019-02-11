@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/rl_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentRight="true">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_video" android:background="?news_icon_no_pic" android:layout_width="86.0dip" android:layout_height="65.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+            <com.hupu.android.ui.colorUi.ColorImageView android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?videolist_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/rl_video" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/v0_txt3" android:textColor="?main_color_5" android:gravity="left" android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/txt_content">
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/time_ic" android:background="?videolist_time_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/comment_ic" android:background="?news_vedio_eye_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txt_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+</LinearLayout>

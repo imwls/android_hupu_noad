@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_quiz_info" android:background="?v0_main_bg_color_3" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0dip" android:textColor="?main_color_5" android:id="@id/user_info" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rank_layout" android:layout_centerVertical="true" />
+        <LinearLayout android:id="@id/rank_layout" android:background="@drawable/btn_rank_selector" android:layout_width="75.0dip" android:layout_height="31.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="11.0dip" android:textColor="?main_color_5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="查看详情" android:drawableLeft="?game_icon_quiz_rank" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/quiz_ad_layout" android:background="?v0_main_bg_color_1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="108.0dip">
+        <TextView android:id="@id/quiz_ad_title" android:layout_toLeftOf="@id/quiz_ad_img" style="@style/txt_quiz_title" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/quiz_ad_img" android:layout_width="86.0dip" android:layout_height="65.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13.0dip" android:textColor="?main_color_7" android:id="@id/ad_tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/txt_ad_tag" />
+            <TextView android:textSize="13.0dip" android:textColor="?main_color_4" android:id="@id/user_click_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/close_quiz_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?bbs_no_interest" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_layout" android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/nav_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/low_price_layout" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/low_price_text" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特价优惠" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/spacial_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?equip_arrow_down" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="?main_color_3" android:layout_width="1.0px" android:layout_height="23.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hot_hit_layout" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/hot_hit_text" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气最高" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/hot_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?equip_arrow_down" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="?main_color_3" android:layout_width="1.0px" android:layout_height="23.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/all_price_layout" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="?main_color_5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/all_price_text" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部价格" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/price_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?equip_arrow_down" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/classification_all_layout" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_below="@id/nav_layout">
+            <com.hupu.android.ui.view.horizontalscrollview.HPHorizontalScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="57.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/equip_class_head_layout" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.hupu.android.ui.view.horizontalscrollview.HPHorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

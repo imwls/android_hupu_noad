@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/info_child_img" android:layout_width="18.0dip" android:layout_height="wrap_content" app:viewAspectRatio="1.125" app:placeholderImage="@mipmap/zhanweifu" />
+    <cn.shihuo.modulelib.views.widget.ReadMoreTextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/info_child_tv_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" />
+</LinearLayout>

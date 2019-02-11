@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:tl="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" tl:elevation="0.0dip" tl:layout_behavior="cn.shihuo.modulelib.views.behaviors.FlingBehaviorForViewPager">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" tl:layout_scrollFlags="scroll">
+                <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" tl:contentInsetStart="0.0dip" tl:contentInsetEnd="0.0dip" tl:contentInsetLeft="0.0dip" tl:contentInsetRight="0.0dip" tl:contentInsetStartWithNavigation="0.0dip">
+                    <View android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                    <RelativeLayout android:background="@drawable/main_top_edit_bg_gray" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <include layout="@layout/include_search_icon" />
+                        <EditText android:textSize="12.0sp" android:textColorHint="@color/color_search_title" android:id="@id/newsearchresult_et" android:background="@null" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="请输入商品" android:singleLine="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" />
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+                <include layout="@layout/line_horizontal" />
+                <ViewSwitcher android:id="@id/viewSwitcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:background="@mipmap/bg_search_head" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="141.0dip">
+                        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo_h5" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+                            <LinearLayout android:orientation="vertical" android:background="@drawable/selector_lv_item_white" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginBottom="-5.0dip">
+                                <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_name_h5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="3.0dip" />
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                                    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_discount" android:background="@drawable/bg_tuangou_discount" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+                                </LinearLayout>
+                                <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                                    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多折扣尽在黑五海淘" android:layout_weight="1.0" />
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_search_sale" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/color_f0f3f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:drawableRight="@mipmap/icon_arrow" android:drawablePadding="3.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ViewSwitcher>
+            </LinearLayout>
+            <cn.shihuo.modulelib.views.widget.tablayout.CommonTabLayout android:id="@id/searchresult_tablayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="42.0dip" tl:tl_divider_color="#1a000000" tl:tl_divider_padding="10.0dip" tl:tl_divider_width="1.0dip" tl:tl_indicator_color="@color/color_ff4343" tl:tl_indicator_width="80.0dip" tl:tl_textSelectColor="@color/color_ff4343" tl:tl_textUnselectColor="@color/color_444444" tl:tl_textsize="14.0sp" tl:tl_underline_color="@color/color_e6e6e6" tl:tl_underline_height="1.0dip" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/searchresult_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" tl:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <include android:layout_gravity="bottom|center|right" android:id="@id/toTop" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" layout="@layout/anchor_list_totop" />
+</FrameLayout>

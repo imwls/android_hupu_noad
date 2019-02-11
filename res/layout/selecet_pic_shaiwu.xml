@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/color_d33333" android:gravity="center" android:id="@id/btn_paizhao" android:background="@drawable/selector_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:text="拍照" />
+    <Button android:textColor="#ff3a5fcd" android:gravity="center" android:id="@id/btn_xiangce" android:background="@drawable/selector_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:text="相册" />
+    <Button android:textColor="#ff3a5fcd" android:gravity="center" android:id="@id/popupWindowCancelButton" android:background="@drawable/selector_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="取消" />
+</LinearLayout>

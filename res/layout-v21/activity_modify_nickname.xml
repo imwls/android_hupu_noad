@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:contentInsetStart="10.0dip" app:contentInsetStart="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_333333" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:layout_gravity="center|right" android:id="@id/tv_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="确定" />
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/line_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" />
+        <EditText android:textSize="15.0sp" android:textColorHint="@color/color_c6c6c6" android:id="@id/et_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:hint="请输入您的昵称" android:singleLine="true" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="昵称必须为3-10个字，设置成功后不能修改；只支持数字、字母、汉字和下划线，且下划线不能在首末位\n\n该昵称仅用于展示，无法用于登录" />
+</LinearLayout>

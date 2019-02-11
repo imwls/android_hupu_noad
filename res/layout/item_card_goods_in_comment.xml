@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_card_goods" android:background="@drawable/selector_lv_item_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff2a67a6" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="3.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_dd1712" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/tv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看详情" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="9.0dip" android:src="@mipmap/icon_go" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

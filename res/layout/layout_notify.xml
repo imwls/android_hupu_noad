@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_notify" style="@style/txt_title" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:paddingBottom="@dimen/set_group_interval" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_notify_item_height" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="?main_color_5" android:id="@id/title_recommand" android:text="@string/notify_recommand3" style="@style/txt_item_myinfo" />
+                <TextView android:textSize="@dimen/txt4" android:textColor="?main_color_4" android:id="@id/tip_recommand" android:text="@string/notify_recommand_tip" style="@style/txt_item_myinfo" />
+            </LinearLayout>
+            <ToggleButton android:id="@id/toggle_recommand" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_notify_item_height" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="?main_color_5" android:id="@id/title_game" android:layout_marginLeft="10.0dip" android:text="@string/notify_game" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+            <ToggleButton android:id="@id/toggle_game" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_notify_item_height" android:layout_marginTop="1.0dip">
+            <TextView android:textColor="?main_color_5" android:id="@id/title_news" android:layout_marginLeft="10.0dip" android:text="@string/notify_news" android:layout_weight="1.0" style="@style/txt_item_myinfo" />
+            <ToggleButton android:id="@id/toggle_news" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="?v0_main_bg_color_1" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/set_notify_item_height" android:layout_marginTop="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="?main_color_5" android:id="@id/title_lighted" android:text="@string/notify_lighted" style="@style/txt_item_myinfo" />
+                <TextView android:textSize="@dimen/txt4" android:textColor="?main_color_4" android:id="@id/tip_lighted" android:text="@string/notify_lighted_tip" style="@style/txt_item_myinfo" />
+            </LinearLayout>
+            <ToggleButton android:id="@id/toggle_lighted" android:background="?myinfo_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:textOn="@null" android:textOff="@null" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+        </LinearLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+</LinearLayout>

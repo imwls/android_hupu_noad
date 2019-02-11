@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/coach" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_player" android:layout_width="30.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="left" android:id="@id/player_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/txt_team_player" />
+            <TextView android:textColor="?main_color_4" android:gravity="left" android:id="@id/role" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/txt_team_player" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/coach_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?team_offical_more_icon" />
+        <TextView android:textColor="?main_color_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查看更多" style="@style/txt_team_player" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

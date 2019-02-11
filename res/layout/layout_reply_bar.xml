@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/commit_layout_bg" android:background="@color/trans_20_land" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/commit_layout" android:background="?bbs_publish_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.hupu.android.ui.colorUi.ColorEditText android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:gravity="center_vertical" android:id="@id/reply_text_content" android:background="?bbs_edit_title_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/reply_hint_text" android:maxLines="4" android:layout_toLeftOf="@id/commit_reply" android:layout_alignParentLeft="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="15.0sp" android:textColor="@drawable/txt_commit_reply_selector" android:id="@id/commit_reply" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_commit_reply" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/to_reply_layout" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/to_reply_img" android:background="?news_bg_bottom_reply" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toLeftOf="@id/layout_reply" />
+        <FrameLayout android:id="@id/reply" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/to_share_img">
+            <com.hupu.android.ui.colorUi.ColorImageView android:textColor="?main_color_4" android:layout_gravity="center_vertical" android:id="@id/to_jump_img" android:background="?bottombar_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.hupu.android.ui.view.RedDotTextView android:textSize="9.0sp" android:textColor="?reddot_color_text" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/reply_num" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.0dip" app:bgColor="@color/normal_res_cor1" />
+        </FrameLayout>
+        <com.hupu.android.ui.colorUi.ColorImageView android:layout_gravity="center_vertical" android:id="@id/to_share_img" android:background="?bottombar_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+        <ImageButton android:id="@id/btn_out" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_web_out_selector" android:scaleType="centerInside" />
+    </LinearLayout>
+    <ImageView android:id="@id/bottom_line" android:background="?v0_main_color_line03" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/to_reply_layout" />
+</RelativeLayout>

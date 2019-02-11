@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_my_pay" style="@style/txt_title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/v0_txt2" android:textStyle="bold" android:textColor="?main_color_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_echange_goldbean_num" />
+            <EditText android:textSize="@dimen/v0_txt3" android:textColor="?main_color_5" android:textColorHint="?main_color_3" android:id="@id/txt_wallet" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:hint="@string/title_goldbean_hint" android:singleLine="true" android:numeric="integer" />
+            <View android:background="?order_coin_divider_bg" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignLeft="@id/layout_wallet" android:layout_alignRight="@id/layout_wallet" />
+            <LinearLayout android:orientation="horizontal" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <TextView android:textSize="@dimen/v0_txt3s" android:textColor="?main_color_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_current_coin" />
+                <TextView android:textSize="@dimen/v0_txt3s" android:textColor="?main_color_6" android:id="@id/txt_kanqiu_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                <TextView android:textSize="@dimen/v0_txt3s" android:textColor="?main_color_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="虎扑币" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_3" android:id="@id/exchange_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/title_exchange_content" />
+        </LinearLayout>
+        <Button android:id="@id/btn_exchange" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/title_exchange_name" style="@style/common_button_submit" />
+    </LinearLayout>
+</LinearLayout>

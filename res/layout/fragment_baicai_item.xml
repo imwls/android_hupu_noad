@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:viewAspectRatio="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lines="2" android:lineSpacingExtra="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:id="@id/tv_tianmao_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/color_999999" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ffe01100" android:id="@id/qhj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券后" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffe01100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="¥" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffe01100" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_quan" android:background="@mipmap/bg_baicai_quan_item" android:layout_width="56.0dip" android:layout_height="16.0dip" android:text="10元" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/view_line" android:background="@color/color_f5f5f5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

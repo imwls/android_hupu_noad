@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:paddingBottom="44.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" layout="@layout/toolbar" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/collapse" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <cn.shihuo.modulelib.views.BaseWebView android:id="@id/webview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/viewGroup_more_lm" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="相关栏目更多内容" />
+                        <View android:background="@color/color_e6e6e6" android:layout_width="105.0dip" android:layout_height="4.0px" android:layout_marginLeft="10.0dip" />
+                        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff3498da" android:gravity="center" android:id="@id/tv_more_lm" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/belowWebView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/viewGroup_light" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/color_d33333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="这些评论亮了" />
+                            <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                            <cn.shihuo.modulelib.views.NoScrollListView android:id="@id/lv_comments_light" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@color/color_e6e6e6" android:dividerHeight="1.0px" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/viewGroup_zuixin" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_zuixin" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="15.0sp" android:textColor="@color/color_d33333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最新评论" />
+                                <TextView android:textSize="15.0sp" android:textColor="@color/color_666666" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                            <cn.shihuo.modulelib.views.NoScrollListView android:id="@id/lv_comments" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@color/color_e6e6e6" android:dividerHeight="1.0px" />
+                            <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_more" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="13.0sp" android:textColor="@color/color_3498da" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="查看更多评论" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_right_next" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_shafa" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="发表评论吧，\n让全世界听到你的声音" android:drawableLeft="@mipmap/icon_comments_first" android:drawablePadding="10.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <TextView android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="相关推荐" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/recyclerViewRecommend" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/viewGroup_bottom" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/tomall_guide" />
+        <View android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_zan" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sw_dianzan_normal" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sw_share_normal" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="分享" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_shoucang" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_shoucang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sw_collection_mormal" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="收藏" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_comment" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/iv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sw_pinglun_normal" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="评论" />
+                </LinearLayout>
+                <TextView android:textSize="8.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_tip" android:background="@drawable/message_tip_bg_red" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/send" android:background="@drawable/sendpinglun_bg" android:paddingLeft="10.0dip" android:layout_width="140.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="发表你的观点" />
+        </LinearLayout>
+    </LinearLayout>
+    <cn.shihuo.modulelib.views.SHVideoViewInPage android:id="@id/videoView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="210.0dip" />
+    <include layout="@layout/retry" />
+</RelativeLayout>

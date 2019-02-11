@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:paddingLeft="10.0dip" android:paddingTop="14.0dip" android:paddingRight="10.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="73.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/iv_head" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/txt2" android:textColor="?main_color_5" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" android:layout_toRightOf="@id/iv_head" android:layout_centerVertical="true" />
+    <Button android:textSize="@dimen/txt6" android:textColor="?main_color_5" android:id="@id/btn_reomve" android:background="?btn_bg_black" android:focusable="false" android:layout_width="57.0dip" android:layout_height="24.0dip" android:text="移除" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

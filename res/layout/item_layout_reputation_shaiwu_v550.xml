@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_reputation_shaiwu_header" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" fresco:fadeDuration="1000" fresco:placeholderImage="@mipmap/zhanweifu_header" fresco:placeholderImageScaleType="centerCrop" fresco:roundAsCircle="true" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_reputation_shaiwu_ll_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_reputation_shaiwu_header" android:layout_alignTop="@id/item_reputation_shaiwu_header">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:id="@id/item_reputation_shaiwu_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/color_d33333" android:id="@id/item_reputation_shaiwu_tv_tip" android:background="@drawable/btn_red_reputation_tip_bg" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="识货" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/item_reputation_shaiwu_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_reputation_shaiwu_header" android:layout_below="@id/item_reputation_shaiwu_ll_name" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_alignTop="@id/item_reputation_shaiwu_ll_name" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/iv_count_zan" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/tv_count_zan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/item_reputation_shaiwu_btn" android:background="@drawable/bg_gray_shaiwu" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:text="晒物" android:layout_toLeftOf="@android:id/icon1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/item_reputation_shaiwu_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="6.0dip" />
+        <cn.shihuo.modulelib.views.ImageGridView android:gravity="center" android:id="@id/item_reputation_shaiwu_gv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="55.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/layout_portrait" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <com.hupu.android.ui.colorUi.ColorButton android:id="@id/btn_back" style="@style/btn_back" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_title" android:text="@string/my_already" style="@style/txt_title" />
+        <Button android:id="@id/btn_clear" android:text="@string/my_already_icon" style="@style/btn_right_txt" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+    <com.hupu.android.ui.widget.PagerSlidingTabStrip android:id="@id/page_indicator" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="44.0dip" app:pstsIndicatorColor="?main_color_1" app:pstsDividerColor="@color/transparent" app:pstsTabPaddingLeftRight="@dimen/slid_tab_width" app:pstsShouldExpand="false" app:ptstCurrentTextColor="?main_color_5" app:ptstNormalTextColor="?main_color_3s" />
+    <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+    <com.base.logic.component.widget.HupuViewPager android:id="@id/myfavor_view_pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

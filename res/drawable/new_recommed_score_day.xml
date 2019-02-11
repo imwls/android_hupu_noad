@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/color_7B7E86" />
+    <item android:state_enabled="true" android:state_selected="false" android:color="@color/bg_gamelist_txt_start" />
+    <item android:state_selected="false" android:color="@color/color_333333" />
+    <item android:color="@color/color_333333" />
+</selector>

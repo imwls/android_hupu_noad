@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_set_more_manage" style="@style/txt_title" />
+    </RelativeLayout>
+    <TextView android:textColor="?main_color_4" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/set_item_img_padding" android:text="打开 / 关闭更多页的入口" />
+    <ScrollView android:id="@id/scrollview" android:background="?v0_main_bg_color_1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:id="@id/toggle_ll" android:paddingBottom="@dimen/set_group_interval" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

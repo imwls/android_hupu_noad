@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="热门单品" />
+        <cn.shihuo.modulelib.views.RectTagGroup android:id="@id/rtg_hot" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WearLessonTag" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="流行元素" />
+        <cn.shihuo.modulelib.views.RectTagGroup android:id="@id/rtg_fashion" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/WearLessonTag" />
+    </LinearLayout>
+</LinearLayout>

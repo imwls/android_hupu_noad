@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.shihuo.modulelib.views.widget.ScrollableLayout android:orientation="vertical" android:id="@id/scrollableLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/toolbar" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.bigkoo.convenientbanner.ConvenientBanner android:id="@id/banner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax" app:canLoop="true" />
+                        <LinearLayout android:id="@id/ll_guarantee" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip">
+                            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:background="@mipmap/icon_tuangou_jingxuan" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="精选店铺" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:background="@mipmap/icon_tuangou_yanshen" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="严审单品" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:background="@mipmap/icon_tuangou_zhuanyuan" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="专员售后" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:background="@mipmap/icon_tuangou_weigui" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="违规必查" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <include layout="@layout/line_horizontal" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日上新" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_today_news_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_today_news" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_4" android:showDividers="beginning|middle" />
+                        </HorizontalScrollView>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_pics" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                            <android.support.v7.widget.CardView android:id="@id/card1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:cardCornerRadius="2.0dip" app:cardElevation="3.0dip">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fadeDuration="@integer/image_duration" app:viewAspectRatio="1.44" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView android:id="@id/card2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:cardCornerRadius="2.0dip" app:cardElevation="3.0dip">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fadeDuration="@integer/image_duration" app:viewAspectRatio="1.44" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView android:id="@id/card3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:cardCornerRadius="2.0dip" app:cardElevation="3.0dip">
+                                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_img3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fadeDuration="@integer/image_duration" app:viewAspectRatio="1.44" app:placeholderImage="@mipmap/zhanweifu" app:actualImageScaleType="fitXY" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/tuangou400_ll_model" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" layout="@layout/line_horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cn.shihuo.modulelib.views.widget.tablayout.SlidingTabLayout android:id="@id/tabLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tl_indicator_color="@color/color_dd1712" app:tl_textAllCaps="true" app:tl_textBold="SELECT" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <View android:layout_gravity="bottom" android:id="@id/view_line" android:background="@color/color_f7f7f7" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tuangou400_ll_choice" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:layout_gravity="bottom" android:id="@id/tuangou400_ll_out_order" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tuangou400_ll_order" android:background="@drawable/selector_prefecture_list_category" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:ellipsize="end" android:gravity="center" android:id="@id/tuangou400_tv_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排序" android:maxLines="1" android:singleLine="true" />
+                                    <ImageView android:id="@id/tuangou400_iv_order" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/selector_arrow_up_down" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="bottom" android:id="@id/tuangou400_ll_out_brand" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tuangou400_ll_brand" android:background="@drawable/selector_prefecture_list_category" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:gravity="center" android:id="@id/tuangou400_tv_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="品牌" android:singleLine="true" />
+                                    <ImageView android:id="@id/tuangou400_iv_brand" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/selector_arrow_up_down" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="bottom" android:id="@id/tuangou400_ll_out_sex" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tuangou400_ll_sex" android:background="@drawable/selector_prefecture_list_category" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                                    <TextView android:textSize="13.0sp" android:textColor="@color/selector_color_black2red" android:gravity="center" android:id="@id/tuangou400_tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人群" android:singleLine="true" />
+                                    <ImageView android:id="@id/tuangou400_iv_sex" android:layout_width="7.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/selector_arrow_up_down" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_weight="1.0">
+                                <CheckBox android:textSize="12.0sp" android:textColor="@color/selector_color_black2red" android:gravity="center" android:id="@id/tuangou400_header_cbo_category_four" android:background="@drawable/selected_tuangou_notice" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:button="@null" android:text="下期预告" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <android.support.v4.view.ViewPager android:id="@id/vp_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </cn.shihuo.modulelib.views.widget.ScrollableLayout>
+            <include android:layout_gravity="bottom|center|right" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_margin="10.0dip" layout="@layout/anchor_list_totop" />
+        </FrameLayout>
+    </cn.shihuo.modulelib.views.ContainsViewPagerSwipeRefreshLayout>
+</FrameLayout>

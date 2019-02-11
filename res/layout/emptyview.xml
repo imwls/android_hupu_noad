@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_f0f3f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/emptyicon" android:layout_width="104.0dip" android:layout_height="104.0dip" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_999999" android:id="@id/emptytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <Button android:textSize="15.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/emptygo" android:background="@drawable/btn_gray_stroke_bg_empty" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="去逛逛" />
+</LinearLayout>

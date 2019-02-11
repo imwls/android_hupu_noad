@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?main_color_2" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/head" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+    <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/txt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/head" />
+    <TextView android:textSize="@dimen/txt5" android:textColor="?main_color_4" android:id="@id/txt_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/head" android:layout_below="@id/txt_name" />
+    <TextView android:textSize="@dimen/txt3" android:textColor="?main_color_5" android:id="@id/txt_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_date" />
+    <com.base.logic.component.widget.EquipMultiImageLayout android:orientation="horizontal" android:id="@id/ll_equip_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/txt_content" />
+</RelativeLayout>

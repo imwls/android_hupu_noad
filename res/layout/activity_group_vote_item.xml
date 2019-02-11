@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keyboardListenLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="15.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:id="@id/add_content_edit" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:singleLine="true" android:maxLength="40" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/del_content_edit" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?voteing_del_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/line_title" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/top" layout="@layout/line_simple_layout" />
+</RelativeLayout>

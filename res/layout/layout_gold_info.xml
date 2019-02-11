@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" android:layout_alignParentTop="true" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/title_my_coin" style="@style/txt_title" />
+        <Button android:id="@id/txt_box_num" style="@style/btn_right_txt_red" />
+    </RelativeLayout>
+    <com.hupu.android.ui.colorUi.ColorView style="@style/view_divider1" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_below="@id/layout_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_coin" android:background="?bg_coin" android:layout_width="fill_parent" android:layout_height="175.0dip">
+                <RelativeLayout android:orientation="vertical" android:id="@id/menu_rank_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="11.0dip" android:layout_alignParentLeft="true">
+                    <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_2" android:id="@id/rank_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_all_guess_rank" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_2" android:id="@id/rank_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rank_txt" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/layout_guess_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_2" android:id="@id/title_guess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_my_guess_result" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/v0_txt5" android:textColor="?main_color_2" android:id="@id/guess_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title_guess" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/v0_txt2" android:textStyle="bold" android:textColor="?main_color_2" android:id="@id/txt_coin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="@string/my_coin" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/txt_coin_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/txt_coin_title" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="?main_color_2" android:id="@id/txt_coin_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ProgressBar android:id="@id/gold_Porgress" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                    <TextView android:textSize="@dimen/v0_txt4" android:textColor="?main_color_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="明细 >" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <Button android:textSize="@dimen/v0_txt3" android:textColor="?main_color_2" android:id="@id/coin_prize" android:background="?bg_coin_change_shop" android:layout_width="92.0dip" android:layout_height="38.0dip" android:layout_marginRight="30.0dip" android:text="@string/txt_exchange_prize" />
+                    <Button android:textSize="@dimen/v0_txt3" android:textColor="?main_color_6" android:id="@id/txt_pay" android:background="?bg_buy_coin" android:layout_width="92.0dip" android:layout_height="38.0dip" android:text="@string/title_my_pay" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/v0_txt3" android:textStyle="bold" android:textColor="?main_color_5" android:id="@id/today_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/today_task" />
+            <View android:layout_marginTop="10.0dip" android:layout_alignLeft="@id/today_task_title" style="@style/view_divider1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/today_task_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/set_top_space_height" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/load_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

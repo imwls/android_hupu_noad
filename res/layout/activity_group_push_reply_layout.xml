@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout android:orientation="vertical" android:id="@id/keyboardListenLayout" android:background="?bbs_publish_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_title_bar" android:background="?common_bg_title_bar" style="@style/bbs_bg_title_bar">
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor" android:id="@id/btn_cancel" android:background="@color/transparent" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="17.0sp" android:textColor="?thread_btn_cor" android:id="@id/btn_sure" android:background="@color/transparent" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="发表" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_title" android:text="dsgsgshshd" style="@style/bbs_txt_title" />
+    </RelativeLayout>
+    <include android:id="@id/line_top" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/layout_title_bar" layout="@layout/line_simple_layout" />
+    <RelativeLayout android:id="@id/select_pic_layout" android:background="?bbs_publish_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/space_tag" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="?main_color_4" android:id="@id/tv_tips" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="发帖小tip:虎扑的每个角落都藏着扫地僧，请随时保持一颗学习的心" />
+        </LinearLayout>
+        <View android:id="@id/top_line2" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/space_tag" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/top_line2">
+            <ImageButton android:id="@id/btn_chose_pic" android:background="?bbs_pick_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/btn_chose_vote" android:background="?vote_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/btn_chose_pic" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/btn_chose_video" android:background="?reply_video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/btn_chose_vote" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已添加9张图片" android:layout_toRightOf="@id/btn_chose_video" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_4" android:gravity="center" android:id="@id/tv_save_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15:30 自动保存" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@id/reply_scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/select_pic_layout" android:layout_below="@id/line_top">
+        <RelativeLayout android:id="@id/pics_parent" android:background="?bbs_publish_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="16.0sp" android:textColor="?main_color_5" android:textColorHint="?main_color_4" android:id="@id/et_title" android:background="?bbs_edit_title_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:hint="输入标题" android:maxLines="2" android:singleLine="false" />
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/et_title_txt" android:background="?bbs_edit_title_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:singleLine="true" />
+            <include android:id="@id/line_title" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/et_title" layout="@layout/line_simple_layout" />
+            <RelativeLayout android:id="@id/top_video_layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line_title">
+                <RelativeLayout android:id="@id/top_video_layout" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="140.0dip">
+                    <RelativeLayout android:id="@id/video_layout" android:background="?bbs_edit_title_bg" android:layout_width="fill_parent" android:layout_height="130.0dip">
+                        <RelativeLayout android:id="@id/video_show_layout" android:layout_width="fill_parent" android:layout_height="130.0dip">
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="130.0dip">
+                                <com.hupu.app.android.bbs.core.module.group.view.CoverImageView android:id="@id/first_frame_image" android:layout_width="wrap_content" android:layout_height="130.0dip" android:src="@drawable/video_no_pic_night" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                                <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_btn_day" android:layout_centerInParent="true" />
+                                <TextView android:textSize="15.0sp" android:textColor="?common_title_txt" android:gravity="center" android:id="@id/loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传中..." android:layout_centerInParent="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <ImageView android:id="@id/delete_img" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/delete_upload_img_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    <View android:id="@id/line_top" android:background="?main_color_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.hupu.app.android.bbs.core.module.group.ui.customized.PicTxtLayout android:id="@id/bbs_pic_edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="60.0dip" android:layout_below="@id/top_video_layout_content" />
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/progress_layout" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hupu.android.ui.view.ProgressWheel android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="100.0dip" android:layout_height="100.0dip" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/color_main_red" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/guide_page" android:background="#9d000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="?help_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="73.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.hupu.app.android.bbs.core.common.ui.view.KeyboardListenLayout>

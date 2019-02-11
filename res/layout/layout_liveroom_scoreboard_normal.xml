@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hupu.android.ui.colorUi.ColorLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_team_left" android:padding="5.0dip" android:layout_width="66.0dip" android:layout_height="53.0dip" android:layout_marginLeft="25.0dip" app:filter_type="mask" app:has_filter="true" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_score" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="11.0">
+            <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/games_time_out" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/left_time_out_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.hupu.android.ui.colorUi.ColorTextView android:textSize="12.0sp" android:textColor="?game_textcolor_style1" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_out_text" />
+                <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/right_time_out_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.hupu.android.ui.colorUi.ColorLinearLayout>
+            <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_shootout1" android:visibility="gone" android:layout_toLeftOf="@id/txt_left_score" android:layout_centerVertical="true" style="@style/txt_football_team2" />
+                    <com.base.logic.component.animation.AutofitTextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="?game_textcolor_style1" android:ellipsize="end" android:gravity="center" android:id="@id/txt_left_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_toLeftOf="@id/foule_father_layout" android:layout_centerVertical="true" />
+                    <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/foule_father_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <com.hupu.android.ui.colorUi.ColorRelativeLayout android:id="@id/foule_layout" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="wrap_content">
+                            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="12.0sp" android:textColor="?game_textcolor_style1" android:id="@id/txt_foul_text" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_foul_text" android:layout_centerHorizontal="true" />
+                            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0sp" android:textColor="?game_textcolor_style1" android:gravity="center" android:id="@id/left_foul_num" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toLeftOf="@id/txt_foul_text" />
+                            <com.hupu.android.ui.colorUi.ColorTextView android:textSize="11.0sp" android:textColor="?game_textcolor_style1" android:gravity="center" android:id="@id/right_foul_num" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toRightOf="@id/txt_foul_text" />
+                        </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+                        <com.hupu.android.ui.colorUi.ColorTextView android:textSize="@dimen/txt_score_textsize" android:textStyle="bold" android:textColor="?game_textcolor_style1" android:id="@id/score_split_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " />
+                    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+                    <com.base.logic.component.animation.AutofitTextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="?game_textcolor_style1" android:gravity="center" android:id="@id/txt_right_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/foule_father_layout" android:layout_centerVertical="true" />
+                    <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_shootout2" android:visibility="gone" android:layout_toRightOf="@id/txt_right_score" android:layout_centerVertical="true" style="@style/txt_football_team2" />
+                </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+            </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+        <com.hupu.android.ui.colorUi.ColorTextView android:textColor="?game_textcolor_style1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txt_start_time" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="11.0" />
+        <com.hupu.android.ui.colorUi.ColorLinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_team_right" android:padding="5.0dip" android:layout_width="66.0dip" android:layout_height="53.0dip" android:layout_marginRight="25.0dip" app:filter_type="mask" app:has_filter="true" />
+        </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    </com.hupu.android.ui.colorUi.ColorLinearLayout>
+    <com.hupu.android.ui.colorUi.ColorRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_team_left" style="@style/txt_football_team" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_proccess" android:drawablePadding="2.0dip" android:layout_centerHorizontal="true" style="@style/txt_football_team2" />
+        <com.hupu.android.ui.colorUi.ColorTextView android:id="@id/txt_team_right" android:layout_alignParentRight="true" style="@style/txt_football_team" />
+    </com.hupu.android.ui.colorUi.ColorRelativeLayout>
+</com.hupu.android.ui.colorUi.ColorLinearLayout>

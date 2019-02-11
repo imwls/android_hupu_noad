@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:cardBackgroundColor="@color/color_f0f0f0" fresco:cardCornerRadius="1.0px" fresco:cardElevation="0.0dip" fresco:cardMaxElevation="0.0dip" fresco:cardUseCompatPadding="true" fresco:contentPadding="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" fresco:placeholderImage="@mipmap/zhanweifu" fresco:placeholderImageScaleType="centerCrop" fresco:actualImageScaleType="centerCrop" fresco:roundTopLeft="true" fresco:roundTopRight="true" fresco:roundBottomRight="false" fresco:roundBottomLeft="false" fresco:roundWithOverlayColor="@android:color/white" xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+            <ImageView android:id="@id/iv_jing" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_margin="3.0dip" android:src="@mipmap/jingpin_icon" android:layout_alignLeft="@id/iv_photo" android:layout_alignTop="@id/iv_photo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingTop="10.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_444444" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/tv_1_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/tv_1_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:id="@id/tv_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:lineSpacingExtra="5.0dip" />
+            <View android:background="@color/color_f0f0f0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="13.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_bdbdbd" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/color_d33333" android:id="@id/tv_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_get_recommend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_get_recommend" />
+</android.support.v7.widget.CardView>

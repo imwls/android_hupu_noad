@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?main_color_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.hupu.app.android.bbs.core.common.ui.view.RoundedImageView.RoundedImageView android:id="@id/admiration_headIcon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="25.0dip" android:src="@drawable/icon_kanqiu_df_head" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" app:riv_corner_radius="33.0dip" />
+        <TextView android:textSize="@dimen/txt4" android:textColor="?main_color_5" android:id="@id/admiration_nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="狂飙鼠" android:layout_toRightOf="@id/admiration_headIcon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt4" android:textColor="?main_color_5" android:gravity="right" android:id="@id/admiration_donatedNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="156虎扑币" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

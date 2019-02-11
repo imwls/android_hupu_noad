@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hupu.android.ui.colorUi.ColorRelativeLayout android:background="?v0_main_bg_color_4" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/xlistview_header_progressbar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" />
+</com.hupu.android.ui.colorUi.ColorRelativeLayout>

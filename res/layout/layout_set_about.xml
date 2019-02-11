@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title_bar" android:layout_alignParentTop="true" style="@style/bg_title_bar">
+        <Button android:id="@id/btn_back" style="@style/btn_back" />
+        <TextView android:id="@id/txt_title" android:text="@string/about" style="@style/txt_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/layout_title_bar" android:layout_centerHorizontal="true">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_about_logo" />
+        <TextView android:textSize="@dimen/txt6" android:textColor="?about_txt_version" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="v4.4.0" />
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:src="@drawable/icon_about_qr_code" />
+        <TextView android:textSize="@dimen/txt6" android:textColor="?about_txt_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/about_qr_code" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/txt6" android:textColor="?main_color_7" android:id="@id/txt_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/company_reg_protocol" />
+        <TextView android:textSize="@dimen/txt6" android:textStyle="bold" android:textColor="?about_txt_copyright" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_reg" />
+    </LinearLayout>
+</RelativeLayout>

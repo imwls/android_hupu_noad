@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?v0_main_bg_color_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hupu.android.ui.colorUi.ColorImageView android:id="@id/img" android:layout_width="55.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_group_def" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_type="mask" app:has_filter="true" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img">
+            <TextView android:textSize="15.0sp" android:textColor="?main_color_5" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="?main_color_4" android:ellipsize="end" android:id="@id/intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:layout_below="@id/name" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
