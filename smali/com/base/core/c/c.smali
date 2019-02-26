@@ -4983,7 +4983,7 @@
 
     move-result-object v0
 
-    const-string v1, "upgrade/check"
+    const-string v1, "fuck_upgrade/check"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7419,7 +7419,7 @@
 
     move-result-object v0
 
-    const-string v1, "user/more"
+    const-string v1, "fuck_user/more"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10602,7 +10602,7 @@
 
     move-result-object v0
 
-    const-string v1, "report/getIp"
+    const-string v1, "fuck_report/getIp"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
